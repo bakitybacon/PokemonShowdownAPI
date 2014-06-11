@@ -1,0 +1,192 @@
+|init|battle
+|title|acnola vs. Ultima Ratio
+|join|acnola
+|join|Ultima Ratio
+|player|p1|acnola|210
+|player|p2|Ultima Ratio|221
+|gametype|singles
+|gen|6
+|tier|UU
+|rated
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokemon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Moody Clause: Moody is banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned.
+|rule|HP Percentage Mod: HP is reported as percentages
+|clearpoke
+|poke|p1|Sableye, F
+|poke|p1|Porygon-Z
+|poke|p1|Mienshao, M
+|poke|p1|Metagross, shiny
+|poke|p1|Florges, F, shiny
+|poke|p1|Arcanine, M, shiny
+|poke|p2|Umbreon, M
+|poke|p2|Chandelure, F
+|poke|p2|Nidoking, M
+|poke|p2|Blastoise, M
+|poke|p2|Porygon-Z
+|poke|p2|Smeargle, F
+|teampreview
+|
+|start
+|switch|p1a: Sableye|Sableye, F|100/100
+|switch|p2a: Smeargle|Smeargle, F|100/100
+|turn|1
+|join|Magma Admin~
+|
+|move|p2a: Smeargle|Magic Coat|p2a: Smeargle
+|-singleturn|p2a: Smeargle|move: Magic Coat
+|move|p1a: Sableye|Trick|p2a: Smeargle
+|-activate|p1a: Sableye|move: Trick|[of] p2a: Smeargle
+|-item|p2a: Smeargle|Choice Specs|[from] move: Trick
+|-item|p1a: Sableye|Focus Sash|[from] move: Trick
+|
+|turn|2
+|
+|move|p1a: Sableye|Confuse Ray|p2a: Smeargle
+|-immune|p2a: Smeargle|confusion
+|-fail|p2a: Smeargle
+|move|p2a: Smeargle|Parting Shot|p1a: Sableye
+|-unboost|p1a: Sableye|atk|1
+|-unboost|p1a: Sableye|spa|1
+|
+|switch|p2a: Chandelure|Chandelure, F|100/100
+|
+|turn|3
+|
+|move|p1a: Sableye|Confuse Ray|p2a: Chandelure
+|-start|p2a: Chandelure|confusion
+|-activate|p2a: Chandelure|confusion
+|-damage|p2a: Chandelure|94/100|[from] confusion
+|
+|turn|4
+|
+|move|p1a: Sableye|Calm Mind|p1a: Sableye
+|-boost|p1a: Sableye|spa|1
+|-boost|p1a: Sableye|spd|1
+|-activate|p2a: Chandelure|confusion
+|-damage|p2a: Chandelure|86/100|[from] confusion
+|
+|turn|5
+|
+|move|p1a: Sableye|Calm Mind|p1a: Sableye
+|-boost|p1a: Sableye|spa|1
+|-boost|p1a: Sableye|spd|1
+|-activate|p2a: Chandelure|confusion
+|-damage|p2a: Chandelure|78/100|[from] confusion
+|
+|turn|6
+|
+|-end|p2a: Chandelure|confusion
+|move|p2a: Chandelure|Fire Blast|p1a: Sableye
+|-damage|p1a: Sableye|48/100
+|-status|p1a: Sableye|brn
+|move|p1a: Sableye|Dark Pulse|p2a: Chandelure
+|-crit|p2a: Chandelure
+|-supereffective|p2a: Chandelure
+|-damage|p2a: Chandelure|0 fnt
+|faint|p2a: Chandelure
+|
+|-damage|p1a: Sableye|36/100 brn|[from] brn
+|
+|switch|p2a: Nidoking|Nidoking, M|100/100
+|turn|7
+|
+|move|p1a: Sableye|Confuse Ray|p2a: Nidoking
+|-start|p2a: Nidoking|confusion
+|-activate|p2a: Nidoking|confusion
+|-damage|p2a: Nidoking|82/100|[from] confusion
+|
+|-damage|p1a: Sableye|23/100 brn|[from] brn
+|turn|8
+|
+|-activate|p2a: Nidoking|confusion
+|-damage|p2a: Nidoking|61/100|[from] confusion
+|move|p1a: Sableye|Dark Pulse|p2a: Nidoking
+|-damage|p2a: Nidoking|8/100
+|
+|-damage|p1a: Sableye|11/100 brn|[from] brn
+|turn|9
+|chat|Ultima Ratio|lol
+|chat|Ultima Ratio|since when did confusion become 100%
+|
+|-end|p2a: Nidoking|confusion
+|move|p2a: Nidoking|Stealth Rock|p1a: Sableye
+|-sidestart|p1: acnola|move: Stealth Rock
+|move|p1a: Sableye|Dark Pulse|p2a: Nidoking
+|-damage|p2a: Nidoking|0 fnt
+|faint|p2a: Nidoking
+|
+|-damage|p1a: Sableye|0 fnt|[from] brn
+|faint|p1a: Sableye
+|
+|switch|p2a: Smeargle|Smeargle, F|100/100
+|switch|p1a: Florges|Florges, F, shiny|100/100
+|-damage|p1a: Florges|88/100|[from] Stealth Rock
+|turn|10
+>battle-uu-123840938
+|
+|move|p2a: Smeargle|Sticky Web|p1a: Florges
+|-sidestart|p1: acnola|move: Sticky Web
+|move|p1a: Florges|Calm Mind|p1a: Florges
+|-boost|p1a: Florges|spa|1
+|-boost|p1a: Florges|spd|1
+|
+|-heal|p1a: Florges|94/100|[from] item: Leftovers
+|turn|11
+|updateuser|Magma Admin~|1|169
+connect.User[Username=Magma Admin~,isGuest=false,avatar=169]
+[Ultima Ratio:lol, Ultima Ratio:since when did confusion become 100%]
+>battle-uu-123840938
+|
+|switch|p2a: Umbreon|Umbreon, M|100/100
+|move|p1a: Florges|Calm Mind|p1a: Florges
+|-boost|p1a: Florges|spa|1
+|-boost|p1a: Florges|spd|1
+|
+|-heal|p1a: Florges|99/100|[from] item: Leftovers
+|turn|12
+>battle-uu-123840938
+|
+|switch|p2a: Smeargle|Smeargle, F|100/100
+|move|p1a: Florges|Moonblast|p2a: Smeargle
+|-damage|p2a: Smeargle|0 fnt
+|faint|p2a: Smeargle
+|
+|-heal|p1a: Florges|100/100|[from] item: Leftovers
+>battle-uu-123840938
+|
+|switch|p2a: Porygon-Z|Porygon-Z|100/100
+|-boost|p2a: Porygon-Z|atk|1|[from] ability: Download
+|turn|13
+>battle-uu-123840938
+|
+|move|p2a: Porygon-Z|Tri Attack|p1a: Florges
+|-damage|p1a: Florges|81/100
+|-damage|p2a: Porygon-Z|91/100|[from] item: Life Orb
+|move|p1a: Florges|Moonblast|p2a: Porygon-Z
+|-damage|p2a: Porygon-Z|0 fnt
+|faint|p2a: Porygon-Z
+|
+|-heal|p1a: Florges|87/100|[from] item: Leftovers
+>battle-uu-123840938
+|chat|Ultima Ratio|gg
+>battle-uu-123840938
+|-message|Ultima Ratio forfeited.
+>battle-uu-123840938
+|
+|win|acnola
+|raw|Ladder updating...
+>battle-uu-123840938
+|raw|acnola's rating: 1094 &rarr; <strong>1113</strong><br />(+19 for winning)
+|raw|Ultima Ratio's rating: 1000 &rarr; <strong>1000</strong><br />(+0 for losing)
+>battle-uu-123840938
+|leave|Ultima Ratio
+>battle-uu-123840938
+|player|p2
+>battle-uu-123840938
+|leave|acnola
+>battle-uu-123840938
+|player|p1

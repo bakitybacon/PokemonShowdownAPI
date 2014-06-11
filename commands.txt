@@ -1,0 +1,58 @@
+/msg OR /whisper OR /w [username], [message] - Send a private message.
+/reply OR /r [message] - Send a private message to the last person you received a message from, or sent a message to.
+/rating - Get your own rating.
+/rating [username] - Get user's rating.
+/nick [new username] - Change your username.
+/avatar [new avatar number] - Change your trainer sprite.
+/whois - Get details on yourself: alts, group, IP address, and rooms.
+/whois [username] - Get details on a username: alts (Requires: % @ & ~), group, IP address (Requires: @ & ~), and rooms.
+/data [pokemon/item/move/ability] - Get details on this pokemon/item/move/ability.
+!data [pokemon/item/move/ability] - Show everyone these details. Requires: + % @ & ~
+/analysis [pokemon], [generation] - Links to the Smogon University analysis for this Pokemon in the given generation.
+!analysis [pokemon], [generation] - Shows everyone this link. Requires: + % @ & ~
+/groups - Explains what the + % @ & next to people's names mean.
+!groups - Show everyone that information. Requires: + % @ & ~
+/opensource - Links to PS's source code repository.
+!opensource - Show everyone that information. Requires: + % @ & ~
+/avatars - Explains how to change avatars.
+!avatars - Show everyone that information. Requires: + % @ & ~
+/intro - Provides an introduction to competitive pokemon.
+!intro - Show everyone that information. Requires: + % @ & ~
+/cap - Provides an introduction to the Create-A-Pokemon project.
+!cap - Show everyone that information. Requires: + % @ & ~
+/om - Provides links to information on the Other Metagames.
+!om - Show everyone that information. Requires: + % @ & ~
+/learn [pokemon], [move, move, ...] - Displays how a Pokemon can learn the given moves, if it can at all.
+!learn [pokemon], [move, move, ...] - Show everyone that information. Requires: + % @ & ~
+/calc - Provides a link to a damage calculator
+!calc - Shows everyone a link to a damage calculator. Requires: + % @ & ~
+/away - Blocks challenges so no one can challenge you. Deactivate it with /back.
+/back - Unlocks challenges so you can be challenged again. Deactivate it with /away.
+/faq [theme] - Provides a link to the FAQ. Add deviation, doubles, randomcap, restart, or staff for a link to these questions. Add all for all of them.
+!faq [theme] - Shows everyone a link to the FAQ. Add deviation, doubles, randomcap, restart, or staff for a link to these questions. Add all for all of them. Requires: + % @ & ~
+Set up highlights:
+/highlight add, word - add a new word to the highlight list.
+/highlight list - list all words that currently highlight you.
+/highlight delete, word - delete a word from the highlight list.
+/highlight delete - clear the highlight list
+Set your timestamps preference:
+/timestamps [all|lobby|pms], [minutes|seconds|off]
+all - change all timestamps preferences, lobby - change only lobby chat preferences, pms - change only PM preferences
+off - set timestamps off, minutes - show timestamps of the form [hh:mm], seconds - show timestamps of the form [hh:mm:ss]
+/effectiveness OR /matchup OR /eff OR /type [attack], [defender] - Provides the effectiveness of a move or type on another type or a Pokémon.
+!effectiveness OR /matchup OR !eff OR !type [attack], [defender] - Shows everyone the effectiveness of a move or type on another type or a Pokémon.
+/dexsearch [type], [move], [move], ... - Searches for Pokemon that fulfill the selected criteria.
+Search categories are: type, tier, color, moves, ability, gen.
+Valid colors are: green, red, blue, white, brown, yellow, purple, pink, gray and black.
+Valid tiers are: Uber/OU/BL/UU/BL2/RU/BL3/NU/LC/CAP.
+Types must be followed by ' type', e.g., 'dragon type'.
+Parameters can be excluded through the use of '!', e.g., '!water type' excludes all water types.
+The parameter 'mega' can be added to search for Mega Evolutions only, and the parameters 'FE' or 'NFE' can be added to search fully or not-fully evolved Pokemon only.
+The order of the parameters does not matter.
+/dice [optional max number] - Randomly picks a number between 1 and 6, or between 1 and the number you choose.
+/dice [number of dice]d[number of sides] - Simulates rolling a number of dice, e.g., /dice 2d4 simulates rolling two 4-sided dice.
+/join [roomname] - Attempts to join the room [roomname].
+/ignore [user] - Ignores all messages from the user [user].
+Note that staff messages cannot be ignored.
+/invite [username], [roomname] - Invites the player [username] to join the room [roomname].
+/help OR /h OR /? - Gives you help.
