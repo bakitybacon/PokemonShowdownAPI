@@ -69,7 +69,7 @@ rapidspin
 reflect
 rest
 retaliate
-"return"
+Return
 roar
 rockslide
 rocksmash
@@ -127,7 +127,7 @@ protect
 psychic
 psychup
 rest
-"return"
+Return
 round
 shadowball
 shadowclaw
@@ -178,7 +178,7 @@ frustration
 solarbeam
 thunderbolt
 thunder
-"return"
+Return
 doubleteam
 sludgewave
 flamethrower
@@ -258,7 +258,7 @@ recycle
 reflect
 rest
 retaliate
-"return"
+Return
 roleplay
 round
 safeguard
@@ -320,7 +320,7 @@ pursuit
 rapidspin
 rest
 retaliate
-"return"
+Return
 roar
 round
 scaryface
@@ -390,7 +390,7 @@ raindance
 razorwind
 rest
 retaliate
-"return"
+Return
 rocksmash
 round
 screech
@@ -447,7 +447,7 @@ quash
 raindance
 reflect
 rest
-"return"
+Return
 round
 scald
 scaryface
@@ -506,7 +506,7 @@ pinmissile
 protect
 raindance
 rest
-"return"
+Return
 rockslide
 rocksmash
 secretpower
@@ -578,7 +578,7 @@ psychup
 punishment
 raindance
 rest
-"return"
+Return
 revenge
 rockslide
 rocksmash
@@ -651,7 +651,7 @@ petaldance
 protect
 psybeam
 rest
-"return"
+Return
 revenge
 roar
 rockclimb
@@ -723,7 +723,7 @@ raindance
 rapidspin
 reflect
 rest
-"return"
+Return
 rockclimb
 rockslide
 rocksmash
@@ -795,7 +795,7 @@ powergem
 protect
 raindance
 rest
-"return"
+Return
 rockblast
 rockclimb
 rockpolish
@@ -861,7 +861,7 @@ punishment
 raindance
 recover
 rest
-"return"
+Return
 revenge
 roar
 rockslide
@@ -946,7 +946,7 @@ psychoshift
 psychup
 raindance
 rest
-"return"
+Return
 revenge
 roar
 safeguard
@@ -1017,7 +1017,7 @@ powergem
 protect
 raindance
 rest
-"return"
+Return
 roar
 sandstorm
 secretpower
@@ -1093,7 +1093,7 @@ pursuit
 raindance
 rapidspin
 rest
-"return"
+Return
 roar
 rockslide
 rocksmash
@@ -1166,7 +1166,7 @@ protect
 raindance
 recycle
 rest
-"return"
+Return
 secretpower
 sheercold
 shockwave
@@ -1236,7 +1236,7 @@ protect
 psychic
 pursuit
 rest
-"return"
+Return
 revenge
 rockslide
 rocksmash
@@ -1307,7 +1307,7 @@ powerwhip
 protect
 razorleaf
 rest
-"return"
+Return
 rocksmash
 round
 safeguard
@@ -1371,7 +1371,7 @@ poisonpowder
 protect
 razorleaf
 rest
-"return"
+Return
 rocksmash
 round
 safeguard
@@ -1440,7 +1440,7 @@ poisonpowder
 protect
 razorleaf
 rest
-"return"
+Return
 roar
 rockclimb
 rocksmash
@@ -1536,7 +1536,7 @@ protect
 quickattack
 rage
 rest
-"return"
+Return
 rockslide
 rocksmash
 rocktomb
@@ -1611,7 +1611,7 @@ overheat
 protect
 rage
 rest
-"return"
+Return
 rockslide
 rocksmash
 rocktomb
@@ -1701,7 +1701,7 @@ overheat
 protect
 rage
 rest
-"return"
+Return
 roar
 rockslide
 rocksmash
@@ -1790,7 +1790,7 @@ raindance
 rapidspin
 refresh
 rest
-"return"
+Return
 rocksmash
 rocktomb
 rollout
@@ -1863,7 +1863,7 @@ protect
 raindance
 rapidspin
 rest
-"return"
+Return
 rocksmash
 rocktomb
 rollout
@@ -1941,7 +1941,7 @@ protect
 raindance
 rapidspin
 rest
-"return"
+Return
 roar
 rockclimb
 rockslide
@@ -2023,7 +2023,7 @@ quiverdance
 ragepowder
 raindance
 rest
-"return"
+Return
 roost
 round
 safeguard
@@ -2104,7 +2104,7 @@ protect
 pursuit
 rage
 rest
-"return"
+Return
 rocksmash
 roost
 round
@@ -2167,7 +2167,7 @@ pursuit
 quickattack
 raindance
 rest
-"return"
+Return
 roost
 round
 sandattack
@@ -2221,7 +2221,7 @@ quickattack
 raindance
 refresh
 rest
-"return"
+Return
 roost
 round
 sandattack
@@ -2276,7 +2276,7 @@ protect
 quickattack
 raindance
 rest
-"return"
+Return
 roost
 round
 sandattack
@@ -2342,7 +2342,7 @@ quickattack
 raindance
 rest
 retaliate
-"return"
+Return
 revenge
 reversal
 rocksmash
@@ -2415,7 +2415,7 @@ raindance
 refresh
 rest
 retaliate
-"return"
+Return
 roar
 rocksmash
 round
@@ -2487,7 +2487,7 @@ quickattack
 raindance
 razorwind
 rest
-"return"
+Return
 roost
 round
 scaryface
@@ -2547,7 +2547,7 @@ protect
 pursuit
 raindance
 rest
-"return"
+Return
 roost
 round
 secretpower
@@ -2608,7 +2608,7 @@ protect
 pursuit
 raindance
 rest
-"return"
+Return
 rockslide
 rocktomb
 round
@@ -2684,7 +2684,7 @@ protect
 raindance
 refresh
 rest
-"return"
+Return
 rockslide
 rocktomb
 round
@@ -2757,7 +2757,7 @@ present
 protect
 raindance
 rest
-"return"
+Return
 reversal
 rollout
 round
@@ -2814,7 +2814,7 @@ painsplit
 protect
 raindance
 rest
-"return"
+Return
 rollout
 secretpower
 shockwave
@@ -2879,7 +2879,7 @@ protect
 quickattack
 raindance
 rest
-"return"
+Return
 rocksmash
 rollout
 round
@@ -2952,7 +2952,7 @@ protect
 quickattack
 raindance
 rest
-"return"
+Return
 rocksmash
 rollout
 round
@@ -3022,7 +3022,7 @@ poisonsting
 protect
 rapidspin
 rest
-"return"
+Return
 rockclimb
 rockslide
 rocksmash
@@ -3096,7 +3096,7 @@ poisonsting
 protect
 rapidspin
 rest
-"return"
+Return
 rockclimb
 rockslide
 rocksmash
@@ -3171,7 +3171,7 @@ protect
 pursuit
 raindance
 rest
-"return"
+Return
 rocksmash
 round
 scratch
@@ -3238,7 +3238,7 @@ poisonsting
 protect
 raindance
 rest
-"return"
+Return
 rocksmash
 round
 scratch
@@ -3319,7 +3319,7 @@ protect
 quash
 raindance
 rest
-"return"
+Return
 roar
 rockclimb
 rockslide
@@ -3405,7 +3405,7 @@ poisontail
 protect
 raindance
 rest
-"return"
+Return
 rocksmash
 round
 secretpower
@@ -3469,7 +3469,7 @@ poisonsting
 protect
 raindance
 rest
-"return"
+Return
 rocksmash
 round
 secretpower
@@ -3552,7 +3552,7 @@ protect
 quash
 raindance
 rest
-"return"
+Return
 roar
 rockclimb
 rockslide
@@ -3651,7 +3651,7 @@ raindance
 recycle
 reflect
 rest
-"return"
+Return
 roleplay
 rollout
 round
@@ -3760,7 +3760,7 @@ recycle
 reflect
 rest
 retaliate
-"return"
+Return
 rocksmash
 roleplay
 rollout
@@ -3866,7 +3866,7 @@ recycle
 reflect
 rest
 retaliate
-"return"
+Return
 rocksmash
 roleplay
 rollout
@@ -3953,7 +3953,7 @@ protect
 psychup
 quickattack
 rest
-"return"
+Return
 roar
 roleplay
 round
@@ -4014,7 +4014,7 @@ psychup
 psyshock
 quickattack
 rest
-"return"
+Return
 roar
 roleplay
 round
@@ -4089,7 +4089,7 @@ raindance
 recycle
 reflect
 rest
-"return"
+Return
 roleplay
 rollout
 round
@@ -4179,7 +4179,7 @@ recycle
 reflect
 rest
 retaliate
-"return"
+Return
 roleplay
 rollout
 round
@@ -4275,7 +4275,7 @@ recycle
 reflect
 rest
 retaliate
-"return"
+Return
 roleplay
 rollout
 round
@@ -4349,7 +4349,7 @@ pursuit
 quickattack
 raindance
 rest
-"return"
+Return
 roost
 round
 secretpower
@@ -4413,7 +4413,7 @@ poisonfang
 protect
 raindance
 rest
-"return"
+Return
 roost
 round
 screech
@@ -4478,7 +4478,7 @@ poisonfang
 protect
 raindance
 rest
-"return"
+Return
 roost
 round
 screech
@@ -4543,7 +4543,7 @@ poisonpowder
 protect
 razorleaf
 rest
-"return"
+Return
 round
 secretpower
 seedbomb
@@ -4597,7 +4597,7 @@ petaldance
 poisonpowder
 protect
 rest
-"return"
+Return
 round
 secretpower
 seedbomb
@@ -4653,7 +4653,7 @@ petaldance
 poisonpowder
 protect
 rest
-"return"
+Return
 round
 secretpower
 seedbomb
@@ -4707,7 +4707,7 @@ naturalgift
 petaldance
 protect
 rest
-"return"
+Return
 round
 safeguard
 secretpower
@@ -4776,7 +4776,7 @@ pursuit
 ragepowder
 refresh
 rest
-"return"
+Return
 rocksmash
 round
 scratch
@@ -4847,7 +4847,7 @@ poisonpowder
 protect
 ragepowder
 rest
-"return"
+Return
 rocksmash
 round
 scratch
@@ -4903,7 +4903,7 @@ psybeam
 psychic
 ragepowder
 rest
-"return"
+Return
 round
 screech
 secretpower
@@ -4966,7 +4966,7 @@ psychic
 quiverdance
 refresh
 rest
-"return"
+Return
 roost
 round
 secretpower
@@ -5032,7 +5032,7 @@ naturalgift
 protect
 pursuit
 rest
-"return"
+Return
 reversal
 rockslide
 rocksmash
@@ -5090,7 +5090,7 @@ naturalgift
 nightslash
 protect
 rest
-"return"
+Return
 rockslide
 rocksmash
 rocktomb
@@ -5172,7 +5172,7 @@ punishment
 raindance
 rest
 retaliate
-"return"
+Return
 round
 scratch
 screech
@@ -5254,7 +5254,7 @@ psychup
 raindance
 rest
 retaliate
-"return"
+Return
 roar
 round
 scratch
@@ -5346,7 +5346,7 @@ psyshock
 raindance
 refresh
 rest
-"return"
+Return
 rocksmash
 roleplay
 round
@@ -5437,7 +5437,7 @@ psychup
 psyshock
 raindance
 rest
-"return"
+Return
 rockclimb
 rocksmash
 roleplay
@@ -5532,7 +5532,7 @@ punishment
 raindance
 rest
 retaliate
-"return"
+Return
 revenge
 reversal
 rockclimb
@@ -5630,7 +5630,7 @@ rage
 raindance
 rest
 retaliate
-"return"
+Return
 reversal
 rockclimb
 rockslide
@@ -5713,7 +5713,7 @@ overheat
 protect
 rest
 retaliate
-"return"
+Return
 reversal
 roar
 rocksmash
@@ -5772,7 +5772,7 @@ overheat
 protect
 rest
 retaliate
-"return"
+Return
 roar
 rockclimb
 rocksmash
@@ -5835,7 +5835,7 @@ psychic
 raindance
 refresh
 rest
-"return"
+Return
 round
 scald
 secretpower
@@ -5899,7 +5899,7 @@ protect
 psychic
 raindance
 rest
-"return"
+Return
 rocksmash
 round
 scald
@@ -5973,7 +5973,7 @@ protect
 psychic
 raindance
 rest
-"return"
+Return
 rockclimb
 rockslide
 rocksmash
@@ -6047,7 +6047,7 @@ protect
 psychic
 raindance
 rest
-"return"
+Return
 rocksmash
 round
 scald
@@ -6119,7 +6119,7 @@ raindance
 recycle
 reflect
 rest
-"return"
+Return
 roleplay
 round
 safeguard
@@ -6205,7 +6205,7 @@ recover
 recycle
 reflect
 rest
-"return"
+Return
 roleplay
 round
 safeguard
@@ -6293,7 +6293,7 @@ recover
 recycle
 reflect
 rest
-"return"
+Return
 roleplay
 round
 safeguard
@@ -6379,7 +6379,7 @@ protect
 raindance
 rest
 retaliate
-"return"
+Return
 revenge
 rockclimb
 rockslide
@@ -6460,7 +6460,7 @@ protect
 raindance
 rest
 retaliate
-"return"
+Return
 revenge
 rockclimb
 rockslide
@@ -6541,7 +6541,7 @@ protect
 raindance
 rest
 retaliate
-"return"
+Return
 revenge
 rockclimb
 rockslide
@@ -6606,7 +6606,7 @@ protect
 razorleaf
 reflect
 rest
-"return"
+Return
 round
 secretpower
 seedbomb
@@ -6668,7 +6668,7 @@ protect
 razorleaf
 reflect
 rest
-"return"
+Return
 round
 secretpower
 seedbomb
@@ -6727,7 +6727,7 @@ protect
 razorleaf
 reflect
 rest
-"return"
+Return
 round
 secretpower
 seedbomb
@@ -6799,7 +6799,7 @@ protect
 raindance
 rapidspin
 rest
-"return"
+Return
 round
 safeguard
 scald
@@ -6864,7 +6864,7 @@ poisonsting
 protect
 raindance
 rest
-"return"
+Return
 round
 safeguard
 scald
@@ -6935,7 +6935,7 @@ mudsport
 naturalgift
 protect
 rest
-"return"
+Return
 rockblast
 rockclimb
 rockpolish
@@ -7006,7 +7006,7 @@ mudsport
 naturalgift
 protect
 rest
-"return"
+Return
 rockblast
 rockclimb
 rockpolish
@@ -7083,7 +7083,7 @@ mudsport
 naturalgift
 protect
 rest
-"return"
+Return
 roar
 rockblast
 rockclimb
@@ -7155,7 +7155,7 @@ overheat
 protect
 quickattack
 rest
-"return"
+Return
 round
 secretpower
 sleeptalk
@@ -7214,7 +7214,7 @@ poisonjab
 protect
 quickattack
 rest
-"return"
+Return
 round
 secretpower
 sleeptalk
@@ -7289,7 +7289,7 @@ psyshock
 raindance
 recycle
 rest
-"return"
+Return
 round
 safeguard
 scald
@@ -7388,7 +7388,7 @@ psyshock
 raindance
 recycle
 rest
-"return"
+Return
 rocksmash
 round
 safeguard
@@ -7491,7 +7491,7 @@ quash
 raindance
 recycle
 rest
-"return"
+Return
 rocksmash
 round
 safeguard
@@ -7557,7 +7557,7 @@ raindance
 recycle
 reflect
 rest
-"return"
+Return
 rollout
 round
 screech
@@ -7618,7 +7618,7 @@ recycle
 reflect
 refresh
 rest
-"return"
+Return
 rollout
 round
 screech
@@ -7682,7 +7682,7 @@ raindance
 recycle
 reflect
 rest
-"return"
+Return
 rollout
 round
 screech
@@ -7762,7 +7762,7 @@ psychup
 quickattack
 rest
 retaliate
-"return"
+Return
 revenge
 roost
 round
@@ -7829,7 +7829,7 @@ pursuit
 quickattack
 rage
 rest
-"return"
+Return
 roost
 round
 secretpower
@@ -7884,7 +7884,7 @@ pursuit
 quickattack
 rage
 rest
-"return"
+Return
 roost
 round
 secretpower
@@ -7944,7 +7944,7 @@ perishsong
 protect
 raindance
 rest
-"return"
+Return
 round
 safeguard
 secretpower
@@ -8004,7 +8004,7 @@ naturalgift
 protect
 raindance
 rest
-"return"
+Return
 round
 safeguard
 secretpower
@@ -8068,7 +8068,7 @@ pound
 protect
 raindance
 rest
-"return"
+Return
 rockslide
 rocktomb
 round
@@ -8148,7 +8148,7 @@ pound
 protect
 raindance
 rest
-"return"
+Return
 rockslide
 rocksmash
 rocktomb
@@ -8216,7 +8216,7 @@ rapidspin
 razorshell
 refresh
 rest
-"return"
+Return
 rockblast
 round
 screech
@@ -8271,7 +8271,7 @@ raindance
 rapidspin
 razorshell
 rest
-"return"
+Return
 rockblast
 round
 secretpower
@@ -8339,7 +8339,7 @@ psychup
 psywave
 raindance
 rest
-"return"
+Return
 round
 scaryface
 secretpower
@@ -8414,7 +8414,7 @@ psychic
 psychup
 raindance
 rest
-"return"
+Return
 round
 secretpower
 selfdestruct
@@ -8501,7 +8501,7 @@ psychic
 psychup
 raindance
 rest
-"return"
+Return
 rocksmash
 roleplay
 round
@@ -8581,7 +8581,7 @@ protect
 psychup
 rage
 rest
-"return"
+Return
 roar
 rockblast
 rockclimb
@@ -8663,7 +8663,7 @@ protect
 psychup
 rage
 rest
-"return"
+Return
 roar
 rockclimb
 rockpolish
@@ -8751,7 +8751,7 @@ raindance
 recycle
 reflect
 rest
-"return"
+Return
 roleplay
 round
 safeguard
@@ -8837,7 +8837,7 @@ raindance
 recycle
 reflect
 rest
-"return"
+Return
 roleplay
 round
 safeguard
@@ -8916,7 +8916,7 @@ naturalgift
 protect
 raindance
 rest
-"return"
+Return
 rockslide
 rocksmash
 rocktomb
@@ -8987,7 +8987,7 @@ protect
 quash
 raindance
 rest
-"return"
+Return
 rockslide
 rocksmash
 rocktomb
@@ -9035,7 +9035,7 @@ protect
 raindance
 refresh
 rest
-"return"
+Return
 rollout
 round
 screech
@@ -9088,7 +9088,7 @@ naturalgift
 protect
 raindance
 rest
-"return"
+Return
 rollout
 round
 screech
@@ -9160,7 +9160,7 @@ psychic
 psychup
 reflect
 rest
-"return"
+Return
 rollout
 round
 secretpower
@@ -9228,7 +9228,7 @@ psyshock
 reflect
 refresh
 rest
-"return"
+Return
 rollout
 round
 secretpower
@@ -9315,7 +9315,7 @@ protect
 rage
 rest
 retaliate
-"return"
+Return
 rockclimb
 rockslide
 rocksmash
@@ -9398,7 +9398,7 @@ protect
 rage
 rest
 retaliate
-"return"
+Return
 rockclimb
 rockslide
 rocksmash
@@ -9463,7 +9463,7 @@ raindance
 rapidspin
 rest
 retaliate
-"return"
+Return
 rockslide
 rocksmash
 roleplay
@@ -9532,7 +9532,7 @@ raindance
 refresh
 rest
 retaliate
-"return"
+Return
 revenge
 reversal
 rockclimb
@@ -9608,7 +9608,7 @@ quickguard
 raindance
 rest
 retaliate
-"return"
+Return
 revenge
 rockclimb
 rockslide
@@ -9678,7 +9678,7 @@ raindance
 rapidspin
 rest
 retaliate
-"return"
+Return
 revenge
 rockslide
 rocksmash
@@ -9769,7 +9769,7 @@ raindance
 refresh
 rest
 retaliate
-"return"
+Return
 rockclimb
 rockslide
 rocksmash
@@ -9860,7 +9860,7 @@ raindance
 refresh
 rest
 retaliate
-"return"
+Return
 rockclimb
 rockslide
 rocksmash
@@ -9930,7 +9930,7 @@ psybeam
 psywave
 raindance
 rest
-"return"
+Return
 rollout
 round
 screech
@@ -9998,7 +9998,7 @@ poisongas
 protect
 raindance
 rest
-"return"
+Return
 rollout
 round
 secretpower
@@ -10076,7 +10076,7 @@ poisonjab
 protect
 raindance
 rest
-"return"
+Return
 reversal
 roar
 rockblast
@@ -10176,7 +10176,7 @@ poisonjab
 protect
 raindance
 rest
-"return"
+Return
 roar
 rockblast
 rockclimb
@@ -10271,7 +10271,7 @@ poisonjab
 protect
 raindance
 rest
-"return"
+Return
 roar
 rockblast
 rockclimb
@@ -10355,7 +10355,7 @@ raindance
 recycle
 refresh
 rest
-"return"
+Return
 rollout
 round
 safeguard
@@ -10448,7 +10448,7 @@ recycle
 refresh
 rest
 retaliate
-"return"
+Return
 rockclimb
 rockslide
 rocksmash
@@ -10561,7 +10561,7 @@ recycle
 refresh
 rest
 retaliate
-"return"
+Return
 rockclimb
 rockslide
 rocksmash
@@ -10648,7 +10648,7 @@ psychup
 ragepowder
 reflect
 rest
-"return"
+Return
 rocksmash
 round
 secretpower
@@ -10718,7 +10718,7 @@ protect
 psychup
 reflect
 rest
-"return"
+Return
 rockslide
 rocksmash
 rocktomb
@@ -10816,7 +10816,7 @@ rage
 raindance
 rest
 retaliate
-"return"
+Return
 reversal
 roar
 rockclimb
@@ -10900,7 +10900,7 @@ protect
 raindance
 razorwind
 rest
-"return"
+Return
 round
 scald
 secretpower
@@ -10954,7 +10954,7 @@ outrage
 protect
 raindance
 rest
-"return"
+Return
 round
 scald
 secretpower
@@ -11012,7 +11012,7 @@ protect
 quash
 raindance
 rest
-"return"
+Return
 round
 scald
 secretpower
@@ -11071,7 +11071,7 @@ protect
 psybeam
 raindance
 rest
-"return"
+Return
 round
 scald
 secretpower
@@ -11128,7 +11128,7 @@ poisonjab
 protect
 raindance
 rest
-"return"
+Return
 round
 scald
 secretpower
@@ -11188,7 +11188,7 @@ recycle
 reflect
 reflecttype
 rest
-"return"
+Return
 rollout
 round
 scald
@@ -11252,7 +11252,7 @@ recycle
 reflect
 refresh
 rest
-"return"
+Return
 rollout
 round
 scald
@@ -11331,7 +11331,7 @@ raindance
 recycle
 reflect
 rest
-"return"
+Return
 roleplay
 round
 safeguard
@@ -11435,7 +11435,7 @@ raindance
 recycle
 reflect
 rest
-"return"
+Return
 roleplay
 round
 safeguard
@@ -11516,7 +11516,7 @@ quickattack
 raindance
 razorwind
 rest
-"return"
+Return
 reversal
 rocksmash
 roost
@@ -11561,7 +11561,6 @@ doubleteam
 endure
 facade
 falseswipe
-
 feint
 flashcannon
 fling
@@ -11588,7 +11587,7 @@ quickattack
 raindance
 razorwind
 rest
-"return"
+Return
 rocksmash
 roost
 round
@@ -11674,7 +11673,7 @@ raindance
 recycle
 reflect
 rest
-"return"
+Return
 roleplay
 round
 secretpower
@@ -11762,7 +11761,7 @@ raindance
 recycle
 reflect
 rest
-"return"
+Return
 roleplay
 round
 secretpower
@@ -11834,7 +11833,7 @@ psychic
 quickattack
 raindance
 rest
-"return"
+Return
 rocksmash
 rollingkick
 round
@@ -11907,7 +11906,7 @@ psychic
 quickattack
 raindance
 rest
-"return"
+Return
 rockclimb
 rocksmash
 round
@@ -11976,7 +11975,7 @@ psychic
 quickattack
 raindance
 rest
-"return"
+Return
 rockclimb
 rockslide
 rocksmash
@@ -12058,7 +12057,7 @@ overheat
 protect
 psychic
 rest
-"return"
+Return
 rocksmash
 round
 screech
@@ -12130,7 +12129,7 @@ overheat
 protect
 psychic
 rest
-"return"
+Return
 rockclimb
 rocksmash
 round
@@ -12193,7 +12192,7 @@ overheat
 protect
 psychic
 rest
-"return"
+Return
 rockclimb
 rockslide
 rocksmash
@@ -12264,7 +12263,7 @@ protect
 quickattack
 raindance
 rest
-"return"
+Return
 revenge
 rockclimb
 rockslide
@@ -12332,7 +12331,7 @@ raindance
 refresh
 rest
 retaliate
-"return"
+Return
 rockclimb
 rockslide
 rocksmash
@@ -12417,7 +12416,7 @@ payback
 protect
 raindance
 rest
-"return"
+Return
 roar
 rocksmash
 round
@@ -12498,7 +12497,7 @@ psychic
 raindance
 refresh
 rest
-"return"
+Return
 roar
 rocksmash
 round
@@ -12564,7 +12563,7 @@ quickattack
 raindance
 rest
 retaliate
-"return"
+Return
 round
 sandattack
 secretpower
@@ -12632,7 +12631,7 @@ quickattack
 raindance
 rest
 retaliate
-"return"
+Return
 roar
 rocksmash
 round
@@ -12696,7 +12695,7 @@ quickattack
 raindance
 rest
 retaliate
-"return"
+Return
 roar
 rocksmash
 round
@@ -12766,7 +12765,7 @@ quickattack
 raindance
 rest
 retaliate
-"return"
+Return
 roar
 rocksmash
 round
@@ -12837,7 +12836,7 @@ raindance
 reflect
 rest
 retaliate
-"return"
+Return
 round
 sandattack
 secretpower
@@ -12906,7 +12905,7 @@ quickattack
 raindance
 rest
 retaliate
-"return"
+Return
 round
 sandattack
 screech
@@ -12970,7 +12969,7 @@ raindance
 razorleaf
 rest
 retaliate
-"return"
+Return
 roar
 rocksmash
 round
@@ -13035,7 +13034,7 @@ quickattack
 raindance
 rest
 retaliate
-"return"
+Return
 roar
 rocksmash
 round
@@ -13098,7 +13097,7 @@ raindance
 recover
 recycle
 rest
-"return"
+Return
 round
 secretpower
 shadowball
@@ -13167,7 +13166,7 @@ raindance
 recover
 recycle
 rest
-"return"
+Return
 round
 secretpower
 shadowball
@@ -13234,7 +13233,7 @@ raindance
 recover
 recycle
 rest
-"return"
+Return
 round
 secretpower
 shadowball
@@ -13300,7 +13299,7 @@ naturalgift
 protect
 raindance
 rest
-"return"
+Return
 rockblast
 rockpolish
 rockslide
@@ -13370,7 +13369,7 @@ naturalgift
 protect
 raindance
 rest
-"return"
+Return
 rockblast
 rockclimb
 rockpolish
@@ -13445,7 +13444,7 @@ protect
 raindance
 rapidspin
 rest
-"return"
+Return
 rockpolish
 rockslide
 rocksmash
@@ -13521,7 +13520,7 @@ nightslash
 protect
 raindance
 rest
-"return"
+Return
 rockclimb
 rockpolish
 rockslide
@@ -13602,7 +13601,7 @@ protect
 pursuit
 raindance
 rest
-"return"
+Return
 roar
 rockpolish
 rockslide
@@ -13685,7 +13684,7 @@ raindance
 recycle
 rest
 retaliate
-"return"
+Return
 rockclimb
 rockslide
 rocksmash
@@ -13789,7 +13788,7 @@ recycle
 refresh
 rest
 retaliate
-"return"
+Return
 rockclimb
 rockslide
 rocksmash
@@ -13868,7 +13867,7 @@ protect
 raindance
 reflect
 rest
-"return"
+Return
 roar
 rocksmash
 roost
@@ -13928,7 +13927,7 @@ pluck
 protect
 raindance
 rest
-"return"
+Return
 roar
 rocksmash
 roost
@@ -13993,7 +13992,7 @@ pluck
 protect
 raindance
 rest
-"return"
+Return
 roar
 rocksmash
 roost
@@ -14059,7 +14058,7 @@ outrage
 protect
 raindance
 rest
-"return"
+Return
 round
 safeguard
 secretpower
@@ -14120,7 +14119,7 @@ outrage
 protect
 raindance
 rest
-"return"
+Return
 round
 safeguard
 secretpower
@@ -14207,7 +14206,7 @@ outrage
 protect
 raindance
 rest
-"return"
+Return
 roar
 rockslide
 rocksmash
@@ -14324,7 +14323,7 @@ recover
 recycle
 reflect
 rest
-"return"
+Return
 rockclimb
 rockslide
 rocksmash
@@ -14493,7 +14492,7 @@ reflect
 reflecttype
 rest
 retaliate
-"return"
+Return
 roar
 rockclimb
 rockpolish
@@ -14634,7 +14633,7 @@ razorleaf
 reflect
 refresh
 rest
-"return"
+Return
 round
 safeguard
 secretpower
@@ -14691,7 +14690,7 @@ protect
 razorleaf
 reflect
 rest
-"return"
+Return
 rocksmash
 round
 safeguard
@@ -14756,7 +14755,7 @@ protect
 razorleaf
 reflect
 rest
-"return"
+Return
 rockclimb
 rocksmash
 round
@@ -14823,7 +14822,7 @@ overheat
 protect
 quickattack
 rest
-"return"
+Return
 reversal
 rollout
 round
@@ -14878,7 +14877,7 @@ overheat
 protect
 quickattack
 rest
-"return"
+Return
 roar
 rocksmash
 rollout
@@ -14950,7 +14949,7 @@ overheat
 protect
 quickattack
 rest
-"return"
+Return
 roar
 rockclimb
 rockslide
@@ -15032,7 +15031,7 @@ protect
 rage
 raindance
 rest
-"return"
+Return
 rockslide
 rocktomb
 round
@@ -15112,7 +15111,7 @@ protect
 rage
 raindance
 rest
-"return"
+Return
 roar
 rockslide
 rocksmash
@@ -15205,7 +15204,7 @@ protect
 rage
 raindance
 rest
-"return"
+Return
 roar
 rockclimb
 rockslide
@@ -15292,7 +15291,7 @@ quickattack
 raindance
 rest
 retaliate
-"return"
+Return
 reversal
 rollout
 round
@@ -15376,7 +15375,7 @@ quickattack
 raindance
 rest
 retaliate
-"return"
+Return
 rocksmash
 rollout
 round
@@ -15455,7 +15454,7 @@ raindance
 recycle
 reflect
 rest
-"return"
+Return
 roost
 round
 secretpower
@@ -15525,7 +15524,7 @@ raindance
 recycle
 reflect
 rest
-"return"
+Return
 roost
 round
 secretpower
@@ -15593,7 +15592,7 @@ psybeam
 reflect
 refresh
 rest
-"return"
+Return
 rollout
 roost
 round
@@ -15663,7 +15662,7 @@ ominouswind
 protect
 reflect
 rest
-"return"
+Return
 rocksmash
 rollout
 roost
@@ -15731,7 +15730,7 @@ pursuit
 ragepowder
 refresh
 rest
-"return"
+Return
 round
 scaryface
 secretpower
@@ -15792,7 +15791,7 @@ poisonsting
 protect
 psychic
 rest
-"return"
+Return
 round
 scaryface
 secretpower
@@ -15857,7 +15856,7 @@ protect
 psybeam
 raindance
 rest
-"return"
+Return
 round
 scald
 screech
@@ -15923,7 +15922,7 @@ naturalgift
 protect
 raindance
 rest
-"return"
+Return
 round
 scald
 secretpower
@@ -16013,7 +16012,7 @@ psyshock
 raindance
 reflect
 rest
-"return"
+Return
 rocksmash
 rollout
 round
@@ -16108,7 +16107,7 @@ raindance
 reflect
 rest
 retaliate
-"return"
+Return
 rocksmash
 rollout
 roost
@@ -16196,7 +16195,7 @@ raindance
 reflect
 rest
 retaliate
-"return"
+Return
 rocksmash
 rollout
 roost
@@ -16281,7 +16280,7 @@ raindance
 reflect
 refresh
 rest
-"return"
+Return
 roost
 round
 secretpower
@@ -16365,7 +16364,7 @@ psyshock
 raindance
 reflect
 rest
-"return"
+Return
 roost
 round
 secretpower
@@ -16437,7 +16436,7 @@ protect
 raindance
 reflect
 rest
-"return"
+Return
 round
 safeguard
 sandattack
@@ -16501,7 +16500,7 @@ powergem
 protect
 raindance
 rest
-"return"
+Return
 rocksmash
 round
 safeguard
@@ -16573,7 +16572,7 @@ powergem
 protect
 raindance
 rest
-"return"
+Return
 rockclimb
 rocksmash
 round
@@ -16639,7 +16638,7 @@ protect
 raindance
 refresh
 rest
-"return"
+Return
 rollout
 round
 scald
@@ -16717,7 +16716,7 @@ protect
 raindance
 refresh
 rest
-"return"
+Return
 rocksmash
 rollout
 round
@@ -16794,7 +16793,7 @@ naturalgift
 protect
 raindance
 rest
-"return"
+Return
 rocksmash
 rollout
 round
@@ -16854,7 +16853,7 @@ naturalgift
 protect
 psychup
 rest
-"return"
+Return
 rockpolish
 rockslide
 rockthrow
@@ -16926,7 +16925,7 @@ naturalgift
 protect
 psychup
 rest
-"return"
+Return
 rockpolish
 rockslide
 rocksmash
@@ -17000,7 +16999,7 @@ psychup
 ragepowder
 reflect
 rest
-"return"
+Return
 round
 secretpower
 seedbomb
@@ -17058,7 +17057,7 @@ psychup
 ragepowder
 reflect
 rest
-"return"
+Return
 round
 secretpower
 seedbomb
@@ -17118,7 +17117,7 @@ psychup
 ragepowder
 reflect
 rest
-"return"
+Return
 round
 secretpower
 seedbomb
@@ -17200,7 +17199,7 @@ pursuit
 raindance
 rest
 retaliate
-"return"
+Return
 revenge
 rocksmash
 roleplay
@@ -17287,7 +17286,7 @@ protect
 raindance
 rest
 retaliate
-"return"
+Return
 rocksmash
 roleplay
 round
@@ -17361,7 +17360,7 @@ naturepower
 protect
 razorleaf
 rest
-"return"
+Return
 round
 safeguard
 secretpower
@@ -17417,7 +17416,7 @@ pound
 protect
 razorleaf
 rest
-"return"
+Return
 round
 safeguard
 secretpower
@@ -17473,7 +17472,7 @@ psychic
 pursuit
 quickattack
 rest
-"return"
+Return
 reversal
 roost
 round
@@ -17536,7 +17535,7 @@ psychup
 pursuit
 quickattack
 rest
-"return"
+Return
 roost
 round
 screech
@@ -17611,7 +17610,7 @@ protect
 raindance
 recover
 rest
-"return"
+Return
 rocksmash
 rollout
 round
@@ -17690,7 +17689,7 @@ naturalgift
 protect
 raindance
 rest
-"return"
+Return
 rockslide
 rocksmash
 rocktomb
@@ -17772,7 +17771,7 @@ quash
 raindance
 rest
 retaliate
-"return"
+Return
 roost
 round
 screech
@@ -17840,7 +17839,7 @@ quash
 raindance
 rest
 retaliate
-"return"
+Return
 roost
 round
 secretpower
@@ -17917,7 +17916,7 @@ psychup
 psywave
 raindance
 rest
-"return"
+Return
 round
 screech
 secretpower
@@ -17990,7 +17989,7 @@ psychup
 psywave
 raindance
 rest
-"return"
+Return
 round
 secretpower
 shadowball
@@ -18101,7 +18100,7 @@ recycle
 reflect
 rest
 retaliate
-"return"
+Return
 rocksmash
 round
 secretpower
@@ -18172,7 +18171,7 @@ rapidspin
 reflect
 refresh
 rest
-"return"
+Return
 revenge
 rockslide
 rocksmash
@@ -18242,7 +18241,7 @@ protect
 rapidspin
 reflect
 rest
-"return"
+Return
 rockpolish
 rockslide
 rocksmash
@@ -18327,7 +18326,7 @@ rage
 raindance
 rest
 retaliate
-"return"
+Return
 rockslide
 rocksmash
 rocktomb
@@ -18410,7 +18409,7 @@ quickattack
 raindance
 razorwind
 rest
-"return"
+Return
 rockclimb
 rockpolish
 rockslide
@@ -18492,7 +18491,7 @@ protect
 quickattack
 raindance
 rest
-"return"
+Return
 rockpolish
 rockslide
 rocksmash
@@ -18581,7 +18580,7 @@ raindance
 reflect
 rest
 retaliate
-"return"
+Return
 roar
 rocksmash
 round
@@ -18678,7 +18677,7 @@ raindance
 reflect
 rest
 retaliate
-"return"
+Return
 roar
 rockclimb
 rockslide
@@ -18765,7 +18764,7 @@ poisonsting
 protect
 raindance
 rest
-"return"
+Return
 revenge
 rollout
 round
@@ -18839,7 +18838,7 @@ powersplit
 powertrick
 protect
 rest
-"return"
+Return
 rockblast
 rockpolish
 rockslide
@@ -18925,7 +18924,7 @@ pursuit
 raindance
 rest
 retaliate
-"return"
+Return
 revenge
 reversal
 rockslide
@@ -19022,7 +19021,7 @@ raindance
 reflect
 rest
 retaliate
-"return"
+Return
 rocksmash
 round
 scratch
@@ -19107,7 +19106,7 @@ raindance
 reflect
 rest
 retaliate
-"return"
+Return
 revenge
 rocksmash
 round
@@ -19194,7 +19193,7 @@ raindance
 refresh
 rest
 retaliate
-"return"
+Return
 roar
 rockslide
 rocksmash
@@ -19284,7 +19283,7 @@ protect
 raindance
 rest
 retaliate
-"return"
+Return
 roar
 rockclimb
 rockslide
@@ -19361,7 +19360,7 @@ protect
 recover
 reflect
 rest
-"return"
+Return
 rockslide
 rocksmash
 rockthrow
@@ -19429,7 +19428,7 @@ recover
 reflect
 refresh
 rest
-"return"
+Return
 rockpolish
 rockslide
 rocksmash
@@ -19505,7 +19504,7 @@ protect
 raindance
 reflect
 rest
-"return"
+Return
 roar
 rockslide
 rocksmash
@@ -19568,7 +19567,7 @@ protect
 raindance
 reflect
 rest
-"return"
+Return
 roar
 rockslide
 rocksmash
@@ -19626,7 +19625,7 @@ protect
 raindance
 reflect
 rest
-"return"
+Return
 roar
 rockclimb
 rockslide
@@ -19707,7 +19706,7 @@ recover
 reflect
 refresh
 rest
-"return"
+Return
 rockblast
 rockpolish
 rockslide
@@ -19780,7 +19779,7 @@ psybeam
 psychic
 raindance
 rest
-"return"
+Return
 rockblast
 round
 scald
@@ -19850,7 +19849,7 @@ psybeam
 psychic
 raindance
 rest
-"return"
+Return
 rockblast
 round
 scald
@@ -19926,7 +19925,7 @@ raindance
 rapidspin
 recycle
 rest
-"return"
+Return
 rollout
 round
 secretpower
@@ -19985,7 +19984,7 @@ naturalgift
 protect
 raindance
 rest
-"return"
+Return
 rockslide
 round
 scald
@@ -20061,7 +20060,7 @@ protect
 psybeam
 raindance
 rest
-"return"
+Return
 rockslide
 rocktomb
 round
@@ -20135,7 +20134,7 @@ pluck
 protect
 pursuit
 rest
-"return"
+Return
 roar
 rockslide
 rocksmash
@@ -20216,7 +20215,7 @@ pursuit
 rage
 rest
 retaliate
-"return"
+Return
 reversal
 roar
 rocksmash
@@ -20292,7 +20291,7 @@ payback
 protect
 rest
 retaliate
-"return"
+Return
 roar
 rocksmash
 roleplay
@@ -20360,7 +20359,7 @@ naturalgift
 odorsleuth
 protect
 rest
-"return"
+Return
 roar
 rockslide
 rocksmash
@@ -20427,7 +20426,7 @@ poisonjab
 protect
 rapidspin
 rest
-"return"
+Return
 roar
 rockpolish
 rockslide
@@ -20505,7 +20504,7 @@ raindance
 reflect
 rest
 retaliate
-"return"
+Return
 roar
 roleplay
 round
@@ -20602,7 +20601,7 @@ punishment
 raindance
 rest
 retaliate
-"return"
+Return
 reversal
 rockslide
 rocksmash
@@ -20677,7 +20676,7 @@ quickattack
 raindance
 reflect
 rest
-"return"
+Return
 roar
 rockclimb
 rocksmash
@@ -20752,7 +20751,7 @@ quash
 raindance
 reflect
 rest
-"return"
+Return
 roar
 rockclimb
 rocksmash
@@ -20822,7 +20821,7 @@ quash
 raindance
 reflect
 rest
-"return"
+Return
 roar
 rockclimb
 rocksmash
@@ -20887,7 +20886,7 @@ pursuit
 raindance
 rest
 retaliate
-"return"
+Return
 rockpolish
 rockslide
 rocksmash
@@ -20949,7 +20948,7 @@ protect
 raindance
 rest
 retaliate
-"return"
+Return
 rockpolish
 rockslide
 rocksmash
@@ -21042,7 +21041,7 @@ protect
 raindance
 rest
 retaliate
-"return"
+Return
 roar
 rockclimb
 rockpolish
@@ -21146,7 +21145,7 @@ raindance
 recover
 reflect
 rest
-"return"
+Return
 roar
 rocksmash
 roost
@@ -21235,7 +21234,7 @@ raindance
 recover
 reflect
 rest
-"return"
+Return
 roar
 rocksmash
 roost
@@ -21320,7 +21319,7 @@ raindance
 recover
 reflect
 rest
-"return"
+Return
 round
 safeguard
 sandstorm
@@ -21413,7 +21412,7 @@ pursuit
 quickattack
 razorwind
 rest
-"return"
+Return
 rockslide
 rocksmash
 rocktomb
@@ -21490,7 +21489,7 @@ protect
 pursuit
 quickattack
 rest
-"return"
+Return
 rockslide
 rocksmash
 rocktomb
@@ -21578,7 +21577,7 @@ protect
 pursuit
 quickattack
 rest
-"return"
+Return
 roar
 rockclimb
 rockslide
@@ -21658,7 +21657,7 @@ peck
 protect
 quickattack
 rest
-"return"
+Return
 reversal
 rockslide
 rocksmash
@@ -21735,7 +21734,7 @@ poisonjab
 protect
 quickattack
 rest
-"return"
+Return
 rockslide
 rocksmash
 rocktomb
@@ -21826,7 +21825,7 @@ poisonjab
 protect
 quickattack
 rest
-"return"
+Return
 roar
 rockclimb
 rockslide
@@ -21903,7 +21902,7 @@ protect
 raindance
 refresh
 rest
-"return"
+Return
 rockslide
 rocksmash
 rocktomb
@@ -21982,7 +21981,7 @@ naturalgift
 protect
 raindance
 rest
-"return"
+Return
 rockslide
 rocksmash
 rocktomb
@@ -22066,7 +22065,7 @@ outrage
 protect
 raindance
 rest
-"return"
+Return
 roar
 rockclimb
 rockslide
@@ -22136,7 +22135,7 @@ psychup
 raindance
 rest
 retaliate
-"return"
+Return
 roar
 rocksmash
 round
@@ -22200,7 +22199,7 @@ psychup
 raindance
 rest
 retaliate
-"return"
+Return
 roar
 rocksmash
 round
@@ -22275,7 +22274,7 @@ pursuit
 raindance
 rest
 retaliate
-"return"
+Return
 rockclimb
 rocksmash
 rollout
@@ -22352,7 +22351,7 @@ protect
 raindance
 rest
 retaliate
-"return"
+Return
 roar
 rocksmash
 rollout
@@ -22433,7 +22432,7 @@ protect
 psychic
 quiverdance
 rest
-"return"
+Return
 roost
 round
 safeguard
@@ -22499,7 +22498,7 @@ psybeam
 psychic
 quiverdance
 rest
-"return"
+Return
 roost
 round
 secretpower
@@ -22563,7 +22562,7 @@ protect
 raindance
 razorleaf
 rest
-"return"
+Return
 round
 scald
 secretpower
@@ -22631,7 +22630,7 @@ naturepower
 protect
 raindance
 rest
-"return"
+Return
 rocksmash
 round
 scald
@@ -22709,7 +22708,7 @@ naturepower
 protect
 raindance
 rest
-"return"
+Return
 rockclimb
 rocksmash
 round
@@ -22777,7 +22776,7 @@ razorwind
 refresh
 rest
 retaliate
-"return"
+Return
 rocksmash
 rollout
 round
@@ -22846,7 +22845,7 @@ razorleaf
 razorwind
 rest
 retaliate
-"return"
+Return
 rockslide
 rocksmash
 rocktomb
@@ -22931,7 +22930,7 @@ psychup
 razorleaf
 rest
 retaliate
-"return"
+Return
 rockslide
 rocksmash
 rocktomb
@@ -23003,7 +23002,7 @@ rage
 raindance
 refresh
 rest
-"return"
+Return
 roost
 round
 secretpower
@@ -23060,7 +23059,7 @@ protect
 quickattack
 raindance
 rest
-"return"
+Return
 roost
 round
 secretpower
@@ -23117,7 +23116,7 @@ pursuit
 quickattack
 raindance
 rest
-"return"
+Return
 roost
 round
 scald
@@ -23181,7 +23180,7 @@ pluck
 protect
 raindance
 rest
-"return"
+Return
 roost
 round
 scald
@@ -23269,7 +23268,7 @@ raindance
 recycle
 reflect
 rest
-"return"
+Return
 round
 safeguard
 secretpower
@@ -23356,7 +23355,7 @@ raindance
 recycle
 reflect
 rest
-"return"
+Return
 round
 safeguard
 secretpower
@@ -23442,7 +23441,7 @@ raindance
 recycle
 reflect
 rest
-"return"
+Return
 round
 safeguard
 secretpower
@@ -23538,7 +23537,7 @@ recycle
 reflect
 rest
 retaliate
-"return"
+Return
 rockslide
 rocksmash
 rocktomb
@@ -23620,7 +23619,7 @@ psychup
 quickattack
 raindance
 rest
-"return"
+Return
 round
 scald
 secretpower
@@ -23682,7 +23681,7 @@ quickattack
 quiverdance
 raindance
 rest
-"return"
+Return
 roost
 round
 scald
@@ -23744,7 +23743,7 @@ poisonpowder
 protect
 refresh
 rest
-"return"
+Return
 round
 safeguard
 secretpower
@@ -23813,7 +23812,7 @@ naturalgift
 protect
 rest
 retaliate
-"return"
+Return
 rockslide
 rocksmash
 rocktomb
@@ -23897,7 +23896,7 @@ pursuit
 raindance
 rest
 retaliate
-"return"
+Return
 rockslide
 rocksmash
 rocktomb
@@ -23976,7 +23975,7 @@ protect
 raindance
 rest
 retaliate
-"return"
+Return
 reversal
 roar
 rockclimb
@@ -24067,7 +24066,7 @@ quash
 raindance
 rest
 retaliate
-"return"
+Return
 roar
 rockclimb
 rockslide
@@ -24132,7 +24131,7 @@ naturalgift
 nightslash
 protect
 rest
-"return"
+Return
 round
 sandattack
 sandstorm
@@ -24186,7 +24185,7 @@ naturalgift
 ominouswind
 protect
 rest
-"return"
+Return
 roost
 round
 sandattack
@@ -24248,7 +24247,7 @@ naturalgift
 nightmare
 protect
 rest
-"return"
+Return
 round
 sandattack
 sandstorm
@@ -24321,7 +24320,7 @@ psychup
 raindance
 rest
 retaliate
-"return"
+Return
 roar
 rollout
 round
@@ -24395,7 +24394,7 @@ psychup
 raindance
 rest
 retaliate
-"return"
+Return
 roar
 rockslide
 rocksmash
@@ -24481,7 +24480,7 @@ psychup
 raindance
 rest
 retaliate
-"return"
+Return
 roar
 rockclimb
 rockslide
@@ -24573,7 +24572,7 @@ raindance
 refresh
 rest
 retaliate
-"return"
+Return
 revenge
 reversal
 rockclimb
@@ -24657,7 +24656,7 @@ protect
 raindance
 rest
 retaliate
-"return"
+Return
 reversal
 rockclimb
 rockslide
@@ -24727,7 +24726,7 @@ painsplit
 powergem
 protect
 rest
-"return"
+Return
 rockblast
 rockpolish
 rockslide
@@ -24797,7 +24796,7 @@ painsplit
 powergem
 protect
 rest
-"return"
+Return
 rockblast
 rockpolish
 rockslide
@@ -24878,7 +24877,7 @@ psychup
 raindance
 rest
 retaliate
-"return"
+Return
 rollout
 round
 safeguard
@@ -24953,7 +24952,7 @@ psychup
 raindance
 rest
 retaliate
-"return"
+Return
 rocksmash
 rollout
 round
@@ -25057,7 +25056,7 @@ raindance
 recover
 rest
 retaliate
-"return"
+Return
 rocksmash
 rocktomb
 round
@@ -25154,7 +25153,7 @@ psychup
 punishment
 raindance
 rest
-"return"
+Return
 rockslide
 rocksmash
 rocktomb
@@ -25239,7 +25238,7 @@ naturalgift
 protect
 raindance
 rest
-"return"
+Return
 roar
 rockpolish
 rockslide
@@ -25308,7 +25307,7 @@ naturalgift
 protect
 raindance
 rest
-"return"
+Return
 roar
 rockpolish
 rockslide
@@ -25403,7 +25402,7 @@ payback
 protect
 raindance
 rest
-"return"
+Return
 roar
 rockclimb
 rockpolish
@@ -25509,7 +25508,7 @@ recycle
 reflect
 rest
 retaliate
-"return"
+Return
 reversal
 rockslide
 rocksmash
@@ -25599,7 +25598,7 @@ recycle
 reflect
 rest
 retaliate
-"return"
+Return
 reversal
 rockslide
 rocksmash
@@ -25662,7 +25661,7 @@ protect
 quickattack
 raindance
 rest
-"return"
+Return
 roar
 round
 secretpower
@@ -25724,7 +25723,7 @@ quickattack
 raindance
 refresh
 rest
-"return"
+Return
 roar
 round
 secretpower
@@ -25797,7 +25796,7 @@ protect
 quickattack
 raindance
 rest
-"return"
+Return
 rollout
 round
 secretpower
@@ -25871,7 +25870,7 @@ protect
 quickattack
 raindance
 rest
-"return"
+Return
 rollout
 round
 secretpower
@@ -25943,7 +25942,7 @@ psychup
 quickattack
 raindance
 rest
-"return"
+Return
 roost
 round
 secretpower
@@ -26024,7 +26023,7 @@ psychup
 quickattack
 raindance
 rest
-"return"
+Return
 roost
 round
 secretpower
@@ -26089,7 +26088,7 @@ psychup
 raindance
 razorleaf
 rest
-"return"
+Return
 round
 secretpower
 seedbomb
@@ -26157,7 +26156,7 @@ psychup
 raindance
 razorleaf
 rest
-"return"
+Return
 round
 secretpower
 seedbomb
@@ -26213,7 +26212,7 @@ protect
 psychup
 raindance
 rest
-"return"
+Return
 round
 secretpower
 seedbomb
@@ -26277,7 +26276,7 @@ pound
 protect
 raindance
 rest
-"return"
+Return
 rocksmash
 rollout
 round
@@ -26354,7 +26353,7 @@ pound
 protect
 raindance
 rest
-"return"
+Return
 rocksmash
 rollout
 round
@@ -26425,7 +26424,7 @@ raindance
 refresh
 rest
 retaliate
-"return"
+Return
 round
 scald
 scaryface
@@ -26497,7 +26496,7 @@ rage
 raindance
 rest
 retaliate
-"return"
+Return
 roar
 rocksmash
 rocktomb
@@ -26565,7 +26564,7 @@ naturalgift
 protect
 raindance
 rest
-"return"
+Return
 roar
 rocksmash
 rocktomb
@@ -26632,7 +26631,7 @@ naturalgift
 protect
 raindance
 rest
-"return"
+Return
 roar
 rocksmash
 rocktomb
@@ -26698,7 +26697,7 @@ naturalgift
 overheat
 protect
 rest
-"return"
+Return
 rockslide
 rocksmash
 rocktomb
@@ -26770,7 +26769,7 @@ naturalgift
 overheat
 protect
 rest
-"return"
+Return
 roar
 rockpolish
 rockslide
@@ -26841,7 +26840,7 @@ overheat
 protect
 rapidspin
 rest
-"return"
+Return
 rockslide
 rocksmash
 rocktomb
@@ -26914,7 +26913,7 @@ raindance
 recycle
 reflect
 rest
-"return"
+Return
 roleplay
 round
 secretpower
@@ -26998,7 +26997,7 @@ raindance
 recycle
 reflect
 rest
-"return"
+Return
 roleplay
 round
 secretpower
@@ -27084,7 +27083,7 @@ rapidspin
 recycle
 rest
 retaliate
-"return"
+Return
 rockslide
 rocksmash
 rocktomb
@@ -27164,7 +27163,7 @@ naturalgift
 protect
 quickattack
 rest
-"return"
+Return
 rockslide
 rocksmash
 rocktomb
@@ -27222,7 +27221,7 @@ ominouswind
 outrage
 protect
 rest
-"return"
+Return
 rockslide
 rocksmash
 rocktomb
@@ -27300,7 +27299,7 @@ ominouswind
 outrage
 protect
 rest
-"return"
+Return
 rockslide
 rocksmash
 rocktomb
@@ -27386,7 +27385,7 @@ poisonjab
 poisonsting
 protect
 rest
-"return"
+Return
 roleplay
 round
 sandattack
@@ -27469,7 +27468,7 @@ poisonsting
 protect
 rest
 retaliate
-"return"
+Return
 revenge
 roleplay
 round
@@ -27547,7 +27546,7 @@ rage
 raindance
 refresh
 rest
-"return"
+Return
 roost
 round
 safeguard
@@ -27622,7 +27621,7 @@ psychup
 raindance
 refresh
 rest
-"return"
+Return
 roar
 rocksmash
 roost
@@ -27717,7 +27716,7 @@ razorwind
 refresh
 rest
 retaliate
-"return"
+Return
 revenge
 roar
 rockclimb
@@ -27799,7 +27798,7 @@ punishment
 raindance
 rest
 retaliate
-"return"
+Return
 rocksmash
 round
 scaryface
@@ -27884,7 +27883,7 @@ raindance
 recycle
 reflect
 rest
-"return"
+Return
 rockpolish
 rockslide
 rockthrow
@@ -27966,7 +27965,7 @@ psywave
 recycle
 reflect
 rest
-"return"
+Return
 rockpolish
 rockslide
 rockthrow
@@ -28036,7 +28035,7 @@ naturalgift
 protect
 raindance
 rest
-"return"
+Return
 rocktomb
 round
 sandstorm
@@ -28091,7 +28090,7 @@ naturalgift
 protect
 raindance
 rest
-"return"
+Return
 rockslide
 rocksmash
 rocktomb
@@ -28161,7 +28160,7 @@ payback
 protect
 raindance
 rest
-"return"
+Return
 rockslide
 rocksmash
 rocktomb
@@ -28238,7 +28237,7 @@ protect
 raindance
 rest
 retaliate
-"return"
+Return
 rockslide
 rocksmash
 rocktomb
@@ -28314,7 +28313,7 @@ recycle
 reflect
 refresh
 rest
-"return"
+Return
 rockpolish
 rockslide
 rocktomb
@@ -28391,7 +28390,7 @@ rapidspin
 recycle
 reflect
 rest
-"return"
+Return
 rockpolish
 rockslide
 rocksmash
@@ -28461,7 +28460,7 @@ protect
 psychup
 recover
 rest
-"return"
+Return
 rockpolish
 rockslide
 rocktomb
@@ -28528,7 +28527,7 @@ painsplit
 protect
 psychup
 rest
-"return"
+Return
 rockpolish
 rockslide
 rocksmash
@@ -28595,7 +28594,7 @@ naturalgift
 protect
 rapidspin
 rest
-"return"
+Return
 rockblast
 rockpolish
 rockslide
@@ -28665,7 +28664,7 @@ mudsport
 naturalgift
 protect
 rest
-"return"
+Return
 rockblast
 rockpolish
 rockslide
@@ -28727,7 +28726,7 @@ naturalgift
 protect
 raindance
 rest
-"return"
+Return
 round
 scald
 secretpower
@@ -28783,7 +28782,7 @@ raindance
 recover
 refresh
 rest
-"return"
+Return
 round
 safeguard
 scald
@@ -28844,7 +28843,7 @@ psychup
 raindance
 rest
 retaliate
-"return"
+Return
 round
 sandstorm
 scald
@@ -28940,7 +28939,7 @@ recycle
 reflecttype
 rest
 retaliate
-"return"
+Return
 rockslide
 rocksmash
 rocktomb
@@ -29029,7 +29028,7 @@ psychup
 pursuit
 raindance
 rest
-"return"
+Return
 roleplay
 round
 screech
@@ -29105,7 +29104,7 @@ psychic
 psychup
 raindance
 rest
-"return"
+Return
 roleplay
 round
 screech
@@ -29189,7 +29188,7 @@ psychup
 pursuit
 raindance
 rest
-"return"
+Return
 round
 secretpower
 shadowball
@@ -29273,7 +29272,7 @@ psychup
 pursuit
 raindance
 rest
-"return"
+Return
 rockslide
 rocksmash
 rocktomb
@@ -29357,7 +29356,7 @@ psychup
 pursuit
 raindance
 rest
-"return"
+Return
 rockslide
 rocksmash
 rocktomb
@@ -29436,7 +29435,7 @@ protect
 razorleaf
 razorwind
 rest
-"return"
+Return
 roar
 rocksmash
 roost
@@ -29505,7 +29504,7 @@ recover
 recycle
 reflect
 rest
-"return"
+Return
 rollout
 round
 safeguard
@@ -29586,7 +29585,7 @@ raindance
 recycle
 reflect
 rest
-"return"
+Return
 rollout
 round
 safeguard
@@ -29687,7 +29686,7 @@ raindance
 razorwind
 rest
 retaliate
-"return"
+Return
 rockslide
 rocksmash
 rocktomb
@@ -29764,7 +29763,7 @@ powdersnow
 protect
 raindance
 rest
-"return"
+Return
 rollout
 round
 safeguard
@@ -29822,7 +29821,7 @@ powdersnow
 protect
 raindance
 rest
-"return"
+Return
 rollout
 round
 safeguard
@@ -29882,7 +29881,7 @@ psychic
 psychup
 raindance
 rest
-"return"
+Return
 rollout
 round
 safeguard
@@ -29947,7 +29946,7 @@ powdersnow
 protect
 raindance
 rest
-"return"
+Return
 rockslide
 rocksmash
 rocktomb
@@ -30010,7 +30009,7 @@ powdersnow
 protect
 raindance
 rest
-"return"
+Return
 roar
 rockslide
 rocksmash
@@ -30076,7 +30075,7 @@ powdersnow
 protect
 raindance
 rest
-"return"
+Return
 roar
 rockslide
 rocksmash
@@ -30128,7 +30127,7 @@ protect
 raindance
 refresh
 rest
-"return"
+Return
 round
 scald
 secretpower
@@ -30176,7 +30175,7 @@ naturalgift
 protect
 raindance
 rest
-"return"
+Return
 rocktomb
 round
 scald
@@ -30233,7 +30232,7 @@ psychic
 psychup
 raindance
 rest
-"return"
+Return
 round
 safeguard
 scald
@@ -30294,7 +30293,7 @@ protect
 psychup
 raindance
 rest
-"return"
+Return
 rockpolish
 rockslide
 rocksmash
@@ -30355,7 +30354,7 @@ protect
 psychup
 raindance
 rest
-"return"
+Return
 round
 safeguard
 scald
@@ -30422,7 +30421,7 @@ protect
 rage
 raindance
 rest
-"return"
+Return
 roar
 rockslide
 rocksmash
@@ -30482,7 +30481,7 @@ protect
 rage
 raindance
 rest
-"return"
+Return
 roar
 rockslide
 rocksmash
@@ -30556,7 +30555,7 @@ rage
 raindance
 refresh
 rest
-"return"
+Return
 roar
 rockslide
 rocksmash
@@ -30638,7 +30637,7 @@ raindance
 reflect
 refresh
 rest
-"return"
+Return
 rockpolish
 rockslide
 rocksmash
@@ -30719,7 +30718,7 @@ pursuit
 raindance
 reflect
 rest
-"return"
+Return
 rockpolish
 rockslide
 rocksmash
@@ -30792,7 +30791,7 @@ naturalgift
 protect
 psychup
 rest
-"return"
+Return
 rockclimb
 rockpolish
 rockslide
@@ -30873,7 +30872,7 @@ protect
 psychup
 raindance
 rest
-"return"
+Return
 rockclimb
 rockpolish
 rockslide
@@ -30947,7 +30946,7 @@ protect
 psychup
 raindance
 rest
-"return"
+Return
 rockclimb
 rockpolish
 rockslide
@@ -31039,7 +31038,7 @@ reflecttype
 refresh
 rest
 retaliate
-"return"
+Return
 roar
 roleplay
 roost
@@ -31136,7 +31135,7 @@ reflect
 refresh
 rest
 retaliate
-"return"
+Return
 roar
 roost
 round
@@ -31206,7 +31205,7 @@ protect
 psychup
 raindance
 rest
-"return"
+Return
 roar
 rockslide
 rocksmash
@@ -31287,7 +31286,7 @@ overheat
 protect
 psychup
 rest
-"return"
+Return
 roar
 rockclimb
 rockpolish
@@ -31379,7 +31378,7 @@ protect
 psychup
 raindance
 rest
-"return"
+Return
 roar
 rockslide
 rocksmash
@@ -31471,7 +31470,7 @@ recycle
 reflect
 refresh
 rest
-"return"
+Return
 round
 safeguard
 sandstorm
@@ -31574,7 +31573,7 @@ recover
 recycle
 reflect
 rest
-"return"
+Return
 rockslide
 rocksmash
 rocktomb
@@ -31654,7 +31653,7 @@ protect
 razorleaf
 reflect
 rest
-"return"
+Return
 rockclimb
 rocksmash
 round
@@ -31718,7 +31717,7 @@ protect
 razorleaf
 reflect
 rest
-"return"
+Return
 rockclimb
 rocksmash
 round
@@ -31782,7 +31781,7 @@ protect
 razorleaf
 reflect
 rest
-"return"
+Return
 roar
 rockclimb
 rockpolish
@@ -31863,7 +31862,7 @@ overheat
 protect
 quickguard
 rest
-"return"
+Return
 rockclimb
 rocksmash
 roleplay
@@ -31943,7 +31942,7 @@ poisonjab
 protect
 rest
 retaliate
-"return"
+Return
 rockclimb
 rockslide
 rocksmash
@@ -32035,7 +32034,7 @@ protect
 punishment
 rest
 retaliate
-"return"
+Return
 roar
 rockclimb
 rockslide
@@ -32114,7 +32113,7 @@ protect
 quash
 raindance
 rest
-"return"
+Return
 rocktomb
 round
 scald
@@ -32178,7 +32177,7 @@ protect
 quash
 raindance
 rest
-"return"
+Return
 rocksmash
 rocktomb
 round
@@ -32253,7 +32252,7 @@ protect
 quash
 raindance
 rest
-"return"
+Return
 roar
 rockclimb
 rockslide
@@ -32315,7 +32314,7 @@ pursuit
 quickattack
 raindance
 rest
-"return"
+Return
 revenge
 roost
 round
@@ -32370,7 +32369,7 @@ quickattack
 raindance
 rest
 retaliate
-"return"
+Return
 roost
 round
 secretpower
@@ -32423,7 +32422,7 @@ quickattack
 raindance
 rest
 retaliate
-"return"
+Return
 roost
 round
 secretpower
@@ -32483,7 +32482,7 @@ quickattack
 raindance
 rest
 retaliate
-"return"
+Return
 rockclimb
 rocksmash
 rollout
@@ -32553,7 +32552,7 @@ protect
 raindance
 rest
 retaliate
-"return"
+Return
 rockclimb
 rocksmash
 rollout
@@ -32633,7 +32632,7 @@ perishsong
 protect
 raindance
 rest
-"return"
+Return
 rocksmash
 round
 screech
@@ -32693,7 +32692,7 @@ protect
 quickattack
 raindance
 rest
-"return"
+Return
 roar
 round
 scaryface
@@ -32747,7 +32746,7 @@ naturalgift
 protect
 raindance
 rest
-"return"
+Return
 roar
 round
 scaryface
@@ -32799,7 +32798,7 @@ naturalgift
 protect
 raindance
 rest
-"return"
+Return
 roar
 round
 scaryface
@@ -32867,7 +32866,7 @@ protect
 pursuit
 raindance
 rest
-"return"
+Return
 roar
 rockclimb
 rockpolish
@@ -32953,7 +32952,7 @@ protect
 pursuit
 raindance
 rest
-"return"
+Return
 roar
 rockclimb
 rockpolish
@@ -33028,7 +33027,7 @@ naturalgift
 protect
 raindance
 rest
-"return"
+Return
 roar
 rockblast
 rockpolish
@@ -33098,7 +33097,7 @@ outrage
 protect
 raindance
 rest
-"return"
+Return
 roar
 rockpolish
 rockslide
@@ -33163,7 +33162,7 @@ psychup
 raindance
 razorleaf
 rest
-"return"
+Return
 round
 safeguard
 secretpower
@@ -33220,7 +33219,7 @@ psychic
 psychup
 raindance
 rest
-"return"
+Return
 rockblast
 rocktomb
 rollout
@@ -33279,7 +33278,7 @@ psychic
 psychup
 raindance
 rest
-"return"
+Return
 round
 safeguard
 secretpower
@@ -33338,7 +33337,7 @@ psychup
 quiverdance
 raindance
 rest
-"return"
+Return
 roost
 round
 safeguard
@@ -33418,7 +33417,7 @@ pursuit
 quash
 raindance
 rest
-"return"
+Return
 roost
 round
 secretpower
@@ -33487,7 +33486,7 @@ protect
 quickattack
 raindance
 rest
-"return"
+Return
 rollout
 round
 secretpower
@@ -33556,7 +33555,7 @@ quickattack
 raindance
 razorwind
 rest
-"return"
+Return
 rocksmash
 rocktomb
 round
@@ -33624,7 +33623,7 @@ quickattack
 raindance
 razorwind
 rest
-"return"
+Return
 roar
 rocksmash
 rocktomb
@@ -33679,7 +33678,7 @@ naturepower
 protect
 razorleaf
 rest
-"return"
+Return
 rollout
 round
 safeguard
@@ -33729,7 +33728,7 @@ naturalgift
 petaldance
 protect
 rest
-"return"
+Return
 rollout
 round
 safeguard
@@ -33788,7 +33787,7 @@ protect
 raindance
 recover
 rest
-"return"
+Return
 round
 scald
 secretpower
@@ -33846,7 +33845,7 @@ protect
 raindance
 recover
 rest
-"return"
+Return
 rockslide
 rocksmash
 rocktomb
@@ -33918,7 +33917,7 @@ psychup
 raindance
 recycle
 rest
-"return"
+Return
 rollout
 round
 secretpower
@@ -33993,7 +33992,7 @@ psychup
 raindance
 recycle
 rest
-"return"
+Return
 rollout
 round
 secretpower
@@ -34076,7 +34075,7 @@ quickattack
 raindance
 rest
 retaliate
-"return"
+Return
 rocksmash
 round
 secretpower
@@ -34160,7 +34159,7 @@ quickattack
 raindance
 rest
 retaliate
-"return"
+Return
 rocksmash
 round
 secretpower
@@ -34228,7 +34227,7 @@ quickattack
 raindance
 rest
 retaliate
-"return"
+Return
 round
 sandattack
 scratch
@@ -34301,7 +34300,7 @@ psychup
 raindance
 rest
 retaliate
-"return"
+Return
 roar
 rollout
 round
@@ -34375,7 +34374,7 @@ punishment
 pursuit
 raindance
 rest
-"return"
+Return
 roar
 rocksmash
 round
@@ -34442,7 +34441,7 @@ poisonjab
 protect
 raindance
 rest
-"return"
+Return
 roar
 rocksmash
 round
@@ -34512,7 +34511,7 @@ raindance
 recycle
 reflect
 rest
-"return"
+Return
 rockpolish
 rockslide
 rocktomb
@@ -34583,7 +34582,7 @@ raindance
 recycle
 reflect
 rest
-"return"
+Return
 rockpolish
 rockslide
 rocksmash
@@ -34645,7 +34644,7 @@ pluck
 protect
 raindance
 rest
-"return"
+Return
 roleplay
 roost
 round
@@ -34709,7 +34708,7 @@ quash
 raindance
 rest
 retaliate
-"return"
+Return
 rocktomb
 round
 secretpower
@@ -34778,7 +34777,7 @@ outrage
 protect
 raindance
 rest
-"return"
+Return
 roar
 rockclimb
 rockslide
@@ -34841,7 +34840,7 @@ outrage
 protect
 raindance
 rest
-"return"
+Return
 roar
 rockclimb
 rockslide
@@ -34914,7 +34913,7 @@ poisonjab
 protect
 raindance
 rest
-"return"
+Return
 roar
 rockclimb
 rockslide
@@ -34998,7 +34997,7 @@ quickattack
 raindance
 rest
 retaliate
-"return"
+Return
 reversal
 roar
 rockslide
@@ -35085,7 +35084,7 @@ quickguard
 raindance
 rest
 retaliate
-"return"
+Return
 roar
 rockclimb
 rockslide
@@ -35138,7 +35137,7 @@ mudslap
 naturalgift
 protect
 rest
-"return"
+Return
 revenge
 roar
 rockslide
@@ -35195,7 +35194,7 @@ mudslap
 naturalgift
 protect
 rest
-"return"
+Return
 roar
 rockslide
 rocksmash
@@ -35265,7 +35264,7 @@ protect
 pursuit
 raindance
 rest
-"return"
+Return
 rocksmash
 rocktomb
 round
@@ -35343,7 +35342,7 @@ pursuit
 raindance
 rest
 retaliate
-"return"
+Return
 roar
 rockclimb
 rockslide
@@ -35426,7 +35425,7 @@ pursuit
 raindance
 rest
 retaliate
-"return"
+Return
 revenge
 rockclimb
 rockslide
@@ -35512,7 +35511,7 @@ pursuit
 raindance
 rest
 retaliate
-"return"
+Return
 revenge
 rockclimb
 rockslide
@@ -35590,7 +35589,7 @@ protect
 ragepowder
 razorleaf
 rest
-"return"
+Return
 round
 secretpower
 seedbomb
@@ -35652,7 +35651,7 @@ psybeam
 psychup
 raindance
 rest
-"return"
+Return
 round
 safeguard
 scald
@@ -35710,7 +35709,7 @@ protect
 psychup
 raindance
 rest
-"return"
+Return
 round
 safeguard
 scald
@@ -35772,7 +35771,7 @@ protect
 raindance
 razorleaf
 rest
-"return"
+Return
 roleplay
 round
 safeguard
@@ -35839,7 +35838,7 @@ protect
 raindance
 razorleaf
 rest
-"return"
+Return
 rockclimb
 rockslide
 rocksmash
@@ -35890,7 +35889,7 @@ psychup
 raindance
 reflect
 rest
-"return"
+Return
 round
 secretpower
 shadowball
@@ -35945,7 +35944,7 @@ psychup
 raindance
 reflect
 rest
-"return"
+Return
 round
 secretpower
 shadowball
@@ -35998,7 +35997,7 @@ psychup
 raindance
 reflect
 rest
-"return"
+Return
 round
 secretpower
 shadowball
@@ -36051,7 +36050,7 @@ psychup
 raindance
 reflect
 rest
-"return"
+Return
 round
 secretpower
 shadowball
@@ -36104,7 +36103,7 @@ psychup
 raindance
 reflect
 rest
-"return"
+Return
 round
 secretpower
 shadowball
@@ -36157,7 +36156,7 @@ psychup
 raindance
 reflect
 rest
-"return"
+Return
 round
 secretpower
 shadowball
@@ -36226,7 +36225,7 @@ raindance
 recycle
 reflect
 rest
-"return"
+Return
 roleplay
 round
 safeguard
@@ -36306,7 +36305,7 @@ raindance
 recycle
 reflect
 rest
-"return"
+Return
 roleplay
 round
 safeguard
@@ -36385,7 +36384,7 @@ raindance
 recycle
 reflect
 rest
-"return"
+Return
 roleplay
 round
 safeguard
@@ -36471,7 +36470,7 @@ protect
 psychup
 raindance
 rest
-"return"
+Return
 roar
 roaroftime
 rockslide
@@ -36552,7 +36551,7 @@ protect
 psychup
 raindance
 rest
-"return"
+Return
 roar
 rockslide
 rocksmash
@@ -36627,7 +36626,7 @@ overheat
 payback
 protect
 rest
-"return"
+Return
 roar
 rockclimb
 rockslide
@@ -36691,7 +36690,7 @@ payback
 psychup
 raindance
 retaliate
-"return"
+Return
 revenge
 rockclimb
 rockpolish
@@ -36774,7 +36773,7 @@ psychic
 psychup
 raindance
 rest
-"return"
+Return
 roar
 rockclimb
 rocksmash
@@ -36850,7 +36849,7 @@ raindance
 recycle
 reflect
 rest
-"return"
+Return
 round
 safeguard
 secretpower
@@ -36905,7 +36904,7 @@ protect
 psychup
 raindance
 rest
-"return"
+Return
 round
 safeguard
 scald
@@ -36968,7 +36967,7 @@ psychup
 raindance
 reflect
 rest
-"return"
+Return
 round
 safeguard
 scald
@@ -37043,7 +37042,7 @@ quickattack
 raindance
 rest
 retaliate
-"return"
+Return
 roaroftime
 rockclimb
 rockslide
@@ -37114,7 +37113,7 @@ protect
 psychic
 psychup
 rest
-"return"
+Return
 round
 safeguard
 secretpower
@@ -37168,7 +37167,7 @@ psychic
 psychup
 quickattack
 rest
-"return"
+Return
 round
 safeguard
 secretpower
@@ -37273,7 +37272,7 @@ reflect
 refresh
 rest
 retaliate
-"return"
+Return
 roar
 roaroftime
 rockclimb
@@ -37365,7 +37364,7 @@ psychup
 psyshock
 quickattack
 rest
-"return"
+Return
 reversal
 rocksmash
 round
@@ -37443,7 +37442,7 @@ protect
 pursuit
 reflect
 rest
-"return"
+Return
 round
 safeguard
 slam
@@ -37500,7 +37499,7 @@ megadrain
 protect
 reflect
 rest
-"return"
+Return
 round
 safeguard
 slam
@@ -37559,7 +37558,7 @@ megadrain
 protect
 reflect
 rest
-"return"
+Return
 rocksmash
 round
 safeguard
@@ -37621,7 +37620,7 @@ odorsleuth
 overheat
 protect
 rest
-"return"
+Return
 roar
 rocksmash
 rocktomb
@@ -37681,7 +37680,7 @@ overheat
 poisonjab
 protect
 rest
-"return"
+Return
 roar
 rockslide
 rocksmash
@@ -37753,7 +37752,7 @@ overheat
 poisonjab
 protect
 rest
-"return"
+Return
 roar
 rockslide
 rocksmash
@@ -37825,7 +37824,7 @@ raindance
 razorshell
 rest
 retaliate
-"return"
+Return
 revenge
 rocksmash
 round
@@ -37880,7 +37879,7 @@ raindance
 razorshell
 rest
 retaliate
-"return"
+Return
 revenge
 rocksmash
 round
@@ -37938,7 +37937,7 @@ raindance
 razorshell
 rest
 retaliate
-"return"
+Return
 revenge
 rocksmash
 round
@@ -37998,7 +37997,7 @@ pursuit
 raindance
 rest
 retaliate
-"return"
+Return
 revenge
 round
 sandattack
@@ -38060,7 +38059,7 @@ psychup
 raindance
 rest
 retaliate
-"return"
+Return
 rocksmash
 round
 sandattack
@@ -38124,7 +38123,7 @@ pursuit
 raindance
 rest
 retaliate
-"return"
+Return
 reversal
 roar
 rocksmash
@@ -38174,7 +38173,7 @@ protect
 raindance
 rest
 retaliate
-"return"
+Return
 reversal
 roar
 rocksmash
@@ -38224,7 +38223,7 @@ protect
 raindance
 rest
 retaliate
-"return"
+Return
 reversal
 roar
 rocksmash
@@ -38289,7 +38288,7 @@ psychup
 pursuit
 raindance
 rest
-"return"
+Return
 round
 sandattack
 scratch
@@ -38352,7 +38351,7 @@ psychup
 pursuit
 raindance
 rest
-"return"
+Return
 rocksmash
 round
 sandattack
@@ -38421,7 +38420,7 @@ payback
 protect
 recycle
 rest
-"return"
+Return
 rocksmash
 rocktomb
 roleplay
@@ -38480,7 +38479,7 @@ lowsweep
 payback
 protect
 rest
-"return"
+Return
 rockslide
 rocksmash
 rocktomb
@@ -38552,7 +38551,7 @@ payback
 protect
 recycle
 rest
-"return"
+Return
 rocksmash
 rocktomb
 roleplay
@@ -38611,7 +38610,7 @@ overheat
 payback
 protect
 rest
-"return"
+Return
 rockslide
 rocksmash
 rocktomb
@@ -38681,7 +38680,7 @@ protect
 raindance
 recycle
 rest
-"return"
+Return
 rocksmash
 rocktomb
 roleplay
@@ -38742,7 +38741,7 @@ payback
 protect
 raindance
 rest
-"return"
+Return
 rockslide
 rocksmash
 rocktomb
@@ -38810,7 +38809,7 @@ psywave
 raindance
 reflect
 rest
-"return"
+Return
 rockslide
 rocktomb
 round
@@ -38870,7 +38869,7 @@ psyshock
 raindance
 reflect
 rest
-"return"
+Return
 rockslide
 rocktomb
 round
@@ -38925,7 +38924,7 @@ quickattack
 raindance
 razorwind
 rest
-"return"
+Return
 roost
 round
 skyattack
@@ -38967,7 +38966,7 @@ quickattack
 raindance
 razorwind
 rest
-"return"
+Return
 roost
 round
 skyattack
@@ -39010,7 +39009,7 @@ quickattack
 raindance
 razorwind
 rest
-"return"
+Return
 roost
 round
 skyattack
@@ -39051,7 +39050,7 @@ quickattack
 rage
 raindance
 rest
-"return"
+Return
 round
 sandattack
 screech
@@ -39097,7 +39096,7 @@ pursuit
 quickattack
 raindance
 rest
-"return"
+Return
 rocksmash
 round
 shockwave
@@ -39142,7 +39141,7 @@ magnitude
 mudslap
 protect
 rest
-"return"
+Return
 rockblast
 rockpolish
 rockslide
@@ -39184,7 +39183,7 @@ mudslap
 powergem
 protect
 rest
-"return"
+Return
 rockblast
 rockpolish
 rockslide
@@ -39229,7 +39228,7 @@ mudslap
 powergem
 protect
 rest
-"return"
+Return
 rockblast
 rockpolish
 rockslide
@@ -39297,7 +39296,7 @@ psyshock
 raindance
 reflect
 rest
-"return"
+Return
 roost
 round
 safeguard
@@ -39371,7 +39370,7 @@ psyshock
 raindance
 reflect
 rest
-"return"
+Return
 round
 safeguard
 shadowball
@@ -39432,7 +39431,7 @@ poisonjab
 protect
 rapidspin
 rest
-"return"
+Return
 rockclimb
 rockslide
 rocksmash
@@ -39483,7 +39482,7 @@ poisonjab
 protect
 rapidspin
 rest
-"return"
+Return
 rockslide
 rocksmash
 rocktomb
@@ -39554,7 +39553,7 @@ reflect
 refresh
 rest
 retaliate
-"return"
+Return
 round
 safeguard
 secretpower
@@ -39639,7 +39638,7 @@ protect
 raindance
 rest
 retaliate
-"return"
+Return
 reversal
 rockslide
 rocksmash
@@ -39700,7 +39699,7 @@ protect
 raindance
 rest
 retaliate
-"return"
+Return
 rockslide
 rocksmash
 rockthrow
@@ -39761,7 +39760,7 @@ protect
 raindance
 rest
 retaliate
-"return"
+Return
 rockslide
 rocksmash
 rockthrow
@@ -39815,7 +39814,7 @@ protect
 raindance
 refresh
 rest
-"return"
+Return
 round
 scald
 sleeptalk
@@ -39856,7 +39855,7 @@ mudshot
 protect
 raindance
 rest
-"return"
+Return
 rocksmash
 round
 scald
@@ -39911,7 +39910,7 @@ poisonjab
 protect
 raindance
 rest
-"return"
+Return
 rockslide
 rocksmash
 rocktomb
@@ -39970,7 +39969,7 @@ protect
 raindance
 rest
 retaliate
-"return"
+Return
 revenge
 reversal
 rockslide
@@ -40033,7 +40032,7 @@ quickguard
 raindance
 rest
 retaliate
-"return"
+Return
 reversal
 rockslide
 rocksmash
@@ -40089,7 +40088,7 @@ protect
 razorleaf
 razorwind
 rest
-"return"
+Return
 round
 safeguard
 screech
@@ -40134,7 +40133,7 @@ payback
 protect
 razorleaf
 rest
-"return"
+Return
 round
 safeguard
 solarbeam
@@ -40187,7 +40186,7 @@ razorleaf
 reflect
 rest
 retaliate
-"return"
+Return
 round
 safeguard
 shadowclaw
@@ -40237,7 +40236,7 @@ poisontail
 protect
 pursuit
 rest
-"return"
+Return
 rockclimb
 rocksmash
 rollout
@@ -40281,7 +40280,7 @@ poisontail
 protect
 pursuit
 rest
-"return"
+Return
 rockclimb
 rocksmash
 rollout
@@ -40328,7 +40327,7 @@ poisontail
 protect
 pursuit
 rest
-"return"
+Return
 rockclimb
 rockslide
 rocksmash
@@ -40390,7 +40389,7 @@ poisonpowder
 protect
 razorleaf
 rest
-"return"
+Return
 round
 safeguard
 solarbeam
@@ -40440,7 +40439,7 @@ megadrain
 protect
 psychic
 rest
-"return"
+Return
 round
 safeguard
 shadowball
@@ -40496,7 +40495,7 @@ megadrain
 naturalgift
 protect
 rest
-"return"
+Return
 round
 safeguard
 sleeppowder
@@ -40537,7 +40536,7 @@ petaldance
 protect
 quiverdance
 rest
-"return"
+Return
 round
 safeguard
 solarbeam
@@ -40589,7 +40588,7 @@ protect
 rage
 raindance
 rest
-"return"
+Return
 revenge
 round
 scald
@@ -40648,7 +40647,7 @@ pursuit
 rage
 rest
 retaliate
-"return"
+Return
 roar
 rockclimb
 rockslide
@@ -40709,7 +40708,7 @@ protect
 rage
 rest
 retaliate
-"return"
+Return
 roar
 rockslide
 rocksmash
@@ -40781,7 +40780,7 @@ protect
 rage
 rest
 retaliate
-"return"
+Return
 roar
 rockslide
 rocksmash
@@ -40852,7 +40851,7 @@ overheat
 protect
 rage
 rest
-"return"
+Return
 roar
 rockslide
 rocksmash
@@ -40917,7 +40916,7 @@ protect
 psychic
 rage
 rest
-"return"
+Return
 roar
 rockslide
 rocksmash
@@ -40978,7 +40977,7 @@ pinmissile
 poisonjab
 protect
 rest
-"return"
+Return
 round
 safeguard
 seedbomb
@@ -41030,7 +41029,7 @@ nightslash
 poisonjab
 protect
 rest
-"return"
+Return
 rockblast
 rockpolish
 rockslide
@@ -41084,7 +41083,7 @@ hyperbeam
 poisonjab
 protect
 rest
-"return"
+Return
 rockblast
 rockpolish
 rockslide
@@ -41157,7 +41156,7 @@ protect
 raindance
 rest
 retaliate
-"return"
+Return
 roar
 rockclimb
 rockslide
@@ -41231,7 +41230,7 @@ protect
 raindance
 rest
 retaliate
-"return"
+Return
 roar
 rockclimb
 rockslide
@@ -41309,7 +41308,7 @@ psywave
 raindance
 reflect
 rest
-"return"
+Return
 roost
 round
 safeguard
@@ -41379,7 +41378,7 @@ psychic
 psychup
 raindance
 rest
-"return"
+Return
 round
 safeguard
 shadowball
@@ -41441,7 +41440,7 @@ psychic
 psychup
 raindance
 rest
-"return"
+Return
 round
 safeguard
 scaryface
@@ -41498,7 +41497,7 @@ knockoff
 protect
 raindance
 rest
-"return"
+Return
 rockpolish
 rockslide
 rocksmash
@@ -41559,7 +41558,7 @@ icebeam
 protect
 raindance
 rest
-"return"
+Return
 rockpolish
 rockslide
 rocksmash
@@ -41623,7 +41622,7 @@ protect
 quickattack
 quickguard
 rest
-"return"
+Return
 roar
 rockpolish
 rockslide
@@ -41689,7 +41688,7 @@ protect
 quickattack
 quickguard
 rest
-"return"
+Return
 roar
 rockpolish
 rockslide
@@ -41749,7 +41748,7 @@ protect
 raindance
 recycle
 rest
-"return"
+Return
 rockblast
 rollout
 round
@@ -41805,7 +41804,7 @@ psychic
 raindance
 recycle
 rest
-"return"
+Return
 rockpolish
 round
 sludge
@@ -41872,7 +41871,7 @@ pursuit
 raindance
 rest
 retaliate
-"return"
+Return
 roar
 round
 scaryface
@@ -41938,7 +41937,7 @@ pursuit
 raindance
 rest
 retaliate
-"return"
+Return
 roar
 rocksmash
 round
@@ -42001,7 +42000,7 @@ protect
 raindance
 rest
 retaliate
-"return"
+Return
 round
 safeguard
 sing
@@ -42050,7 +42049,7 @@ protect
 raindance
 rest
 retaliate
-"return"
+Return
 rockblast
 round
 safeguard
@@ -42120,7 +42119,7 @@ psyshock
 raindance
 reflect
 rest
-"return"
+Return
 rockslide
 rocktomb
 round
@@ -42191,7 +42190,7 @@ psyshock
 raindance
 reflect
 rest
-"return"
+Return
 rockslide
 rocktomb
 round
@@ -42265,7 +42264,7 @@ psyshock
 raindance
 reflect
 rest
-"return"
+Return
 rockslide
 rocktomb
 round
@@ -42335,7 +42334,7 @@ raindance
 recover
 reflect
 rest
-"return"
+Return
 rockslide
 rocktomb
 rollout
@@ -42394,7 +42393,7 @@ raindance
 recover
 reflect
 rest
-"return"
+Return
 rockslide
 rocktomb
 rollout
@@ -42458,7 +42457,7 @@ raindance
 recover
 reflect
 rest
-"return"
+Return
 rockslide
 rocksmash
 rocktomb
@@ -42524,7 +42523,7 @@ pluck
 protect
 raindance
 rest
-"return"
+Return
 roost
 round
 scald
@@ -42569,7 +42568,7 @@ pluck
 protect
 raindance
 rest
-"return"
+Return
 roost
 round
 scald
@@ -42622,7 +42621,7 @@ powdersnow
 protect
 raindance
 rest
-"return"
+Return
 round
 sheercold
 substitute
@@ -42661,7 +42660,7 @@ mist
 protect
 raindance
 rest
-"return"
+Return
 round
 sheercold
 substitute
@@ -42705,7 +42704,7 @@ mist
 protect
 raindance
 rest
-"return"
+Return
 round
 sheercold
 substitute
@@ -42753,7 +42752,7 @@ protect
 raindance
 rest
 retaliate
-"return"
+Return
 round
 safeguard
 sandattack
@@ -42807,7 +42806,7 @@ protect
 raindance
 rest
 retaliate
-"return"
+Return
 rocksmash
 round
 safeguard
@@ -42862,7 +42861,7 @@ pursuit
 quickattack
 raindance
 rest
-"return"
+Return
 roost
 round
 shockwave
@@ -42920,7 +42919,7 @@ protect
 pursuit
 raindance
 rest
-"return"
+Return
 round
 scaryface
 screech
@@ -42964,7 +42963,7 @@ protect
 quickguard
 raindance
 rest
-"return"
+Return
 reversal
 rocksmash
 round
@@ -43013,7 +43012,7 @@ protect
 ragepowder
 raindance
 rest
-"return"
+Return
 rollout
 round
 sludgebomb
@@ -43060,7 +43059,7 @@ protect
 ragepowder
 raindance
 rest
-"return"
+Return
 round
 sludgebomb
 solarbeam
@@ -43113,7 +43112,7 @@ psychup
 raindance
 recover
 rest
-"return"
+Return
 round
 safeguard
 scald
@@ -43172,7 +43171,7 @@ psychup
 raindance
 recover
 rest
-"return"
+Return
 round
 safeguard
 scald
@@ -43234,7 +43233,7 @@ psychup
 raindance
 refresh
 rest
-"return"
+Return
 round
 safeguard
 scald
@@ -43288,7 +43287,7 @@ protect
 pursuit
 raindance
 rest
-"return"
+Return
 rockclimb
 round
 screech
@@ -43341,7 +43340,7 @@ poisonjab
 protect
 raindance
 rest
-"return"
+Return
 round
 screech
 signalbeam
@@ -43396,7 +43395,7 @@ pinmissile
 poisonjab
 protect
 rest
-"return"
+Return
 rockclimb
 rockpolish
 rocksmash
@@ -43453,7 +43452,7 @@ poisonjab
 powerwhip
 protect
 rest
-"return"
+Return
 rockclimb
 rockpolish
 rocksmash
@@ -43503,7 +43502,7 @@ metalsound
 mirrorshot
 protect
 rest
-"return"
+Return
 rockpolish
 rocksmash
 round
@@ -43548,7 +43547,7 @@ metalsound
 mirrorshot
 protect
 rest
-"return"
+Return
 rockpolish
 rocksmash
 round
@@ -43594,7 +43593,7 @@ metalsound
 mirrorshot
 protect
 rest
-"return"
+Return
 rockpolish
 rocksmash
 round
@@ -43652,7 +43651,7 @@ lightscreen
 protect
 raindance
 rest
-"return"
+Return
 round
 spark
 substitute
@@ -43705,7 +43704,7 @@ lightscreen
 protect
 raindance
 rest
-"return"
+Return
 roar
 rockslide
 rocksmash
@@ -43781,7 +43780,7 @@ raindance
 recover
 reflect
 rest
-"return"
+Return
 rockslide
 rocktomb
 round
@@ -43851,7 +43850,7 @@ raindance
 recover
 reflect
 rest
-"return"
+Return
 rockslide
 rocktomb
 round
@@ -43926,7 +43925,7 @@ protect
 psychic
 psychup
 rest
-"return"
+Return
 round
 safeguard
 shadowball
@@ -43982,7 +43981,7 @@ protect
 psychic
 psychup
 rest
-"return"
+Return
 round
 safeguard
 shadowball
@@ -44031,7 +44030,7 @@ protect
 psychic
 psychup
 rest
-"return"
+Return
 round
 safeguard
 shadowball
@@ -44090,7 +44089,7 @@ protect
 raindance
 razorwind
 rest
-"return"
+Return
 reversal
 roar
 rocksmash
@@ -44142,7 +44141,7 @@ poisonjab
 protect
 raindance
 rest
-"return"
+Return
 roar
 rocksmash
 rocktomb
@@ -44203,7 +44202,7 @@ poisonjab
 protect
 raindance
 rest
-"return"
+Return
 roar
 rockslide
 rocksmash
@@ -44265,7 +44264,7 @@ powdersnow
 protect
 raindance
 rest
-"return"
+Return
 rocksmash
 rocktomb
 round
@@ -44325,7 +44324,7 @@ powdersnow
 protect
 raindance
 rest
-"return"
+Return
 roar
 rockslide
 rocksmash
@@ -44383,7 +44382,7 @@ rapidspin
 recover
 reflect
 rest
-"return"
+Return
 round
 sharpen
 sheercold
@@ -44431,7 +44430,7 @@ pursuit
 raindance
 recover
 rest
-"return"
+Return
 round
 sludgebomb
 spikes
@@ -44472,7 +44471,7 @@ quickattack
 raindance
 recover
 rest
-"return"
+Return
 round
 sandstorm
 sludgebomb
@@ -44521,7 +44520,7 @@ payback
 protect
 raindance
 rest
-"return"
+Return
 revenge
 rockslide
 rocktomb
@@ -44601,7 +44600,7 @@ raindance
 reflect
 rest
 retaliate
-"return"
+Return
 reversal
 rockslide
 rocksmash
@@ -44665,7 +44664,7 @@ raindance
 reflect
 rest
 retaliate
-"return"
+Return
 reversal
 rockslide
 rocksmash
@@ -44735,7 +44734,7 @@ pursuit
 raindance
 rest
 retaliate
-"return"
+Return
 revenge
 roar
 rockclimb
@@ -44806,7 +44805,7 @@ protect
 psychic
 raindance
 rest
-"return"
+Return
 rockpolish
 rockslide
 rocksmash
@@ -44876,7 +44875,7 @@ protect
 psychic
 raindance
 rest
-"return"
+Return
 rockpolish
 rockslide
 rocksmash
@@ -44950,7 +44949,7 @@ pursuit
 raindance
 rest
 retaliate
-"return"
+Return
 revenge
 rockpolish
 rocksmash
@@ -45023,7 +45022,7 @@ protect
 raindance
 rest
 retaliate
-"return"
+Return
 rockpolish
 rocksmash
 rocktomb
@@ -45088,7 +45087,7 @@ rage
 raindance
 rest
 retaliate
-"return"
+Return
 revenge
 reversal
 rockclimb
@@ -45143,7 +45142,7 @@ protect
 raindance
 rest
 retaliate
-"return"
+Return
 rockslide
 rocksmash
 rocktomb
@@ -45195,7 +45194,7 @@ protect
 raindance
 rest
 retaliate
-"return"
+Return
 rockslide
 rocksmash
 rocktomb
@@ -45256,7 +45255,7 @@ punishment
 raindance
 rest
 retaliate
-"return"
+Return
 rocksmash
 rocktomb
 roost
@@ -45316,7 +45315,7 @@ punishment
 raindance
 rest
 retaliate
-"return"
+Return
 rocksmash
 rocktomb
 round
@@ -45378,7 +45377,7 @@ protect
 pursuit
 raindance
 rest
-"return"
+Return
 rocksmash
 rocktomb
 round
@@ -45443,7 +45442,7 @@ metalsound
 protect
 rest
 retaliate
-"return"
+Return
 rockclimb
 rockpolish
 rockslide
@@ -45501,7 +45500,7 @@ protect
 psychup
 raindance
 rest
-"return"
+Return
 roar
 rocksmash
 round
@@ -45553,7 +45552,7 @@ protect
 psychup
 raindance
 rest
-"return"
+Return
 roar
 rocksmash
 round
@@ -45617,7 +45616,7 @@ psychup
 raindance
 reflect
 rest
-"return"
+Return
 roar
 rockslide
 rocksmash
@@ -45684,7 +45683,7 @@ overheat
 protect
 psychic
 rest
-"return"
+Return
 round
 safeguard
 solarbeam
@@ -45737,7 +45736,7 @@ psychic
 quiverdance
 ragepowder
 rest
-"return"
+Return
 round
 safeguard
 silverwind
@@ -45795,7 +45794,7 @@ quickguard
 reflect
 rest
 retaliate
-"return"
+Return
 roar
 rockpolish
 rocksmash
@@ -45851,7 +45850,7 @@ quickguard
 reflect
 rest
 retaliate
-"return"
+Return
 roar
 rockpolish
 rockslide
@@ -45911,7 +45910,7 @@ quickguard
 reflect
 rest
 retaliate
-"return"
+Return
 roar
 rocksmash
 round
@@ -45974,7 +45973,7 @@ protect
 psychic
 raindance
 rest
-"return"
+Return
 revenge
 rocksmash
 round
@@ -46036,7 +46035,7 @@ protect
 psychic
 raindance
 rest
-"return"
+Return
 revenge
 rocksmash
 round
@@ -46110,7 +46109,7 @@ protect
 psychic
 reflect
 rest
-"return"
+Return
 rockslide
 rocksmash
 rocktomb
@@ -46172,7 +46171,7 @@ psychic
 raindance
 reflect
 rest
-"return"
+Return
 rockslide
 rocksmash
 rocktomb
@@ -46236,7 +46235,7 @@ protect
 psychic
 punishment
 rest
-"return"
+Return
 rockpolish
 rockslide
 rocksmash
@@ -46300,7 +46299,7 @@ psychic
 raindance
 reflect
 rest
-"return"
+Return
 rockslide
 rocksmash
 rocktomb
@@ -46363,7 +46362,7 @@ psychic
 raindance
 reflect
 rest
-"return"
+Return
 rockslide
 rocksmash
 rocktomb
@@ -46425,7 +46424,7 @@ psychic
 raindance
 reflect
 rest
-"return"
+Return
 rockslide
 rocksmash
 rocktomb
@@ -46478,7 +46477,7 @@ raindance
 reflect
 rest
 retaliate
-"return"
+Return
 roar
 rocksmash
 round
@@ -46543,7 +46542,7 @@ raindance
 relicsong
 rest
 retaliate
-"return"
+Return
 rocksmash
 roleplay
 round
@@ -46638,7 +46637,7 @@ quickattack
 recycle
 reflect
 rest
-"return"
+Return
 rockpolish
 round
 screech
@@ -46691,7 +46690,7 @@ protect
 frustration
 solarbeam
 smackdown
-"return"
+Return
 dig
 brickbreak
 doubleteam
@@ -46759,7 +46758,7 @@ protect
 frustration
 solarbeam
 smackdown
-"return"
+Return
 dig
 brickbreak
 doubleteam
@@ -46829,7 +46828,7 @@ frustration
 solarbeam
 smackdown
 earthquake
-"return"
+Return
 dig
 brickbreak
 doubleteam
@@ -46891,7 +46890,7 @@ raindance
 safeguard
 frustration
 solarbeam
-"return"
+Return
 doubleteam
 facade
 rest
@@ -46940,7 +46939,7 @@ raindance
 safeguard
 frustration
 solarbeam
-"return"
+Return
 doubleteam
 facade
 rest
@@ -46992,7 +46991,7 @@ raindance
 safeguard
 frustration
 solarbeam
-"return"
+Return
 doubleteam
 facade
 rest
@@ -47039,7 +47038,7 @@ blizzard
 protect
 raindance
 frustration
-"return"
+Return
 dig
 rocktomb
 aerialace
@@ -47092,7 +47091,7 @@ blizzard
 protect
 raindance
 frustration
-"return"
+Return
 dig
 rocktomb
 aerialace
@@ -47147,7 +47146,7 @@ protect
 raindance
 frustration
 smackdown
-"return"
+Return
 dig
 rocktomb
 aerialace
@@ -47199,7 +47198,7 @@ hiddenpower
 protect
 frustration
 smackdown
-"return"
+Return
 brickbreak
 doubleteam
 sludgebomb
@@ -47258,7 +47257,7 @@ hyperbeam
 protect
 frustration
 smackdown
-"return"
+Return
 brickbreak
 doubleteam
 sludgebomb
@@ -47308,7 +47307,7 @@ sunnyday
 taunt
 protect
 frustration
-"return"
+Return
 doubleteam
 aerialace
 facade
@@ -47348,7 +47347,7 @@ sunnyday
 taunt
 protect
 frustration
-"return"
+Return
 doubleteam
 flamethrower
 fireblast
@@ -47396,7 +47395,7 @@ hyperbeam
 protect
 frustration
 solarbeam
-"return"
+Return
 doubleteam
 flamethrower
 fireblast
@@ -47454,7 +47453,7 @@ raindance
 roost
 frustration
 solarbeam
-"return"
+Return
 psychic
 doubleteam
 aerialace
@@ -47500,7 +47499,7 @@ protect
 raindance
 frustration
 solarbeam
-"return"
+Return
 dig
 doubleteam
 fireblast
@@ -47553,7 +47552,7 @@ protect
 raindance
 frustration
 solarbeam
-"return"
+Return
 dig
 doubleteam
 fireblast
@@ -47600,7 +47599,7 @@ protect
 raindance
 safeguard
 frustration
-"return"
+Return
 psychic
 doubleteam
 facade
@@ -47643,7 +47642,7 @@ protect
 raindance
 safeguard
 frustration
-"return"
+Return
 psychic
 doubleteam
 facade
@@ -47684,7 +47683,7 @@ protect
 raindance
 safeguard
 frustration
-"return"
+Return
 psychic
 doubleteam
 facade
@@ -47725,7 +47724,7 @@ raindance
 safeguard
 frustration
 solarbeam
-"return"
+Return
 psychic
 doubleteam
 facade
@@ -47767,7 +47766,7 @@ protect
 raindance
 frustration
 solarbeam
-"return"
+Return
 dig
 brickbreak
 doubleteam
@@ -47819,7 +47818,7 @@ protect
 raindance
 frustration
 solarbeam
-"return"
+Return
 dig
 brickbreak
 doubleteam
@@ -47865,7 +47864,7 @@ sunnyday
 protect
 raindance
 frustration
-"return"
+Return
 dig
 brickbreak
 doubleteam
@@ -47934,7 +47933,7 @@ protect
 raindance
 frustration
 earthquake
-"return"
+Return
 dig
 brickbreak
 doubleteam
@@ -47997,7 +47996,7 @@ sunnyday
 protect
 raindance
 frustration
-"return"
+Return
 dig
 doubleteam
 facade
@@ -48044,7 +48043,7 @@ raindance
 safeguard
 frustration
 thunderbolt
-"return"
+Return
 psychic
 doubleteam
 reflect
@@ -48102,7 +48101,7 @@ raindance
 safeguard
 frustration
 thunderbolt
-"return"
+Return
 dig
 shadowball
 doubleteam
@@ -48158,7 +48157,7 @@ raindance
 safeguard
 frustration
 thunderbolt
-"return"
+Return
 dig
 doubleteam
 reflect
@@ -48204,7 +48203,7 @@ hiddenpower
 protect
 raindance
 frustration
-"return"
+Return
 brickbreak
 doubleteam
 reflect
@@ -48245,7 +48244,7 @@ hiddenpower
 protect
 raindance
 frustration
-"return"
+Return
 brickbreak
 doubleteam
 reflect
@@ -48285,7 +48284,7 @@ hyperbeam
 protect
 raindance
 frustration
-"return"
+Return
 shadowball
 brickbreak
 doubleteam
@@ -48332,7 +48331,7 @@ protect
 raindance
 frustration
 thunderbolt
-"return"
+Return
 doubleteam
 reflect
 torment
@@ -48388,7 +48387,7 @@ raindance
 frustration
 thunderbolt
 thunder
-"return"
+Return
 doubleteam
 torment
 facade
@@ -48432,7 +48431,7 @@ protect
 raindance
 frustration
 thunderbolt
-"return"
+Return
 psychic
 doubleteam
 flamethrower
@@ -48479,7 +48478,7 @@ protect
 raindance
 frustration
 thunderbolt
-"return"
+Return
 psychic
 doubleteam
 flamethrower
@@ -48525,7 +48524,7 @@ protect
 raindance
 frustration
 thunderbolt
-"return"
+Return
 psychic
 doubleteam
 flamethrower
@@ -48585,7 +48584,7 @@ protect
 raindance
 frustration
 thunderbolt
-"return"
+Return
 psychic
 doubleteam
 flamethrower
@@ -48637,7 +48636,7 @@ safeguard
 frustration
 smackdown
 earthquake
-"return"
+Return
 dig
 brickbreak
 doubleteam
@@ -48713,7 +48712,7 @@ safeguard
 frustration
 smackdown
 earthquake
-"return"
+Return
 dig
 brickbreak
 doubleteam
@@ -48777,7 +48776,7 @@ protect
 raindance
 frustration
 thunderbolt
-"return"
+Return
 shadowball
 sludgewave
 facade
@@ -48824,7 +48823,7 @@ raindance
 frustration
 thunderbolt
 thunder
-"return"
+Return
 shadowball
 sludgewave
 facade
@@ -48862,7 +48861,7 @@ icebeam
 protect
 raindance
 frustration
-"return"
+Return
 doubleteam
 sludgewave
 sludgebomb
@@ -48910,7 +48909,7 @@ hyperbeam
 protect
 raindance
 frustration
-"return"
+Return
 shadowball
 doubleteam
 sludgewave
@@ -48953,7 +48952,7 @@ protect
 raindance
 frustration
 thunder
-"return"
+Return
 dig
 doubleteam
 sandstorm
@@ -48998,7 +48997,7 @@ protect
 raindance
 frustration
 thunderbolt
-"return"
+Return
 dig
 doubleteam
 sandstorm
@@ -49050,7 +49049,7 @@ hiddenpower
 sunnyday
 protect
 frustration
-"return"
+Return
 dig
 brickbreak
 doubleteam
@@ -49105,7 +49104,7 @@ sunnyday
 hyperbeam
 protect
 frustration
-"return"
+Return
 dig
 brickbreak
 doubleteam
@@ -49155,7 +49154,7 @@ raindance
 safeguard
 frustration
 thunderbolt
-"return"
+Return
 doubleteam
 reflect
 sandstorm
@@ -49217,7 +49216,7 @@ frustration
 thunderbolt
 thunder
 earthquake
-"return"
+Return
 psychic
 doubleteam
 reflect
@@ -49271,7 +49270,7 @@ protect
 raindance
 safeguard
 frustration
-"return"
+Return
 dig
 shadowball
 doubleteam
@@ -49317,7 +49316,7 @@ taunt
 protect
 raindance
 frustration
-"return"
+Return
 dig
 brickbreak
 doubleteam
@@ -49381,7 +49380,7 @@ protect
 raindance
 frustration
 thunderbolt
-"return"
+Return
 dig
 doubleteam
 aerialace
@@ -49429,7 +49428,7 @@ hiddenpower
 sunnyday
 protect
 frustration
-"return"
+Return
 psychic
 doubleteam
 sandstorm
@@ -49467,7 +49466,7 @@ hiddenpower
 sunnyday
 frustration
 thunderbolt
-"return"
+Return
 doubleteam
 sludgewave
 sludgebomb
@@ -49507,7 +49506,7 @@ icebeam
 blizzard
 frustration
 thunderbolt
-"return"
+Return
 doubleteam
 sludgewave
 sludgebomb
@@ -49549,7 +49548,7 @@ frustration
 thunderbolt
 thunder
 earthquake
-"return"
+Return
 doubleteam
 sludgewave
 flamethrower
@@ -49601,7 +49600,7 @@ protect
 raindance
 safeguard
 frustration
-"return"
+Return
 psychic
 doubleteam
 reflect
@@ -49645,7 +49644,7 @@ protect
 safeguard
 frustration
 solarbeam
-"return"
+Return
 dig
 psychic
 shadowball
@@ -49704,7 +49703,7 @@ safeguard
 frustration
 solarbeam
 earthquake
-"return"
+Return
 dig
 psychic
 shadowball
@@ -49757,7 +49756,7 @@ protect
 safeguard
 frustration
 solarbeam
-"return"
+Return
 psychic
 doubleteam
 flamethrower
@@ -49816,7 +49815,7 @@ protect
 safeguard
 frustration
 solarbeam
-"return"
+Return
 psychic
 doubleteam
 flamethrower
@@ -49871,7 +49870,7 @@ protect
 raindance
 safeguard
 frustration
-"return"
+Return
 doubleteam
 rocktomb
 facade
@@ -49925,7 +49924,7 @@ raindance
 safeguard
 frustration
 earthquake
-"return"
+Return
 doubleteam
 rocktomb
 facade
@@ -49972,7 +49971,7 @@ taunt
 protect
 frustration
 solarbeam
-"return"
+Return
 psychic
 shadowball
 brickbreak
@@ -50033,7 +50032,7 @@ hyperbeam
 protect
 frustration
 solarbeam
-"return"
+Return
 psychic
 shadowball
 brickbreak
@@ -50096,7 +50095,7 @@ raindance
 frustration
 thunderbolt
 thunder
-"return"
+Return
 psychic
 doubleteam
 reflect
@@ -50143,7 +50142,7 @@ sunnyday
 protect
 raindance
 frustration
-"return"
+Return
 shadowball
 aerialace
 torment
@@ -50191,7 +50190,7 @@ sunnyday
 hyperbeam
 protect
 frustration
-"return"
+Return
 brickbreak
 doubleteam
 sludgewave
@@ -50238,7 +50237,7 @@ sunnyday
 hyperbeam
 protect
 frustration
-"return"
+Return
 psychic
 doubleteam
 sandstorm
@@ -50289,7 +50288,7 @@ raindance
 safeguard
 frustration
 thunderbolt
-"return"
+Return
 brickbreak
 doubleteam
 reflect
@@ -50340,7 +50339,7 @@ frustration
 solarbeam
 smackdown
 earthquake
-"return"
+Return
 brickbreak
 doubleteam
 sludgewave

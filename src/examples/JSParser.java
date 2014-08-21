@@ -11,14 +11,17 @@ public class JSParser
 		File file = new File("/home/cory/twerkspace/PokemonShowdownAPI/data/pokedex.js");
 		File kekpot = new File("/home/cory/twerkspace/PokemonShowdownAPI/data/nfe.txt");
 		File opperpowered = new File("/home/cory/twerkspace/PokemonShowdownAPI/bin/swag.txt");
+		File weedsmokeur = new File("/home/cory/twerkspace/PokemonShowdownAPI/data/pokeymens.txt");
 		Scanner fr = new Scanner(file);
 		Scanner potkek = new Scanner(kekpot);
 		Scanner overpwrd = new Scanner(opperpowered);
+		Scanner wead = new Scanner(weedsmokeur);
 		String num = "";
 		String species = "";
 		boolean inTypes = false;
 		boolean inAbilities = false;
-		String ha = "null";
+		boolean isReel = true;
+		String daMoves = "";
 		String baseStats = "";
 		String swagString = "";
 		while(fr.hasNextLine())
@@ -36,8 +39,13 @@ public class JSParser
 						swagString += "Abilities."+currline.substring(4,currline.length()-2).toLowerCase().replaceAll("[^a-z]","");
 					else 
 						{
-							swagString += "Abilities."+currline.substring(4,currline.length()-1).toLowerCase().replaceAll("[^a-z]","")+"},null,";
-							swagString += overpwrd.nextLine() + ");";
+							swagString += "Abilities."+currline.substring(4,currline.length()-1).toLowerCase().replaceAll("[^a-z]","")+"},null);";
+							if(isReel)
+							{
+								daMoves = overpwrd.nextLine();
+							}
+							daMoves = "";
+							swagString += daMoves;
 						}
 					currline = fr.nextLine();
 					if(currline.startsWith("1"))
@@ -49,23 +57,38 @@ public class JSParser
 						currline = fr.nextLine();
 						if(currline.startsWith("H"))
 						{
-							swagString += "Abilities." +currline.substring(4,currline.length()-1).toLowerCase().replaceAll("[^a-z]",""+",");
-							swagString += overpwrd.nextLine() + ");";
+							swagString += "Abilities." +currline.substring(4,currline.length()-1).toLowerCase().replaceAll("[^a-z]",""+"");
+							if(isReel)
+							{
+								daMoves = "";
+								//daMoves = overpwrd.nextLine();
+							}
+							swagString += daMoves + ");";
+							isReel = false;
 						}
 						else 
 						{
-							swagString += "null,";
-							swagString += overpwrd.nextLine() + ");";
+							swagString += "null";
+							daMoves = "";
+							//daMoves = overpwrd.nextLine();
+							swagString += daMoves + ");";
 							inAbilities = false;
+							isReel = false;
 						}
 					}
 					else if(currline.startsWith("H"))
 					{
-						swagString += "}, Abilities." +currline.substring(4,currline.length()-1).toLowerCase().replaceAll("[^a-z]","")+",";
-						swagString += overpwrd.nextLine() + ");";
+						swagString += "}, Abilities." +currline.substring(4,currline.length()-1).toLowerCase().replaceAll("[^a-z]","");
+						if(isReel)
+						{
+							daMoves = overpwrd.nextLine();
+						}
+						daMoves = "";
+						swagString += daMoves + ");";
 					}
 					inAbilities = false;
 					System.out.println(swagString);
+					isReel = false;
 					swagString = "";
 				}
 			}
@@ -123,6 +146,15 @@ public class JSParser
 					}
 				}
 				potkek = new Scanner(kekpot);
+				isReel = false;
+				while(wead.hasNextLine())
+				{
+					if(wead.nextLine().equals(speciessan))
+					{
+						isReel = true;
+					}
+				}
+				wead = new Scanner(weedsmokeur);
 				swagString += (found+",");
 			}
 			if(currline.startsWith("abilities:"))
@@ -133,5 +165,7 @@ public class JSParser
 		}
 		fr.close();
 		potkek.close();
+		overpwrd.close();
+		wead.close();
 	}
 }

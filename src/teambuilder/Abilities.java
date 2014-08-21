@@ -194,4 +194,21 @@ public class Abilities
 	public static final Ability rebound = new Ability("Rebound","rebound","It can reflect the effect of status moves when switching in.","On switch-in, this Pokemon blocks certain status moves and uses the move itself.");
 	public static final Ability persistent = new Ability("Persistent","persistent","Increases the duration of many field effects by two turns when used by this Pokémon.","The duration of certain field effects is increased by 2 turns if used by this Pokemon.");
 
+	public Ability getByID(String id)
+	{
+		try 
+		{
+			java.lang.reflect.Field field = this.getClass().getDeclaredField(id.toLowerCase());
+			//below wants the instance of the class
+			//but since it is static, it is irrelevant what the instance is,
+			//so passing null will not create errors
+			Ability ability = (Ability)field.get(null);
+			return ability;
+		} 
+		catch (NoSuchFieldException | SecurityException | IllegalArgumentException | IllegalAccessException e) 
+		{
+			e.printStackTrace();
+			return null;
+		}
+	}
 }

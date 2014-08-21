@@ -11,8 +11,8 @@ import teambuilder.Gender;
 import teambuilder.ItemBoost;
 import teambuilder.Items;
 import teambuilder.Move;
+import teambuilder.Moves;
 import teambuilder.Pokemon;
-import teambuilder.Range;
 import teambuilder.SpeciesList;
 import teambuilder.Type;
 
@@ -23,10 +23,35 @@ public class DamageCalc
 	
 	public static double[] getSinglesDamage(Pokemon attacker, Pokemon defender, Move move, Field field, boolean isCrit)
 	{
+
+		//since a lot of moves are 0 base power, there's no reason to go through the formula
+		//when they can't possibly do damage
+		if(move.getBasePower() == 0)
+			return new double[]{0,0};
 		//formula:
 		//{[(2 * level + 10) / 250] * attack/defense * base + 2 }*mods
 		//mods are stab, type effectiveness, crit, held items, and a random component
 		
+		if(attacker.getAbility().equals("pixilate"))
+		{
+			if(move.getType().equals(Type.Normal))
+				move.setType(Type.Ice);
+			move.setBasePower((int)(move.getBasePower()*1.3));
+		}
+		else if(attacker.getAbility().equals("aerilate"))
+		{
+			if(move.getType().equals(Type.Normal))
+				move.setType(Type.Flying);
+			move.setBasePower((int)(move.getBasePower()*1.3));
+		}
+		else if(attacker.getAbility().equals("refrigerate"))
+		{
+			if(move.getType().equals(Type.Normal))
+				move.setType(Type.Ice);
+			move.setBasePower((int)(move.getBasePower()*1.3));
+		}
+		if(attacker.getAbility().equals("normalize"))
+			move.setType(Type.Normal);
 		double levelmod = (attacker.getLevel()*2+10)/250.0;
 		double attack = 0;
 		double defense = 1;
@@ -84,27 +109,24 @@ public class DamageCalc
 		if(isCrit)
 			mods *= 1.5;
 		mods *= ItemBoost.getOffensiveBoost(move,attacker.getItem(),attacker,defender); //offensive items, e.g. life orb
-		System.out.println(ItemBoost.getOffensiveBoost(move,attacker.getItem(),attacker, defender));
 		mods *= ItemBoost.getDefensiveBoost(move,defender.getItem(),defender); //defensive items, e.g. assault vest
-		System.out.println(ItemBoost.getDefensiveBoost(move,defender.getItem(),defender));
 		mods *= AbilityBoost.getOffensiveBoost(attacker.getAbility(), attacker, defender, null, null, move, field, isCrit);
 		mods *= AbilityBoost.getDefensiveBoost(defender.getAbility(), attacker, defender, null, null, move, field);
-		System.out.println(mods);
 		for(FieldCondition fc : field.getSide2())
 		{
 			mods *= FieldConditionsBoost.getFieldConditionsBoost(fc, move, defender);
 		}
-		System.out.println(mods);
+		System.out.println("Move "+move.getName()+" by Pokemon "+attacker.getName()+" on Pokemon "+defender.getName()+": "+Arrays.toString(new double[]{before * mods * minMod,before * mods * maxMod}));
 		return new double[]{before * mods * minMod,before * mods * maxMod};
 	}
 	
 	public static void main(String[]args)
 	{
-		//Pokemon attaque = new Pokemon(SpeciesList.sylveon,"yourfaceon",Abilities.scrappy, Gender.Male, 100,Items.choicespecs,new int[]{331,149,166,350,296,156}, 331, new int[]{1,1,1,1,1});
-		//Pokemon defense = new Pokemon(SpeciesList.cofagrigus,"whourse",Abilities.runaway, Gender.Female, 100,Items.chopleberry,new int[]{394,167,256,140,394,166}, 394, new int[]{1,1,1,1,1});
-		//Move move = new Move(Type.Normal,"HopperVoice", "lesweed",Range.Opponent1, 65,42,0,false,false,false,1);
-		//Field field = new Field();
-		//field.add1(FieldCondition.LightScreen);
-		//System.out.println(Arrays.toString(getSinglesDamage(attaque,defense,move, field,false)));
+		Pokemon attaque = new Pokemon(new SpeciesList().sylveon,"yourfaceon",Abilities.scrappy, Gender.Male, 100,Items.choicespecs,new int[]{331,149,166,350,296,156}, 331, new int[]{1,1,1,1,1}, null);
+		Pokemon defense = new Pokemon(new SpeciesList().cofagrigus,"whourse",Abilities.runaway, Gender.Female, 100,Items.chopleberry,new int[]{394,167,256,140,394,166}, 394, new int[]{1,1,1,1,1}, null);
+		Move move = Moves.stockpile;
+		Field field = new Field();
+		field.add1(FieldCondition.LightScreen);
+		System.out.println(Arrays.toString(getSinglesDamage(attaque,defense,move, field,false)));
 	}
 }

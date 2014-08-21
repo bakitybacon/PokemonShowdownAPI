@@ -2,8 +2,8 @@ package teambuilder;
 
 public class Move 
 {
-	private final Type type;
-	private final int basepower;
+	private Type type;//this can be changed by refrigerate n stuff
+	private int basepower;//fling and things
 	private final boolean usesPhysDef;
 	private final Range range;
 	private final int pp;
@@ -94,5 +94,14 @@ public class Move
 	public int getAccuracy() 
 	{
 		return accuracy;
+	}
+	
+	public void setType(Type t)
+	{
+		type = t;
+	}
+	public void setBasePower(int bp)
+	{
+		basepower = bp;
 	}
 }

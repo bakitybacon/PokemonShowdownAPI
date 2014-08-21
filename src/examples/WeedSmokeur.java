@@ -20,13 +20,13 @@ public class WeedSmokeur
 			currline = fr.nextLine();
 			if(pokeNext)
 			{
-				System.out.print("new Move[]{");
+				System.out.print("public static final Move[] " + currline+ " = new Move[]{");
 				pokeNext = false;
 			}
 			else if(currline.endsWith("}}"))
 			{
 				pokeNext = true;
-				System.out.println("Moves."+currline.substring(0,currline.length()-2)+"}");
+				System.out.println("Moves."+currline.substring(0,currline.length()-2)+"};");
 			}
 			else 
 			{

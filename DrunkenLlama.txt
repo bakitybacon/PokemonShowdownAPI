@@ -1,0 +1,25 @@
+DrunkenLlama ideas
+
+On join: "Good luck!"
+
+Principal choice will be how many of the opposing Pokemon each poke can beat. 
+This will be done by calcing at max defense, middle defense, and min defense. 
+If the Pokemon scores an unconditional OHKO and avoids OHKO back(by outspeeding/surviving), it beats it.
+If it scores a 2HKO while avoiding 2HKO, it beats it, etc.
+To calculate defensive viability assume opponent Pokemon has stab moves with BP 70.
+This is likely because most fire types learn 80% of fire moves, etc. check on SpDef and def. 
+
+Each Pokemon gets +1 for every poke it beats, -1 for every one it fails to, +0 for unknown outcomes. Poke with highest score is sent out. 
+
+After opponent is sent out calc each move's damage.
+If the moves nasty plot or swords dance or metal sound or screech are available, they should be considered.
+If the opponent poke is faster, thunder wave should always be chosen.
+If the opponent is susceptible to burns and wow is an option and opponent has much higher atk then spa, wow should be considered.
+Any sleeping move should be considered.
+Any move less than 70 accuracy should be ignored unless the matchup is lost without it.
+
+Nasty plot/sd/screech/ms should be chosen if the strongest move does not OHKO. 
+
+After each move this process should be reevaluated. If poke is burned this can change the most powerful move, likewise opponent boosts.
+
+On result "Good game"

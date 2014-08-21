@@ -353,7 +353,7 @@ public class Client extends WebSocketClient
 			}
 	        System.out.println(obj);
 	        Object assertion = obj.get("assertion");
-	        send("|/trn spheal4ubers,0,"+assertion);
+	        send("|/trn "+uname+",0,"+assertion);
         }
         catch(IOException ioe)
         {
@@ -386,7 +386,6 @@ public class Client extends WebSocketClient
 			currentRoom.chatMessage(args[2],args[3]);
 			return;
 		}
-		
 	}
 	
 	public void deltaMessage(String msg)
@@ -426,8 +425,7 @@ public class Client extends WebSocketClient
 		Client ec = new Client(new URI("ws://sim.smogon.com:8000/showdown/websocket"));
 		ec.connectBlocking(); //running connect() will cause problems, so wait for it to finish
 		
-		
-		ec.sendMessage("","/search Challenge Cup 1-vs-1");
+		ec.join("battle-ou-141281206");
 		
 		System.out.println(ec.currentRoom.getMessages());
 	}

@@ -267,4 +267,21 @@ public class Items
 	public static final ResistBerry yacheberry = new ResistBerry("yacheberry", "Yache Berry", "Halves damage taken from a super effective Ice-type attack. Single use.",Type.Ice,4);
 	public static final Plate zapplate = new Plate("zapplate", "Zap Plate", "Holder's Electric-type attacks have 1.2x power. Judgment is Electric-type.", Type.Electric, 4);
 
+	public Item getByID(String id)
+	{
+		try 
+		{
+			java.lang.reflect.Field field = this.getClass().getDeclaredField(id.toLowerCase());
+			//below wants the instance of the class
+			//but since it is static, it is irrelevant what the instance is,
+			//so passing null will not create errors
+			Item item = (Item)field.get(null);
+			return item;
+		} 
+		catch (NoSuchFieldException | SecurityException | IllegalArgumentException | IllegalAccessException e) 
+		{
+			e.printStackTrace();
+			return null;
+		}
+	}
 }

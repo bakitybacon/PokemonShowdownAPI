@@ -18,4 +18,9 @@ public class Item
 	{
 		return id;
 	}
+	
+	public String toString()
+	{
+		return getClass().getName()+"["+name+"]";
+	}
 }

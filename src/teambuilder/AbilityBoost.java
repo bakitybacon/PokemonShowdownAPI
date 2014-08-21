@@ -1,7 +1,10 @@
 package teambuilder;
 
+
 public class AbilityBoost 
 {
+	
+	//ate boosts that change types are dealt with in the damagecalc thing because it changes types
 	public static final double tintedBoost = 2;
 	public static final double lowHPBoost = 1.5;
 	public static final double strongJawBoost = 1.5;
@@ -60,42 +63,6 @@ public class AbilityBoost
 			if(speed1 < speed2 && speed1 < speed3 && speed1 < speed4)
 				return 4/3.0;
 			return noBoost;
-		}
-		if(ability.getID().equals("aerilate"))
-		{
-			if(move.getType().equals(Type.Normal) && !move.getID().equals("hiddenpower"))
-			{
-				if(defense.weaknessModifier(Type.Flying) != defense.weaknessModifier(Type.Normal))
-					return defense.weaknessModifier(Type.Flying)*ateBoost;
-				return ateBoost;
-			}
-			return noBoost;
-		}
-		if(ability.getID().equals("pixilate"))
-		{
-			if(move.getType().equals(Type.Normal) && !move.getID().equals("hiddenpower"))
-			{
-				if(defense.weaknessModifier(Type.Fairy) != defense.weaknessModifier(Type.Normal))
-					return defense.weaknessModifier(Type.Fairy)*ateBoost;
-				return ateBoost;
-			}
-			return noBoost;
-		}
-		if(ability.getID().equals("refrigerate"))
-		{
-			if(move.getType().equals(Type.Normal) && !move.getID().equals("hiddenpower"))
-			{
-				if(defense.weaknessModifier(Type.Ice) != defense.weaknessModifier(Type.Normal))
-					return defense.weaknessModifier(Type.Ice)*ateBoost;
-				return ateBoost;
-			}
-			return noBoost;
-		}
-		if(ability.getID().equals("normalize"))
-		{
-			double one = defense.weaknessModifier(move.getType());
-			//undo bonuses/things from other moves
-			return 1/one * defense.weaknessModifier(Type.Normal);
 		}
 		if(ability.getID().equals("blaze"))
 		{

@@ -30,4 +30,8 @@ public class Ability
 	{
 		return shortdesc;
 	}
+	public String toString()
+	{
+		return getClass().getName()+"["+name+"]";
+	}
 }

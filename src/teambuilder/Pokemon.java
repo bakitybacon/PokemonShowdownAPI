@@ -1,6 +1,7 @@
 package teambuilder;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 
 public class Pokemon 
@@ -15,8 +16,9 @@ public class Pokemon
 	int[] boosts;
 	Ability ability;
 	Gender gender;
+	ArrayList<Move> moves;
 	
-	public Pokemon(Species species, String nick, Ability ability, Gender gender, int level, Item item, int[] stats, int currentHP, int[] boosts)
+	public Pokemon(Species species, String nick, Ability ability, Gender gender, int level, Item item, int[] stats, int currentHP, int[] boosts, ArrayList<Move> moves)
 	{
 		this.species = species;
 		this.nick = nick;
@@ -28,6 +30,79 @@ public class Pokemon
 		this.boosts = boosts;
 		this.ability = ability;
 		this.gender = gender;
+		this.moves = moves;
+	}
+	public Pokemon(Species species, Ability ability, Gender gender, int level, Item item, int[] stats, int currentHP, int[] boosts, ArrayList<Move> moves)
+	{
+		this.species = species;
+		this.nick = species.getSpecies();
+		this.level = level;
+		this.item = item;
+		this.stats = stats;
+		status.add(Status.Normal);
+		this.currentHP = currentHP;
+		this.boosts = boosts;
+		this.ability = ability;
+		this.gender = gender;
+		this.moves = moves;
+	}
+	public Pokemon(Species species, Ability ability, Gender gender, int level, Item item, int[] stats, int[] boosts, ArrayList<Move> moves)
+	{
+		this.species = species;
+		this.nick = species.getSpecies();
+		this.level = level;
+		this.item = item;
+		this.stats = stats;
+		status.add(Status.Normal);
+		this.currentHP = stats[0];
+		this.boosts = boosts;
+		this.ability = ability;
+		this.gender = gender;
+		this.moves = moves;
+	}
+	
+	public static ArrayList<Pokemon> getPokemonPossibilities(Species species, Gender gender, int level)
+	{
+		ArrayList<Ability> possabilities = new ArrayList<Ability>(Arrays.asList(species.getAbilities()));
+		
+		ArrayList<Pokemon> pokes = new ArrayList<>();
+		
+		int[] minstats = new int[]{species.getHPStat(level,0,0),species.getMinStatAtLevel(1,level),species.getMinStatAtLevel(2,level),
+				species.getMinStatAtLevel(3,level),species.getMinStatAtLevel(4,level),species.getMinStatAtLevel(5,level)};
+		
+		int[] midstats = new int[]{species.getHPStat(level,15,124),species.getMidStatAtLevel(1,level),species.getMidStatAtLevel(2,level)
+				,species.getMidStatAtLevel(5,level),species.getMidStatAtLevel(4,level),species.getMidStatAtLevel(3,level)};
+		
+		int[] maxstats = new int[]{species.getHPStat(level,31,255),species.getMaxStatAtLevel(1,level),species.getMaxStatAtLevel(2,level),
+				species.getMaxStatAtLevel(3,level),species.getMaxStatAtLevel(4,level),species.getMaxStatAtLevel(5,level)};
+		
+		for(Ability ab : possabilities)
+		{
+			ArrayList<Move> stabmoves = new ArrayList<>();
+			for(Type t : species.getTypes())
+			{
+				Move phys = new Move(t,"testmove:"+t+"phys","testmove:"+t+"phys","testmove:"+t+"phys","testmove:"+t+"phys", 
+						Range.Any1,100,70,420,0,true,true,true,false,new int[]{1});
+				Move spec = new Move(t,"testmove:"+t+"spec","testmove:"+t+"spec","testmove:"+t+"spec","testmove:"+t+"spec", 
+						Range.Any1,100,70,420,0,false,false,false,false,new int[]{1});
+				stabmoves.add(phys);
+				stabmoves.add(spec);
+			}
+			int[] boosts = new int[]{1,1,1,1,1};
+			
+			Pokemon min = new Pokemon(species, ab, gender, level, Items.pokeball,minstats,boosts,stabmoves);
+			Pokemon mid = new Pokemon(species, ab, gender, level, Items.pokeball,midstats,boosts,stabmoves);
+			Pokemon max = new Pokemon(species, ab, gender, level, Items.pokeball,maxstats,boosts,stabmoves);
+			pokes.add(min);
+			pokes.add(mid);
+			pokes.add(max);
+		}
+		return pokes;
+	}
+	
+	public Species getSpecies()
+	{
+		return species;
 	}
 	
 	public String getNickname()
@@ -106,6 +181,13 @@ public class Pokemon
 		return species.canEvolve();
 	}
 	
+	public ArrayList<Move> getMoves()
+	{
+		if(moves == null)
+			moves = species.getMovesFromFile();
+		return moves;
+	}
+	
 	public void addStatus(Status st)
 	{
 		status.add(st);
@@ -146,5 +228,17 @@ public class Pokemon
 	public Gender gender()
 	{
 		return gender;
+	}
+	public String toString()
+	{
+		return getClass().getName()+"[Species="+getSpeciesName()+",nick="+nick+",ability"+
+				ability+",gender="+gender+",item="+item+",stats="+Arrays.toString(stats)
+				+",currentHP="+currentHP+",boosts="+Arrays.toString(boosts)+",moves="+moves+"]";
+	}
+	
+	public static void main(String[]args)
+	{
+		Species species = new SpeciesList().arghonaut;
+		System.out.println(species.getMoves());
 	}
 }

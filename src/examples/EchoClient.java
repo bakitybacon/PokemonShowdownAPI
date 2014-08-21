@@ -4,6 +4,27 @@ import java.lang.System;
 
 class EchoClient
 {
+	
+	/*
+	http://sim.smogon.com:8080/Stats/2014-04/
+		http://sim.smogon.com:8080/Stats/2013-05/
+			http://sim.smogon.com:8080/Stats/2013-05/
+				http://sim.smogon.com:8080/Stats/2013-05/
+					http://sim.smogon.com:8080/Stats/2013-05/
+						http://sim.smogon.com:8080/Stats/2013-05/
+							http://sim.smogon.com:8080/Stats/2013-05/
+								http://sim.smogon.com:8080/Stats/2013-05/
+									http://sim.smogon.com:8080/Stats/2013-05/
+										http://sim.smogon.com:8080/Stats/2013-05/
+											http://sim.smogon.com:8080/Stats/2013-05/
+												http://sim.smogon.com:8080/Stats/2013-05/
+													http://sim.smogon.com:8080/Stats/2013-05/
+														http://sim.smogon.com:8080/Stats/2013-05/
+															http://sim.smogon.com:8080/Stats/2013-05/
+																http://sim.smogon.com:8080/Stats/2013-05/
+																	http://sim.smogon.com:8080/Stats/2013-05/
+																		http://sim.smogon.com:8080/Stats/2013-05/
+																*/
 	public static void main(String[] args)
 	{
 		System.out.println(kek("any"));
