@@ -533,12 +533,12 @@ public class SpeciesList
 	public final Species uxie = new Species(480,"Uxie",false,new Type[]{Type.Psychic},new int[]{75,75,130,75,130,95},new Ability[]{Abilities.levitate},null);
 	public final Species mesprit = new Species(481,"Mesprit",false,new Type[]{Type.Psychic},new int[]{80,105,105,105,105,80},new Ability[]{Abilities.levitate},null);
 	public final Species azelf = new Species(482,"Azelf",false,new Type[]{Type.Psychic},new int[]{75,125,70,125,70,115},new Ability[]{Abilities.levitate},null);
-	public final Species dialga = new Species(483,"Dialga",false,new Type[]{Type.Steel,Type.Dragon},new int[]{100,120,120,150,100,90},new Ability[]{Abilities.pressure}, Abilities.telepathy);
-	public final Species palkia = new Species(484,"Palkia",false,new Type[]{Type.Water,Type.Dragon},new int[]{90,120,100,150,120,100},new Ability[]{Abilities.pressure}, Abilities.telepathy);
+	public final static Species dialga = new Species(483,"Dialga",false,new Type[]{Type.Steel,Type.Dragon},new int[]{100,120,120,150,100,90},new Ability[]{Abilities.pressure}, Abilities.telepathy);
+	public final static Species palkia = new Species(484,"Palkia",false,new Type[]{Type.Water,Type.Dragon},new int[]{90,120,100,150,120,100},new Ability[]{Abilities.pressure}, Abilities.telepathy);
 	public final Species heatran = new Species(485,"Heatran",false,new Type[]{Type.Fire,Type.Steel},new int[]{91,90,106,130,106,77},new Ability[]{Abilities.flashfire}, Abilities.flamebody);
 	public final Species regigigas = new Species(486,"Regigigas",false,new Type[]{Type.Normal},new int[]{110,160,110,80,110,100},new Ability[]{Abilities.slowstart},null);
-	public final Species giratina = new Species(487,"Giratina",false,new Type[]{Type.Ghost,Type.Dragon},new int[]{150,100,120,100,120,90},new Ability[]{Abilities.pressure}, Abilities.telepathy);
-	public final Species giratinaorigin = new Species(487,"Giratina-Origin",false,new Type[]{Type.Ghost,Type.Dragon},new int[]{150,120,100,120,100,90},new Ability[]{Abilities.levitate},null);
+	public final static Species giratina = new Species(487,"Giratina",false,new Type[]{Type.Ghost,Type.Dragon},new int[]{150,100,120,100,120,90},new Ability[]{Abilities.pressure}, Abilities.telepathy);
+	public final static Species giratinaorigin = new Species(487,"Giratina-Origin",false,new Type[]{Type.Ghost,Type.Dragon},new int[]{150,120,100,120,100,90},new Ability[]{Abilities.levitate},null);
 	public final Species cresselia = new Species(488,"Cresselia",false,new Type[]{Type.Psychic},new int[]{120,70,120,75,130,85},new Ability[]{Abilities.levitate},null);
 	public final Species phione = new Species(489,"Phione",false,new Type[]{Type.Water},new int[]{80,80,80,80,80,80},new Ability[]{Abilities.hydration},null);
 	public final Species manaphy = new Species(490,"Manaphy",false,new Type[]{Type.Water},new int[]{100,100,100,100,100,100},new Ability[]{Abilities.hydration},null);

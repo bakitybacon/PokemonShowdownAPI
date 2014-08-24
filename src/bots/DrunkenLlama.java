@@ -169,7 +169,7 @@ public class DrunkenLlama extends WebSocketClient
 				Move move = new Moves().getByID(mstring);
 				movelist.add(move);
 			}
-			Pokemon pokemon = new Pokemon(species,ability,gender,level,item,statarray,new int[]{1,1,1,1,1},movelist);
+			Pokemon pokemon = new Pokemon(species,ability,gender,level,item,statarray,new double[]{1,1,1,1,1},movelist);
 			team.add(pokemon);
 			System.out.println(pokemon);
 		}

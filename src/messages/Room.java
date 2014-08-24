@@ -5,6 +5,7 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.math.BigInteger;
+import java.net.URL;
 import java.security.MessageDigest;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -31,6 +32,7 @@ public abstract class Room
 	
 	public static Color getNameColor(String name)
 	{
+		name = name.toLowerCase().replaceAll("[^a-z0-9]+","");
 		if(cache.containsKey(name))
 			return(cache.get(name));
 			
@@ -49,12 +51,13 @@ public abstract class Room
 			  hashtext = "0"+hashtext;
 			}
 			System.out.println(Long.parseLong(hashtext.substring(4,8), 16) % 50 + 50);
-			int s = (int)(Long.parseLong(hashtext.substring(4,8), 16) % 50 + 50);
+			int s = (int)(Long.parseLong(hashtext.substring(0,4), 16) % 50 + 50);
 			System.out.println(Long.parseLong(hashtext.substring(0,4), 16) % 360);
-			int h = (int)(Long.parseLong(hashtext.substring(0,4), 16) % 360);
+			int h = (int)(Long.parseLong(hashtext.substring(4,8), 16) % 360);
 			System.out.println(Long.parseLong(hashtext.substring(8,12), 16) % 20 + 25);
 			int l = (int)(Long.parseLong(hashtext.substring(8,12), 16) % 20 + 25);
 			cache.put(name,HSLColor.toRGB(h,s,l));
+			System.out.println(hashtext);
 			return HSLColor.toRGB(h,s,l);
 		}
 		catch(Exception e)
@@ -71,7 +74,8 @@ public abstract class Room
 			avatar = "0"+avatar;
 		try 
 		{
-			BufferedImage bi = ImageIO.read(new File("sprites/trainers/"+avatar+".png"));
+			URL url = new URL("http://play.pokemonshowdown.com/sprites/trainers-ordered/"+avatar+".png");
+			BufferedImage bi = ImageIO.read(url);
 			return bi;
 		} 
 		catch (IOException e) 
@@ -83,16 +87,23 @@ public abstract class Room
 	
 	public static void main(String[]args) throws Exception
 	{
+		
 		JFrame jf = new JFrame();
 		jf.setSize(500,500);
 		jf.setDefaultCloseOperation(3);
+		
+		Color color = getNameColor("Magma Admin~");
+		JLabel jl = new JLabel("Magma Admin~");
+		jl.setForeground(color);
+		jf.add(jl);
 		jf.setVisible(true);
-		JLabel jl = new JLabel("meme");
+		/*
 		for(int i = 1;i < 294; i++)
 		{
 			jl = new JLabel(new ImageIcon(resolveAvatar(i)));
 			jf.add(jl);
 			Thread.sleep(500);
 		}
+		*/
 	}
 }

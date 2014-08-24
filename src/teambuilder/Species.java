@@ -236,4 +236,8 @@ public class Species
 		Species garch = new SpeciesList().garchomp;
 		System.out.println(garch.getHPStat(78,12,195));
 	}
+	public String getID() 
+	{
+		return species.toLowerCase().replaceAll("[^a-z0-9]","");
+	}
 }

@@ -5,7 +5,7 @@ public class Items
 	public static final Item abomasite = new Item("abomasite", "Abomasite", "Mega-evolves Abomasnow.",6);
 	public static final Item absolite = new Item("absolite", "Absolite", "Mega-evolves Absol.",6);
 	public static final Item absorbbulb = new Item("absorbbulb", "Absorb Bulb", "Raises Sp. Atk by 1 if hit by a Water-type attack. Single use.",5);
-	public static final TimeSpaceOrb adamantorb = new TimeSpaceOrb("adamantorb", "Adamant Orb", "If holder is a Dialga, its Steel- and Dragon-type attacks have 1.2x power.", new Type[]{Type.Steel,Type.Dragon}, 4);
+	public static final TimeSpaceOrb adamantorb = new TimeSpaceOrb(SpeciesList.dialga,"adamantorb", "Adamant Orb", "If holder is a Dialga, its Steel- and Dragon-type attacks have 1.2x power.", new Type[]{Type.Steel,Type.Dragon}, 4);
 	public static final Item aerodactylite = new Item("aerodactylite", "Aerodactylite", "Mega-evolves Aerodactyl.",6);
 	public static final Item aggronite = new Item("aggronite", "Aggronite", "Mega-evolves Aggron.",6);
 	public static final Item aguavberry = new Item("aguavberry", "Aguav Berry", "Restores 1/8 max HP when at 1/2 max HP or less. May confuse. Single use.",3);
@@ -96,7 +96,7 @@ public class Items
 	public static final Item greatball = new Item("greatball", "Great Ball", "A high-performance Ball that provides a higher catch rate than a Poke Ball.",1);
 	public static final Item grepaberry = new Item("grepaberry", "Grepa Berry", "No competitive use.",3);
 	public static final Item gripclaw = new Item("gripclaw", "Grip Claw", "Holder's partial-trapping moves always last 7 turns.",4);
-	public static final TimeSpaceOrb griseousorb = new TimeSpaceOrb("griseousorb", "Griseous Orb", "If holder is a Giratina, its Ghost- and Dragon-type attacks have 1.2x power.", new Type[]{Type.Ghost,Type.Dragon}, 4);
+	public static final TimeSpaceOrb griseousorb = new TimeSpaceOrb(SpeciesList.giratinaorigin,"griseousorb", "Griseous Orb", "If holder is a Giratina, its Ghost- and Dragon-type attacks have 1.2x power.", new Type[]{Type.Ghost,Type.Dragon}, 4);
 	public static final Gem groundgem = new Gem("groundgem", "Ground Gem", "Holder's first successful Ground-type attack will have 1.3x power. Single use.", Type.Ground, 5);
 	public static final Item gyaradosite = new Item("gyaradosite", "Gyaradosite", "Mega-evolves Gyarados.",6);
 	public static final ResistBerry habanberry = new ResistBerry("habanberry", "Haban Berry", "Halves damage taken from a super effective Dragon-type attack. Single use.",Type.Dragon,4);
@@ -140,7 +140,7 @@ public class Items
 	public static final Item lumberry = new Item("lumberry", "Lum Berry", "Holder cures itself if it is confused or has a major status problem. Single use.",3);
 	public static final Item luminousmoss = new Item("luminousmoss", "Luminous Moss", "Raises Special Defense by 1 if hit by a Water-type attack. Single use.",6);
 	public static final Item lureball = new Item("lureball", "Lure Ball", "A Poke Ball for catching Pokemon hooked by a Rod when fishing.",2);
-	public static final TimeSpaceOrb lustrousorb = new TimeSpaceOrb("lustrousorb", "Lustrous Orb", "If holder is a Palkia, its Water- and Dragon-type attacks have 1.2x power.", new Type[]{Type.Water,Type.Dragon}, 4);
+	public static final TimeSpaceOrb lustrousorb = new TimeSpaceOrb(SpeciesList.palkia,"lustrousorb", "Lustrous Orb", "If holder is a Palkia, its Water- and Dragon-type attacks have 1.2x power.", new Type[]{Type.Water,Type.Dragon}, 4);
 	public static final Item luxuryball = new Item("luxuryball", "Luxury Ball", "A comfortable Poke Ball that makes a caught wild Pokemon quickly grow friendly.",3);
 	public static final Item machobrace = new Item("machobrace", "Macho Brace", "Holder's Speed is halved.",3);
 	public static final TypeBoostingItem magnet = new TypeBoostingItem("magnet", "Magnet", "Holder's Electric-type attacks have 1.2x power.",Type.Electric,2);

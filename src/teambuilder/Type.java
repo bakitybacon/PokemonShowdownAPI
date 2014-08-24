@@ -57,7 +57,7 @@ public enum Type
 		 }
 	 }
 	 
-	 static double getEffectiveness(Type one, Type two)
+	 public static double getEffectiveness(Type one, Type two)
 	 {
 		 switch(one)
 		 {

@@ -193,6 +193,7 @@ public class Abilities
 	public static final Ability mountaineer = new Ability("Mountaineer","mountaineer","This Pokémon avoids all Rock-type attacks and hazards when switching in.","On switch-in, this Pokemon avoids all Rock-type attacks and Stealth Rock.");
 	public static final Ability rebound = new Ability("Rebound","rebound","It can reflect the effect of status moves when switching in.","On switch-in, this Pokemon blocks certain status moves and uses the move itself.");
 	public static final Ability persistent = new Ability("Persistent","persistent","Increases the duration of many field effects by two turns when used by this Pokémon.","The duration of certain field effects is increased by 2 turns if used by this Pokemon.");
+	public static final Ability nothing = new Ability("nothing","nothing","nothing","nothing");
 
 	public Ability getByID(String id)
 	{
