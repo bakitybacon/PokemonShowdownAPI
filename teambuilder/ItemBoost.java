@@ -1,5 +1,15 @@
 package teambuilder;
 
+import teambuilder.Gem;
+import teambuilder.Item;
+import teambuilder.Move;
+import teambuilder.Plate;
+import teambuilder.Pokemon;
+import teambuilder.ResistBerry;
+import teambuilder.TimeSpaceOrb;
+import teambuilder.Type;
+import teambuilder.TypeBoostingItem;
+
 public class ItemBoost 
 {
 	public static final double lightBallBoost = 2;

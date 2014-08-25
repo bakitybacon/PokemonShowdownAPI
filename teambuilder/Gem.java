@@ -9,7 +9,7 @@ public class Gem extends Item
 		super(name,id,desc,gen);
 		boostedType = type;
 	}
-	Type boostedType()
+	public Type boostedType()
 	{
 		return boostedType;
 	}

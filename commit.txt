@@ -1,0 +1,30 @@
+Redid damage calculator
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Changes to be committed:
+#	deleted:    .settings/org.eclipse.jdt.core.prefs
+#	modified:   src/bots/DrunkenLlama.java
+#	modified:   src/damage/DamageCalc.java
+#	modified:   src/messages/Room.java
+#	modified:   src/teambuilder/Abilities.java
+#	modified:   src/teambuilder/Field.java
+#	modified:   src/teambuilder/FieldCondition.java
+#	modified:   src/teambuilder/Items.java
+#	modified:   src/teambuilder/Plate.java
+#	modified:   src/teambuilder/Pokemon.java
+#	modified:   src/teambuilder/Species.java
+#	modified:   src/teambuilder/SpeciesList.java
+#	modified:   src/teambuilder/Status.java
+#	modified:   src/teambuilder/TimeSpaceOrb.java
+#	modified:   src/teambuilder/Type.java
+#
+# Changes not staged for commit:
+#	modified:   .gitignore
+#
+# Untracked files:
+#	.gitignore~
+#	damage.js
+#	damagecalc
+#

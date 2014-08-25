@@ -1,5 +1,7 @@
 package teambuilder;
 
+import teambuilder.TypeBoostingItem;
+
 public class Items 
 {
 	public static final Item abomasite = new Item("abomasite", "Abomasite", "Mega-evolves Abomasnow.",6);

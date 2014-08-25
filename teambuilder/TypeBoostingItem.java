@@ -1,7 +1,9 @@
 package teambuilder;
 
+
 public class TypeBoostingItem extends Item
 {
+
 	Type boostedType;
 	public TypeBoostingItem(String name, String id, String desc, Type type, int gen)
 	{
@@ -12,4 +14,5 @@ public class TypeBoostingItem extends Item
 	{
 		return boostedType;
 	}
+
 }

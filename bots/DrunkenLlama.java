@@ -21,6 +21,7 @@ import org.json.simple.JSONValue;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
+import damage.DamageCalc;
 import teambuilder.Abilities;
 import teambuilder.Ability;
 import teambuilder.Field;
@@ -32,7 +33,6 @@ import teambuilder.Moves;
 import teambuilder.Pokemon;
 import teambuilder.Species;
 import teambuilder.SpeciesList;
-import damage.DamageCalc;
 
 public class DrunkenLlama extends WebSocketClient
 {
