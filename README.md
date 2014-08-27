@@ -19,7 +19,7 @@ Copied Honko's damagecalc by basically translating it into Java.
 The JS can be found at http://pokemonshowdown.com/damagecalc/damage.js.
 
 Currently, I need to:
-* finish damage calculator
+* finish testing damage calculator
 
 * translate battle messages to plain text (and figure out what those are)
 
