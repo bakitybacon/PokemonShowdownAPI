@@ -24,3 +24,12 @@ Currently, I need to:
 * translate battle messages to plain text (and figure out what those are)
 
 * figure out how to resolve the 403 while getting certain files
+
+Libraries
+---------
+
+
+TooTallNate's Java Websocket (https://github.com/TooTallNate/Java-WebSocket/)
+
+
+JSON.simple (https://code.google.com/p/json-simple/)
