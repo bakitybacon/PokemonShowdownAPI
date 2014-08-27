@@ -18,6 +18,7 @@ public class Pokemon
 	Ability ability;
 	Gender gender;
 	ArrayList<Move> moves;
+	Type[] types;
 	
 	static ArrayList<Double> statstages = new ArrayList<Double>();
 	static ArrayList<Double> evstages = new ArrayList<Double>();
@@ -45,6 +46,7 @@ public class Pokemon
 		this.ability = ability;
 		this.gender = gender;
 		this.moves = moves;
+		types = species.getTypes();
 	}
 	public Pokemon(Species species, Ability ability, Gender gender, int level, Item item, int[] stats, int currentHP, double[] boosts, ArrayList<Move> moves)
 	{
@@ -63,6 +65,7 @@ public class Pokemon
 		this.ability = ability;
 		this.gender = gender;
 		this.moves = moves;
+		types = species.getTypes();
 	}
 	public Pokemon(Species species, Ability ability, Gender gender, int level, Item item, int[] stats, double[] boosts, ArrayList<Move> moves)
 	{
@@ -81,6 +84,7 @@ public class Pokemon
 		this.ability = ability;
 		this.gender = gender;
 		this.moves = moves;
+		types = species.getTypes();
 	}
 	
 	public static ArrayList<Pokemon> getPokemonPossibilities(Species species, Gender gender, int level)
@@ -141,7 +145,7 @@ public class Pokemon
 	}
 	public Type[] getTypes()
 	{
-		return species.getTypes();
+		return types;
 	}
 	public Ability[] getAbilities()
 	{
@@ -169,7 +173,7 @@ public class Pokemon
 	}
 	public boolean getsStabFrom(Move m)
 	{
-		for(Type t : species.getTypes())
+		for(Type t : types)
 		{
 			if(t.equals(m.getType()))
 				return true;
@@ -179,7 +183,7 @@ public class Pokemon
 	public double weaknessModifier(Type type)
 	{
 		double mod = 1;
-		for(Type t : species.getTypes())
+		for(Type t : types)
 		{
 			mod *= Type.getEffectiveness(type, t);
 		}
@@ -237,15 +241,6 @@ public class Pokemon
 	public Ability getAbility()
 	{
 		return ability;
-	}
-	public boolean getsSandBoost()
-	{
-		for(Type t : getTypes())
-		{
-			if(t.equals(Type.Steel) || t.equals(Type.Rock) || t.equals(Type.Ground))
-				return true;
-		}
-		return false;
 	}
 	public Gender gender()
 	{
@@ -432,5 +427,18 @@ public class Pokemon
 	public boolean isPoisoned()
 	{
 		return status.contains(Status.Poison) || status.contains(Status.Toxic);
+	}
+	public boolean isType(Type type)
+	{
+		for(Type t : types)
+		{
+			if(t.equals(type))
+				return true;
+		}
+		return false;
+	}
+	public void setTypes(Type[] types) 
+	{
+		this.types = types;
 	}
 }

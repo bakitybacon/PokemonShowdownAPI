@@ -120,4 +120,16 @@ public class Field extends ArrayList<ArrayList<FieldCondition>>
 			return true;
 		return false;
 	}
+	public boolean isReflect() 
+	{
+		if(side2.contains(FieldCondition.Reflect))
+			return true;
+		return false;
+	}
+	public boolean Lightscreen() 
+	{
+		if(side2.contains(FieldCondition.LightScreen))
+			return true;
+		return false;
+	}
 }

@@ -504,7 +504,7 @@ public class SpeciesList
 	public final Species lumineon = new Species(457,"Lumineon",false,new Type[]{Type.Water},new int[]{69,69,76,69,86,91},new Ability[]{Abilities.swiftswim,Abilities.stormdrain},Abilities.waterveil);
 	public final Species mantyke = new Species(458,"Mantyke",true,new Type[]{Type.Water,Type.Flying},new int[]{45,20,50,60,120,50},new Ability[]{Abilities.swiftswim,Abilities.waterabsorb},Abilities.waterveil);
 	public final Species snover = new Species(459,"Snover",true,new Type[]{Type.Grass,Type.Ice},new int[]{60,62,50,62,60,40},new Ability[]{Abilities.snowwarning}, Abilities.soundproof);
-	public final Species abomasnow = new Species(460,"Abomasnow",false,new Type[]{Type.Grass,Type.Ice},new int[]{90,92,75,92,85,60},new Ability[]{Abilities.snowwarning}, Abilities.soundproof);
+	public final static Species abomasnow = new Species(460,"Abomasnow",false,new Type[]{Type.Grass,Type.Ice},new int[]{90,92,75,92,85,60},new Ability[]{Abilities.snowwarning}, Abilities.soundproof);
 	public final Species abomasnowmega = new Species(460,"Abomasnow-Mega",false,new Type[]{Type.Grass,Type.Ice},new int[]{90,132,105,132,105,30},new Ability[]{Abilities.snowwarning},null);
 	public final Species weavile = new Species(461,"Weavile",false,new Type[]{Type.Dark,Type.Ice},new int[]{70,120,65,45,85,125},new Ability[]{Abilities.pressure}, Abilities.pickpocket);
 	public final Species magnezone = new Species(462,"Magnezone",false,new Type[]{Type.Electric,Type.Steel},new int[]{70,70,115,130,90,60},new Ability[]{Abilities.magnetpull,Abilities.sturdy},Abilities.analytic);
@@ -553,7 +553,7 @@ public class SpeciesList
 	public final Species arceusfairy = new Species(493,"Arceus-Fairy",false,new Type[]{Type.Fairy},new int[]{120,120,120,120,120,120},new Ability[]{Abilities.multitype},null);
 	public final Species arceusfighting = new Species(493,"Arceus-Fighting",false,new Type[]{Type.Fighting},new int[]{120,120,120,120,120,120},new Ability[]{Abilities.multitype},null);
 	public final Species arceusfire = new Species(493,"Arceus-Fire",false,new Type[]{Type.Fire},new int[]{120,120,120,120,120,120},new Ability[]{Abilities.multitype},null);
-	public final Species arceusflying = new Species(493,"Arceus-Flying",false,new Type[]{Type.Flying},new int[]{120,120,120,120,120,120},new Ability[]{Abilities.multitype},null);
+	public final static Species arceusflying = new Species(493,"Arceus-Flying",false,new Type[]{Type.Flying},new int[]{120,120,120,120,120,120},new Ability[]{Abilities.multitype},null);
 	public final Species arceusghost = new Species(493,"Arceus-Ghost",false,new Type[]{Type.Ghost},new int[]{120,120,120,120,120,120},new Ability[]{Abilities.multitype},null);
 	public final Species arceusgrass = new Species(493,"Arceus-Grass",false,new Type[]{Type.Grass},new int[]{120,120,120,120,120,120},new Ability[]{Abilities.multitype},null);
 	public final Species arceusground = new Species(493,"Arceus-Ground",false,new Type[]{Type.Ground},new int[]{120,120,120,120,120,120},new Ability[]{Abilities.multitype},null);
@@ -788,7 +788,7 @@ public class SpeciesList
 	public final Species sylveon = new Species(700,"Sylveon",false,new Type[]{Type.Fairy},new int[]{95,65,65,110,130,60},new Ability[]{Abilities.cutecharm}, Abilities.pixilate);
 	public final Species hawlucha = new Species(701,"Hawlucha",false,new Type[]{Type.Fighting,Type.Flying},new int[]{78,92,75,74,63,118},new Ability[]{Abilities.limber,Abilities.unburden},Abilities.moldbreaker);
 	public final Species dedenne = new Species(702,"Dedenne",false,new Type[]{Type.Electric,Type.Fairy},new int[]{67,58,57,81,67,101},new Ability[]{Abilities.cheekpouch,Abilities.pickup},Abilities.plus);
-	public final Species carbink = new Species(703,"Carbink",false,new Type[]{Type.Rock,Type.Fairy},new int[]{50,50,150,50,150,50},new Ability[]{Abilities.clearbody}, Abilities.sturdy);
+	public final static Species carbink = new Species(703,"Carbink",false,new Type[]{Type.Rock,Type.Fairy},new int[]{50,50,150,50,150,50},new Ability[]{Abilities.clearbody}, Abilities.sturdy);
 	public final Species goomy = new Species(704,"Goomy",true,new Type[]{Type.Dragon},new int[]{45,50,35,55,75,40},new Ability[]{Abilities.sapsipper,Abilities.hydration},Abilities.gooey);
 	public final Species sliggoo = new Species(705,"Sliggoo",true,new Type[]{Type.Dragon},new int[]{68,75,53,83,113,60},new Ability[]{Abilities.sapsipper,Abilities.hydration},Abilities.gooey);
 	public final Species goodra = new Species(706,"Goodra",false,new Type[]{Type.Dragon},new int[]{90,100,70,110,150,80},new Ability[]{Abilities.sapsipper,Abilities.hydration},Abilities.gooey);

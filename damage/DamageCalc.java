@@ -8,16 +8,15 @@ import teambuilder.Abilities;
 import teambuilder.Ability;
 import teambuilder.Field;
 import teambuilder.FieldCondition;
-import teambuilder.FieldConditionsBoost;
 import teambuilder.Gem;
 import teambuilder.Gender;
 import teambuilder.Item;
-import teambuilder.ItemBoost;
 import teambuilder.Items;
 import teambuilder.Move;
 import teambuilder.Moves;
 import teambuilder.Plate;
 import teambuilder.Pokemon;
+import teambuilder.ResistBerry;
 import teambuilder.SpeciesList;
 import teambuilder.Status;
 import teambuilder.TimeSpaceOrb;
@@ -26,11 +25,9 @@ import teambuilder.TypeBoostingItem;
 
 public class DamageCalc
 {
-	public static final double minMod = 0.85;
-	public static final double maxMod = 1;
+	public static final double divisor = 0x1000;
 	
 	public static final Ability[] moldbreakers = new Ability[]{Abilities.moldbreaker,Abilities.turboblaze,Abilities.teravolt};
-	
 	public static final ArrayList<Ability> waterimmune = new ArrayList<>();
 	public static final ArrayList<Ability> eleimmune = new ArrayList<>();
 	public static final ArrayList<Move> bullets = new ArrayList<>();
@@ -65,10 +62,7 @@ public class DamageCalc
 	public static double[] getSinglesDamage(Pokemon attacker, Pokemon defender, Move move, Field field, boolean isCrit)
 	{
 
-		//since a lot of moves are 0 base power, there's no reason to go through the formula
-		//when they can't possibly do damage
-		if(move.getBasePower() == 0)
-			return new double[]{0,0};
+		
 		//formula:
 		//{[(2 * level + 10) / 250] * attack/defense * base + 2 }*mods
 		//mods are stab, type effectiveness, crit, held items, and a random component
@@ -80,9 +74,11 @@ public class DamageCalc
 		attacker = checkKlutz(attacker);
 		defender = checkKlutz(defender);
 		
-		if(defender.getAbility().equals(Abilities.intimidate))
+		String id = attacker.getAbility().getID();
+		String did = defender.getAbility().getID();
+		
+		if(did.equals("intimidate"))
 		{
-			String id = attacker.getAbility().getID();
 			if(id.equals("contrary") || id.equals("defiant"))
 					attacker.increaseAttack(1);
 			else if(id.equals("clearbody") || id.equals("whitesmoke")
@@ -92,24 +88,39 @@ public class DamageCalc
 			else attacker.decreaseAttack(1);
 		}
 		
-		if(defender.getAbility().equals(Abilities.download))
+		if(id.equals("download"))
 		{
 			if(defender.getStats()[4] >= defender.getStats()[2])
-				attacker.increaseSpAttack(1);
-			else attacker.increaseAttack(1);
+			{
+				attacker.increaseAttack(1);
+			}
+			else attacker.increaseSpAttack(1);
+		}
+		
+		if(id.equals("forecast"))
+		{
+			attacker = checkForecast(attacker,field);
+		}
+		if(did.equals("forecast"))
+		{
+			defender = checkForecast(defender,field);
 		}
 		
 		field = checkInfiltrator(attacker, field);
 		
-		if(isCrit && (defender.getAbility().equals(Abilities.shellarmor) || defender.getAbility().equals(Abilities.battlearmor)))
-		{
-			isCrit = false;
-		}
-		
 		for(Ability a : moldbreakers)
 		{
 			if(a.equals(attacker.getAbility()))
+			{
 				defender.setAbility(Abilities.nothing);
+				did = "nothing";
+			}
+		}
+		
+		
+		if((isCrit && (did.equals("shellarmor")) || (did.equals("battlearmor"))))
+		{
+			isCrit = false;
 		}
 		
 		////////////////////////////
@@ -127,10 +138,44 @@ public class DamageCalc
 	                : Type.Normal);
 		}
 		
-		if(mid.equals("judgment") && attacker.getItem() instanceof Plate)
+		else if(mid.equals("judgment") && attacker.getItem() instanceof Plate)
 		{
 			move.setType(((Plate)attacker.getItem()).boostedType());
 		}
+		
+		else if(mid.equals("seismictoss") || mid.equals("nightshade"))
+		{
+			int level = attacker.getLevel();
+			if(attackab.getID().equals("parentalbond"))
+				return new double[]{2 * level,2 * level};
+			return new double[]{level,level};	
+		}
+		
+		double weakness = 1;
+		//instead of just checking for two, i'm now checking for every type since trick-or-treat now exists
+		for(Type t : defender.getTypes())
+		{
+		weakness *= getMoveEffectiveness(move,t,field.isForesight() || defenseab.getID().equals("scrappy"),field.isGravity());
+		}
+		if(weakness == 0)
+			return new double[]{0,0};
+		
+		if((did.equals("wonderguard") && weakness <= 1) ||
+				(move.getType().equals(Type.Grass) && did.equals("sapsipper")) || 
+				(move.getType().equals(Type.Fire) && did.equals("flashfire")) ||
+				(move.getType().equals(Type.Water) && waterimmune.contains(defenseab)) ||
+				(move.getType().equals(Type.Electric) && eleimmune.contains(defenseab)) ||
+			    (move.getType().equals(Type.Ground) && !field.isGravity() && defenseab.getID().equals("levitate")) ||
+				 (bullets.contains(move) && did.equals("bulletproof")) ||
+				 (sounds.contains(move) && did.equals("soundproof")))
+			{
+					return new double[]{0,0};
+			}
+		
+		
+
+		if(move.getType().equals(Type.Ground) && !field.isGravity() && defender.getItem().getID().equals("airballoon"))
+			 return new double[]{0,0};
 		
 		
 			////////////////////////////
@@ -214,14 +259,17 @@ public class DamageCalc
 		}
 		
 		int basepower = move.getBasePower();
+
+		//since a lot of moves are 0 base power, there's no reason to go through the formula
+		//when they can't possibly do damage
+		if(move.getBasePower() == 0)
+			return new double[]{0,0};
 		
 		///////////////////////////////
 		// changing bp based on mods //
 		///////////////////////////////
 		
 		ArrayList<Integer> bpmod = new ArrayList<>();
-		
-		String id = attackab.getID();
 		
 		if(id.equals("techinician") && basepower <= 60 ||
 				id.equals("flareboost") && attacker.isBurned() && !move.isPhysical() ||
@@ -240,15 +288,6 @@ public class DamageCalc
 			if(types.contains(move.getType()))
 				bpmod.add(0x14CD);
 		}
-		else if(id.equals("sandforce") && field.isSandstorm())
-		{
-			ArrayList<Type> types = new ArrayList<Type>();
-			types.add(Type.Ground);
-			types.add(Type.Rock);
-			types.add(Type.Steel);
-			if(types.contains(move.getType()))
-				bpmod.add(0x14CD);
-		}
 		
 		else if(id.equals("reckless") && reckless.contains(move) ||
 				id.equals("ironfist") && ironfist.contains(move))
@@ -257,8 +296,6 @@ public class DamageCalc
 		}
 		else if(id.equals("sheerforce") && move.hasSecondaryEffect())
 			bpmod.add(0x14CD);
-		
-		String did = defenseab.getID();
 		
 		if(did.equals("heatproof") && move.getType().equals(Type.Fire))
 			bpmod.add(0x800);
@@ -275,6 +312,12 @@ public class DamageCalc
 		else if(i instanceof Gem)
 		{
 			bpmod.add(0x14CD);
+		}
+		else if(i instanceof Plate)
+		{
+			Plate plate = (Plate)i;
+			if(move.getType().equals(plate.boostedType()))
+				bpmod.add(0x1333);
 		}
 		else if(i.getID().equals("muscleband") && move.isPhysical() ||
 				i.getID().equals("wiseglasses") && !move.isPhysical())
@@ -347,8 +390,7 @@ public class DamageCalc
 				defender.getSpecies().getID().matches("arceus") && i instanceof Plate)
 			bpmod.add(0x1800);
 		
-		basepower = Math.max(1, pokeRound(basepower * chainMods(bpmod) / 0x1000));
-		
+		basepower = Math.max(1, pokeRound(basepower * chainMods(bpmod) / divisor));
 		
 		////////////
 		// ATTACK //
@@ -426,73 +468,150 @@ public class DamageCalc
 			attackmod.add(0x1800);
 		}
 		
-		attack = Math.max(1,pokeRound(attack * chainMods(attackmod)/0x1000));
-				
-				
+		attack = Math.max(1,pokeRound(attack * chainMods(attackmod)/divisor));
 		
 		if(move.usesPhysDef())
 		{
+			if(attackab.getID().equals("unaware"))
+				defense = attacker.getStats()[2];
 			if(isCrit && defender.getBoosts()[1] > 1)
 				defense = defender.getStats()[2];
-			defense = defender.getStats()[2] * defender.getBoosts()[1];
+			else defense = defender.getStats()[2] * defender.getBoosts()[1];
 		}
 		else
 		{
-			if(isCrit && defender.getBoosts()[1] > 1)
-				defense = defender.getStats()[2];
-			defense = defender.getStats()[4] * defender.getBoosts()[3];
+			if(attackab.getID().equals("unaware"))
+				defense = attacker.getStats()[4];
+			if(isCrit && defender.getBoosts()[3] > 1)
+				defense = defender.getStats()[4];
+			else defense = defender.getStats()[4] * defender.getBoosts()[3];
 		}
-		double defensemod = attack/defense;
-		double levelmod = (attacker.getLevel()*2+10)/250.0;
-		double before = levelmod * defensemod * basepower + 2;
-		double mods = 1;
-		if(attacker.getsStabFrom(move))
-					mods *= 1500;
 		
-		double weakness = 1;
-		//instead of just checking for two, i'm now checking for every type since trick-or-treat now exists
-		for(Type t : defender.getTypes())
+		if(field.isSandstorm() && (defender.isType(Type.Rock)))
 		{
-			weakness *= getMoveEffectiveness(move,t,field.isForesight() || defenseab.getID().equals("scrappy"),field.isGravity());
-		}
-		if(weakness == 0)
-			return new double[]{0,0};
-		
-		if((defenseab.getID().equals("wonderguard") && weakness <= 1) ||
-			move.getType().equals(Type.Grass) && defenseab.getID().equals("sapsipper") || 
-			 move.getType().equals(Type.Fire) && defenseab.getID().equals("flashfire") ||
-			 move.getType().equals(Type.Water) && waterimmune.contains(defenseab) ||
-			 move.getType().equals(Type.Electric) && eleimmune.contains(defenseab) ||
-			 move.getType().equals(Type.Ground) && !field.isGravity() && defenseab.getID().equals("levitate") ||
-			 bullets.contains(move) && defenseab.getID().equals("bulletproof") ||
-			 sounds.contains(move) && defenseab.getID().equals("soundproof"))
-		{
-				return new double[]{0,0};
-		}
-		if(move.getType().equals(Type.Ground) && !field.isGravity() && defender.getItem().getID().equals("airballoon"))
-			 return new double[]{0,0};
-		
-		if(mid.equals("seismictoss") || mid.equals("nightshade"))
-		{
-			int level = attacker.getLevel();
-			if(attackab.getID().equals("attackab"))
-				return new double[]{2 * level,2 * level};
-			return new double[]{level,level};
+			defense = pokeRound(defense * 3 / 2.0);
 		}
 		
+		ArrayList<Integer> defmod = new ArrayList<>();
+		if(did.equals("marvelscale") && !defender.isHealthy() &&
+				move.isPhysical())
+			defmod.add(0x1800);
 		
-		mods *= weakness;
-		if(isCrit)
-			mods *= 1.5;
-		mods *= ItemBoost.getOffensiveBoost(move,attacker.getItem(),attacker,defender); //offensive items, e.g. life orb
-		mods *= ItemBoost.getDefensiveBoost(move,defender.getItem(),defender); //defensive items, e.g. assault vest
+		else if(did.equals("flowergift") && field.isSun() && !move.isPhysical())
+			defmod.add(0x1800);
+		
+		String diid = defender.getItem().getID();
+		
+		if(diid.equals("deepseascale") && defender.getSpecies().getName().equals("clamperl") && !move.isPhysical())
+			defmod.add(0x1800);
+		else if(diid.equals("metalpowder") && defender.getSpecies().getName().equals("ditto"))
+			defmod.add(0x1800);
+		else if(diid.equals("souldew") && defender.getSpecies().getName().matches("lati[oa]s"))
+			defmod.add(0x1800);
+		else if(diid.equals("assaultvest") && !move.isPhysical())
+			defmod.add(0x1800);
+		else if(diid.equals("eviolite"))
+			defmod.add(0x1800);
+		
+		defense = Math.max(1,pokeRound(defense * chainMods(defmod) / divisor));
 
-		for(FieldCondition fc : field.getSide2())
+		double baseDamage = Math.floor(Math.floor((Math.floor((2 * attacker.getLevel())/5 + 2) * basepower * attack) / defense) / 50 + 2);
+		if((field.isSun() && move.getType().equals(Type.Fire)) ||
+				(field.isRain() && move.getType().equals(Type.Water)))
 		{
-			mods *= FieldConditionsBoost.getFieldConditionsBoost(fc, move, defender);
+			System.out.println("ツ");
+			baseDamage = pokeRound(baseDamage * 0x1800/divisor);
 		}
-		System.out.println("Move "+move.getName()+" by Pokemon "+attacker.getName()+" on Pokemon "+defender.getName()+": "+Arrays.toString(new double[]{before * mods * minMod,before * mods * maxMod}));
-		return new double[]{before * mods * minMod,before * mods/1000 * maxMod};
+		if((field.isSun() && move.getType().equals(Type.Water)) ||
+				(field.isRain() && move.getType().equals(Type.Fire)))
+		{
+			baseDamage = pokeRound(baseDamage * 0x800/divisor);
+		}
+		
+		if(isCrit)
+			baseDamage = Math.floor(baseDamage * 1.5);
+		
+		int stabmod = 0x1000;
+		if(attacker.getsStabFrom(move))
+		{
+			if(id.equals("adaptability"))
+				stabmod = 0x2000;
+			else stabmod = 0x1800;
+		}
+		else if(id.equals("protean"))
+			stabmod = 0x1800;
+		
+		boolean applyBurn = (attacker.isBurned() && move.isPhysical() && id.equals("guts") && !mid.equals("facade"));
+		
+		ArrayList<Integer> finalmod = new ArrayList<>();
+		
+		if(field.isReflect() && move.isPhysical() && !isCrit)
+			finalmod.add(0x800);
+		if(field.Lightscreen() && !move.isPhysical() && !isCrit)
+			finalmod.add(0x800);
+		if(did.equals("multiscale") && defender.getHPFraction() == 1)
+			finalmod.add(0x800);
+		if(id.equals("tintedlens") && weakness < 1)
+		{
+			finalmod.add(0x2000);
+		}
+		else if (id.equals("sniper") && isCrit)
+			finalmod.add(0x1800);
+		
+		if((did.equals("solidrock") || did.equals("filter") && weakness > 1))
+			finalmod.add(0xC00);
+		
+		if(iid.equals("expertbelt") && weakness > 1)
+		{
+			finalmod.add(0x1333);
+		}
+		else if(iid.equals("lifeorb"))
+		{
+			finalmod.add(0x14CC);
+		}
+		
+		if(i instanceof ResistBerry)
+		{
+			ResistBerry rb = (ResistBerry)i;
+			if(move.getType().equals(rb.boostedType()) && !did.equals("unnerve"))
+			{
+				finalmod.add(0x800);
+			}
+		}
+		if(did.equals("furcoat") && move.isPhysical())
+			finalmod.add(0x800);
+		
+		
+		double finalmods = chainMods(finalmod)/divisor;
+		System.out.println("basepower:"+basepower);
+		System.out.println("attack:"+attack);
+		System.out.println("defense:"+defense);
+		System.out.println("basedamage:"+baseDamage);
+		System.out.println("finalmods:"+finalmods);
+		System.out.println("weakness:"+weakness);
+		System.out.println("stab:"+stabmod/divisor);
+		
+		double[] damagearray = new double[16];
+		for(int j = 0; j < 16; j ++)
+		{
+			damagearray[j] = Math.floor(baseDamage * (85 + j) / 100);
+			damagearray[j] = pokeRound(damagearray[j] * stabmod/divisor);
+			damagearray[j] = Math.floor(damagearray[j] * weakness);
+			if(applyBurn)
+			{
+				damagearray[j] = Math.floor(damagearray[j] / 2);
+			}
+			damagearray[j] = Math.max(1,damagearray[j]);
+			damagearray[j] = pokeRound(damagearray[j] * finalmods);
+			
+			if(id.equals("parentalbond") && move.hitCount().length == 1 && move.hitCount()[0] == 1)
+			{
+				damagearray[j] = Math.floor(damagearray[j] * 3/ 2.0);
+			}
+		}
+		
+		
+		return damagearray;
 	}
 	
 	private static Field checkAirLock(Ability a, Ability b, Field f)
@@ -531,18 +650,6 @@ public class DamageCalc
 		return Type.getEffectiveness(move.getType(), type);
 	}
 	
-	/*
-	 * function chainMods(mods) {
-    var M = 0x1000;
-    for(var i = 0; i < mods.length; i++) {
-        if(mods[i] !== 0x1000) {
-            M = ((M * mods[i]) + 0x800) >> 12;
-        }
-    }
-    return M;
-}
-	 */
-	
 	public static int chainMods(ArrayList<Integer> mods)
 	{
 		int m = 0x1000;
@@ -558,7 +665,8 @@ public class DamageCalc
 	
 	public static int getFinalSpeed(Pokemon poke, Field field)
 	{
-		double speed = poke.getStats()[5] * poke.getBoosts()[5];
+		double speed = poke.getStats()[5] * poke.getBoosts()[4];
+		
 		String id = poke.getItem().getID();
 		if(id.equals("choicescarf"))
 			speed = Math.floor(speed * 1.5);
@@ -570,6 +678,7 @@ public class DamageCalc
 				id.equals("sandrush") && field.isSandstorm() ||
 				id.equals("swiftswim") && field.isRain())
 			speed *= 2;
+		System.out.println("Speed is: "+pokeRound(speed));
 		return pokeRound(speed);
 	}
 	
@@ -578,13 +687,28 @@ public class DamageCalc
 		return (num % 1 > 0.5) ? (int)Math.ceil(num) : (int)Math.floor(num);
 	}
 	
+	public static Pokemon checkForecast(Pokemon poke, Field field)
+	{
+		if(poke.getAbility().getID().equals("forecast") && (poke.getSpecies().getID().equals("castform")))
+		{
+			if(field.isSun())
+				poke.setTypes(new Type[]{Type.Fire});
+			else if(field.isRain())
+				poke.setTypes(new Type[]{Type.Water});
+			else if(field.isHail())
+				poke.setTypes(new Type[]{Type.Ice});
+			else poke.setTypes(new Type[]{Type.Normal});
+		}
+		return poke;
+	}
+	
 	public static void main(String[]args)
 	{
-		Pokemon attaque = new Pokemon(new SpeciesList().sylveon,"yourfaceon",Abilities.scrappy, Gender.Male, 100,Items.choicespecs,new int[]{331,149,166,350,296,156}, 331, new double[]{1,1,1,1,1,1,1}, null);
-		Pokemon defense = new Pokemon(new SpeciesList().cofagrigus,"whourse",Abilities.runaway, Gender.Female, 100,Items.chopleberry,new int[]{394,167,256,140,394,166}, 394, new double[]{1,1,1,1,1,1,1}, null);
-		Move move = Moves.stockpile;
+		Pokemon deus = new Pokemon(SpeciesList.deoxysspeed, Abilities.pressure, Gender.Female, 100, Items.choicescarf, new int[]{304,203,306,226,127,0}, 304, new double[]{1,1,1,1,4,1,1}, null);
+		Pokemon snorlacks = new Pokemon(SpeciesList.snorlax, Abilities.waterabsorb, Gender.Male, 100, Items.ironball, new int[]{497,256,234,166,300,86}, 497, new double[]{1,1,1,1,1,0.25,1}, null);
 		Field field = new Field();
-		field.add1(FieldCondition.LightScreen);
-		System.out.println(Arrays.toString(getSinglesDamage(attaque,defense,move, field,false)));
+		Move move = Moves.payback;
+		System.out.println(Arrays.toString(getSinglesDamage(snorlacks,deus,move,field,false)));
+		
 	}
 }
