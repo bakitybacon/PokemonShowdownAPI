@@ -48,6 +48,11 @@ public class Pokemon
 		this.moves = moves;
 		types = species.getTypes();
 	}
+	public Pokemon(Species species)
+	{
+		this(species,species.getName(),species.getAbilities()[0],Gender.Male,100,null,new int[]{100,100,100,100,100,100},100,new double[]{1,1,1,1,1,1,1},null);
+	}
+	
 	public Pokemon(Species species, Ability ability, Gender gender, int level, Item item, int[] stats, int currentHP, double[] boosts, ArrayList<Move> moves)
 	{
 		if(stats.length != 6)
@@ -249,7 +254,7 @@ public class Pokemon
 	public String toString()
 	{
 		return getClass().getName()+"[Species="+getSpeciesName()+",nick="+nick+",ability"+
-				ability+",gender="+gender+",item="+item+",stats="+Arrays.toString(stats)
+				ability+",gender="+gender+",item="+item+",level="+level+",stats="+stats+Arrays.toString(stats)
 				+",currentHP="+currentHP+",boosts="+Arrays.toString(boosts)+",moves="+moves+"]";
 	}
 	
@@ -400,6 +405,21 @@ public class Pokemon
 			return false;
 		return true;
 	}
+	public void clearStatus()
+	{
+		if(status.contains(Status.Toxic))
+			status.remove(Status.Toxic);
+		if(status.contains(Status.Sleep))
+			status.remove(Status.Sleep);
+		if(status.contains(Status.Paralysis))
+			status.remove(Status.Paralysis);
+		if(status.contains(Status.Burn))
+			status.remove(Status.Burn);
+		if(status.contains(Status.Poison))
+			status.remove(Status.Poison);
+		if(status.contains(Status.Freeze))
+			status.remove(Status.Freeze);
+	}
 	public boolean isBurned()
 	{
 		return status.contains(Status.Burn);
@@ -440,5 +460,33 @@ public class Pokemon
 	public void setTypes(Type[] types) 
 	{
 		this.types = types;
+	}
+	public void setHP(int hp) 
+	{
+		currentHP = hp;
+	}
+	public void clearBoosts() 
+	{
+		setBoosts(new double[]{1,1,1,1,1,1,1});	
+	}
+	private void setBoosts(double[] boosts) 
+	{
+		if(boosts.length != 7)
+		{
+			boosts = new double[]{1,1,1,1,1,1,1};
+			throw new IllegalArgumentException("Please supply 7 boosts.");
+		}
+		else this.boosts = boosts;
+	}
+	public void addMove(Move move) 
+	{
+		if(moves == null)
+			moves = new ArrayList<>();
+		if(!moves.contains(move))
+			moves.add(move);
+	}
+	public void setBoost(int which, double level) 
+	{
+		boosts[which] = level;
 	}
 }

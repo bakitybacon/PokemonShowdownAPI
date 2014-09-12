@@ -831,6 +831,7 @@ public class SpeciesList
 	public final Species colossoil = new Species(-59,"Colossoil",false,new Type[]{Type.Dark,Type.Ground},new int[]{133,122,72,71,72,95},new Ability[]{Abilities.rebound,Abilities.guts},null);
 	public final Species krilowatt = new Species(-60,"Krilowatt",false,new Type[]{Type.Electric,Type.Water},new int[]{151,84,73,83,74,105},new Ability[]{Abilities.trace,Abilities.magicguard},null);
 	public final Species voodoom = new Species(-61,"Voodoom",false,new Type[]{Type.Fighting,Type.Dark},new int[]{90,85,80,105,80,110},new Ability[]{Abilities.voltabsorb,Abilities.lightningrod},null);
+	public static final Species placeholder = new Species(-62,"placeholder",false,new Type[]{Type.Normal},new int[]{1,1,1,1,1,1}, new Ability[]{Abilities.nothing},null);
 	
 	public Species getFromName(String name)
 	{
@@ -846,7 +847,7 @@ public class SpeciesList
 			catch (NoSuchFieldException | SecurityException | IllegalArgumentException | IllegalAccessException e) 
 			{
 				e.printStackTrace();
-				return null;
+				return placeholder;
 			}
 	}
 }

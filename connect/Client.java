@@ -30,6 +30,7 @@ import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
 import server.Format;
+import teambuilder.Pokemon;
 
 public class Client extends WebSocketClient
 {
@@ -419,13 +420,14 @@ public class Client extends WebSocketClient
 		else
 			JOptionPane.showMessageDialog(null,"Swag");
 	}
+
 	
 	public static void main(String[] args) throws URISyntaxException, InterruptedException
 	{
 		Client ec = new Client(new URI("ws://sim.smogon.com:8000/showdown/websocket"));
 		ec.connectBlocking(); //running connect() will cause problems, so wait for it to finish
 		
-		ec.join("battle-ou-141281206");
+		ec.join("battle-ou-162741245");
 		
 		System.out.println(ec.currentRoom.getMessages());
 	}

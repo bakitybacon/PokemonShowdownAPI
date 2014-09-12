@@ -195,11 +195,11 @@ public class Abilities
 	public static final Ability persistent = new Ability("Persistent","persistent","Increases the duration of many field effects by two turns when used by this Pokémon.","The duration of certain field effects is increased by 2 turns if used by this Pokemon.");
 	public static final Ability nothing = new Ability("nothing","nothing","nothing","nothing");
 
-	public Ability getByID(String id)
+	public static Ability getByID(String id)
 	{
 		try 
 		{
-			java.lang.reflect.Field field = this.getClass().getDeclaredField(id.toLowerCase());
+			java.lang.reflect.Field field = new Abilities().getClass().getDeclaredField(id.toLowerCase());
 			//below wants the instance of the class
 			//but since it is static, it is irrelevant what the instance is,
 			//so passing null will not create errors

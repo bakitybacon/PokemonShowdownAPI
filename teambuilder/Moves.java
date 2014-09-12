@@ -648,13 +648,13 @@ public class Moves
 
 
 	
-	public Move getByID(String id)
+	public static Move getByID(String id)
 	{
 		if(id.equals("Return"))
 			return Return;
 		try 
 		{
-			java.lang.reflect.Field field = this.getClass().getDeclaredField(id.toLowerCase());
+			java.lang.reflect.Field field = new Moves().getClass().getDeclaredField(id.toLowerCase());
 			//below wants the instance of the class
 			//but since it is static, it is irrelevant what the instance is,
 			//so passing null will not create errors

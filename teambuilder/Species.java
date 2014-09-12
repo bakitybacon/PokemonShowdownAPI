@@ -47,12 +47,15 @@ public class Species
 	public Ability[] getAbilities()
 	{
 		Ability[] abilities = new Ability[mainabilities.length+1];
+		if(hiddenability == null)
+			abilities = new Ability[mainabilities.length];
 		int iterator = 0;
 		for(Ability a : mainabilities)
 		{
 			abilities[iterator++] = a;
 		}
-		abilities[iterator] = hiddenability;
+		if(hiddenability != null)
+			abilities[iterator] = hiddenability;
 		return abilities;
 	}
 	public Ability[] getMainAbilities()
@@ -122,6 +125,18 @@ public class Species
 		return (int)top;
 		//concatenates, which is the desired operation
 	}
+	public int getStatAtLevel(int which, int iv, int ev,double naturemod, int level)
+	{
+		//don't use this for hp
+		//([iv+(2*Base)+ev/4]*level)/100+5*nature
+		double top = iv + (2*baseStats[which])+ev/4.0;
+		top *= level;
+		top /= 100.0;
+		top += 5;
+		top *= naturemod;
+		return (int)top;
+		//concatenates, which is the desired operation
+	}
 	public int getStat(int which, int iv, int ev)
 	{
 		//don't use this for hp
@@ -132,6 +147,16 @@ public class Species
 		top += 5;
 		return (int)top;
 		//concatenates, which is the desired operation
+	}
+	
+	public int[] getBasicStatsAtLevel(int level)
+	{
+		return new int[]{getStatAtLevel(0,31,0,1,level),
+				getStatAtLevel(1,31,0,1,level),
+				getStatAtLevel(2,31,0,1,level),
+				getStatAtLevel(3,31,0,1,level),
+				getStatAtLevel(4,31,0,1,level),
+				getStatAtLevel(5,31,0,1,level)};
 	}
 	public int getMinStatAtLevel(int which,int level)
 	{
