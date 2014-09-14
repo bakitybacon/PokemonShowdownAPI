@@ -8,6 +8,7 @@ import server.Format;
 import teambuilder.Abilities;
 import teambuilder.Ability;
 import teambuilder.Gender;
+import teambuilder.Item;
 import teambuilder.Items;
 import teambuilder.Moves;
 import teambuilder.Pokemon;
@@ -77,13 +78,21 @@ public class BattleRoom extends Room
 	@Override
 	public void join(String who) 
 	{
-		rawMessage(who + " joined.");
+		if(joinsOn)
+			rawMessage(who + " joined.");
 	}
 
 	@Override
 	public void leave(String who) 
 	{
-		rawMessage(who + " left.");
+		if(leavesOn)
+			rawMessage(who + " left.");
+	}
+	
+	public void suppressLeaveJoins()
+	{
+		joinsOn = false;
+		leavesOn = false;
 	}
 
 	public void rawMessage(String message)
@@ -678,18 +687,111 @@ public class BattleRoom extends Room
 		else switch(status.toLowerCase().replaceAll("[^a-z0-9]",""))
 		{
 		case "brn":
-			//poke.getName() 
+			if(from.startsWith("item"))
+			{
+				rawMessage(poke.getName() + "'s " + cleanEffect(from) + " healed its burn!");
+			}
+			else rawMessage(poke.getName() + " was healed of its burn!");
+			break;
+		case "psn":
+		case "tox":
+			if(from.startsWith("item"))
+			{
+				rawMessage(poke.getName() + "'s " + cleanEffect(from) + " healed its poisoning!");
+			}
+			else rawMessage(poke.getName() + " was healed of its poisoning!");
+			break;
+		case "slp":
+			if(from.startsWith("item"))
+			{
+				rawMessage(poke.getName() + "'s " + cleanEffect(from) + " woke it up!");
+			}
+			else rawMessage(poke.getName() + "'s paralysis was cured!");
+			break;
+		case "frz":
+			if(from.startsWith("item"))
+			{
+				rawMessage(poke.getName() + "'s " + cleanEffect(from) + " defrosted it!");
+			}
+			else rawMessage(poke.getName() + " thawed out!");
+			break;
+		case "par":
+			if(from.startsWith("item"))
+			{
+				rawMessage(poke.getName() + "'s " + cleanEffect(from) + " cured its paralysis!");
+			}
+			else rawMessage(poke.getName() + " woke up!");
+			break;
 		}
 	}
 	
-	public void cureTeamMessage()
+	public void cureTeamMessage(String pokeString, String effect)
 	{
-		//TODO
+		Pokemon poke = getPokemon(pokeString);
+		if(team1.contains(poke))
+			for(Pokemon p : team1)
+				p.clearStatus();
+		switch(cleanEffect(effect))
+		{
+		case "healbell":
+			rawMessage("A bell chimed!");
+			break;
+		case "aromatherapy":
+			rawMessage("A soothing aroma wafted through the area!");
+			break;
+		default:
+			rawMessage(poke.getName()+ "'s team was cured!");
+		}
 	}
 	
-	public void itemMessage()
+	public void itemMessage(String pokeString, String itemstr, String from, String of)
 	{
-		//TODO
+		// a lot of item detection happens here
+		
+		Pokemon poke = getPokemon(pokeString);
+		Pokemon ofpoke = getPokemon(of);
+		Item items = Items.getByID(itemstr);
+		String item = items.getID();
+		
+		if(from != null && !from.equals(""))
+		{
+			switch(cleanEffect(from))
+			{
+			case "recycle":
+			case "pickup":
+				rawMessage(poke.getName() + " found one "+item+"!");
+				poke.setItem(items);
+				break;
+			case "frisk":
+				rawMessage(ofpoke.getName() + " frisked its target and found one "+item);
+				poke.setItem(items);
+				break;
+			case "thief":
+			case "covet":
+				rawMessage(poke.getName() + " stole "+ofpoke.getName()+"'s "+item+"!");
+				poke.setItem(items);
+				ofpoke.setItem(null);
+				break;
+			case "harvest":
+				rawMessage(poke.getName() + " harvested one "+item+"!");
+				poke.setItem(items);
+				break;
+			case "bestow":
+				rawMessage(poke.getName() + " received "+item+" from "+ofpoke.getName()+"!");
+				poke.setItem(items);
+				ofpoke.setItem(null);
+				break;
+			default:
+				rawMessage(poke.getName() + " obtained one "+item+".");
+				poke.setItem(items);
+				break;
+			}
+		}
+		else if(item.toLowerCase().replaceAll("[^a-z0-9]","").equals("airballoon"))
+		{
+			rawMessage(poke.getName() + " floats in the air with its Air Balloon!");
+			poke.setItem(items);
+		}
 	}
 	public void endItemMessage()
 	{
@@ -723,41 +825,44 @@ public class BattleRoom extends Room
 	public void singleTurnMessage(String pokeString, String effect, String from, String of)
 	{
 		Pokemon pokemon = getPokemon(pokeString);
-		switch(cleanEffect(effect))
+		if(effect != null && !effect.equals(""))
 		{
-		case "roost":
-			rawMessage(pokemon.getName()+" landed on the ground!");
-			break;
-		case "quickguard":
-			rawMessage("Quick Guard protected "+pokemon.getName()+"'s team!");
-			break;
-		case "wideguard":
-			rawMessage("Wide Guard protected "+pokemon.getName()+"'s team!");
-			break;
-		case "protect":
-			rawMessage(pokemon.getName() + " protected itself!");
-			break;
-		case "endure":
-			rawMessage(pokemon.getName() + " braced itself!");
-			break;
-		case "helpinghand":
-			rawMessage(of + " is read to help"+pokemon.getName());
-			break;
-		case "focuspunch":
-			rawMessage(pokemon.getName() + " is tightening its focus!");
-			break;
-		case "snatch":
-			rawMessage(pokemon.getName() + " waits for a target to make a move!");
-			break;
-		case "magiccoat":
-			rawMessage(pokemon.getName() + " shrouded itself with Magic Coat!");
-			break;
-		case "matblock":
-			rawMessage(pokemon.getName() + " intends to flip up a mat and block incoming attacks!");
-			break;
-		case "electrify":
-			rawMessage(pokemon.getName() + "'s moves have been electrified!");
-			break;
+			switch(cleanEffect(effect))
+			{
+			case "roost":
+				rawMessage(pokemon.getName()+" landed on the ground!");
+				break;
+			case "quickguard":
+				rawMessage("Quick Guard protected "+pokemon.getName()+"'s team!");
+				break;
+			case "wideguard":
+				rawMessage("Wide Guard protected "+pokemon.getName()+"'s team!");
+				break;
+			case "protect":
+				rawMessage(pokemon.getName() + " protected itself!");
+				break;
+			case "endure":
+				rawMessage(pokemon.getName() + " braced itself!");
+				break;
+			case "helpinghand":
+				rawMessage(of + " is read to help"+pokemon.getName());
+				break;
+			case "focuspunch":
+				rawMessage(pokemon.getName() + " is tightening its focus!");
+				break;
+			case "snatch":
+				rawMessage(pokemon.getName() + " waits for a target to make a move!");
+				break;
+			case "magiccoat":
+				rawMessage(pokemon.getName() + " shrouded itself with Magic Coat!");
+				break;
+			case "matblock":
+				rawMessage(pokemon.getName() + " intends to flip up a mat and block incoming attacks!");
+				break;
+			case "electrify":
+				rawMessage(pokemon.getName() + "'s moves have been electrified!");
+				break;
+			}
 		}
 		pokemon.addMove(Moves.getByID(effect));
 	}
