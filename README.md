@@ -19,8 +19,17 @@ Copied Honko's damagecalc by basically translating it into Java.
 The JS can be found at http://pokemonshowdown.com/damagecalc/damage.js.
 
 Currently, I need to:
-* finish damage calculator
+* finish testing damage calculator
 
 * translate battle messages to plain text (and figure out what those are)
 
 * figure out how to resolve the 403 while getting certain files
+
+Libraries
+---------
+
+
+TooTallNate's Java Websocket (https://github.com/TooTallNate/Java-WebSocket/)
+
+
+JSON.simple (https://code.google.com/p/json-simple/)
